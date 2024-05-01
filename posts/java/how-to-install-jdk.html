@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="How to create a JSON Server a Comprehensive Guide to JSON Server - CSEdge." />
+    <meta name="keywords"
+        content="GitHub, account, create, server, DB, JSON Server, JSON, API, REST API, RESTful API" />
+    <title>How to create a JSON Server - CSEdge</title>
+    <meta name="author" content="CSEdge" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <style>
+        /* CSS Styles */
+        .code-block {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+            display: flex; /* Add flex display */
+            justify-content: space-between; /* Add space between items */
+            align-items: center; /* Align items vertically */
+        }
+
+        .code-block pre {
+            margin: 0;
+            flex: 1; /* Take remaining space */
+        }
+
+        .copy-button {
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            color: #495057;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        .copy-button:hover {
+            background-color: #e9ecef;
+            color: #212529;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .code-block {
+                flex-direction: column; /* Stack items vertically on small screens */
+                align-items: flex-start; /* Align items to the start */
+            }
+
+            .copy-button {
+                margin-left: auto; /* Move button to right side */
+                margin-top: 0.5rem; /* Add space between command and button */
+            }
+        }
+    </style>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#!">CSEdge Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="https://learn.csedge.courses">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://csedge.courses/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://csedge.courses#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="https://learn.csedge.courses">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8">
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <img class="card-img-top"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_jP16SYm1-aJJqN2F7CN74_D8Y1cPOeEaKAJcNG_iw&s"
+                        alt="How to Create GitHub Account " />
+                    <div class="card-body">
+                        <main class="container">
+                            <section>
+                                <h2>How to Install JDK on Windows</h2>
+                                <p>Java Development Kit (JDK) is a crucial component for developing and running Java
+                                    applications. In this article, we'll walk through the steps to download and install
+                                    JDK on a Windows operating system, setting you up for Java development.</p>
+                            </section>
+
+                            <section>
+                                <h3>1. Check System Requirements</h3>
+                                <p>Before downloading and installing JDK, ensure your Windows system meets the minimum
+                                    requirements. JDK typically requires a modern Windows version (e.g., Windows 10 or
+                                    11) and sufficient disk space. Check the <a
+                                        href="https://www.oracle.com/java/technologies/downloads/#system-requirements">Oracle
+                                        JDK download page</a> for specifics.</p>
+                            </section>
+
+                            <section>
+                                <h3>2. Download JDK</h3>
+                                <ol>
+                                    <li>Navigate to the <a
+                                            href="https://www.oracle.com/java/technologies/downloads/">Oracle JDK
+                                            download page</a>.</li>
+                                    <li>Under "Java SE," click "Download" for your preferred JDK version. You'll be
+                                        redirected to the Oracle Technology Network (OTN) page.</li>
+                                    <li>Sign in to your Oracle account or create one if necessary. The download should
+                                        start automatically.</li>
+                                    <li>If it doesn't, click "Download" again to initiate.</li>
+                                </ol>
+                            </section>
+
+                            <section>
+                                <h3>3. Install JDK</h3>
+                                <ol>
+                                    <li>Locate the downloaded JDK installer file (e.g.,
+                                        "jdk-17.0.2_windows-x64_bin.exe").</li>
+                                    <li>Double-click to launch, accept any security warnings, and proceed.</li>
+                                    <li>In the JDK Setup wizard, click "Next."</li>
+                                    <li>Accept the license agreement and click "Next."</li>
+                                    <li>Specify the installation location or use the default ("C:\Program
+                                        Files\Java\jdk-17.0.2"). Click "Next."</li>
+                                    <li>Wait for the installation to complete.</li>
+                                    <li>Keep the "Set JAVA_HOME variable" option checked, then click "Next" and "Close."
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section>
+                                <h3>4. Verify Installation</h3>
+                                <ol>
+                                    <li>Open the Command Prompt as an administrator (search for "cmd" in the Start menu
+                                        and run as admin).</li>
+                                    <li>
+                                        In the Command Prompt, use the following command:
+                                        <div class="code-block">
+                                            <pre><code class="language-bash">java -version</code></pre>
+                                            <button class="copy-button"
+                                                onclick="copyToClipboard('java -version')">Copy</button>
+                                        </div>
+                                    </li>
+                                    <li>If JDK is installed correctly, you should see the Java version information
+                                        displayed.</li>
+                                </ol>
+
+                            </section>
+
+                            <section>
+                                <h3>5. Set Environment Variables (Optional)</h3>
+                                <p>To set or verify the JAVA_HOME environment variable:</p>
+                                <ol>
+                                    <li>Right-click the Start menu and select "System."</li>
+                                    <li>In the System window, click "Advanced System Settings" on the left.</li>
+                                    <li>In the Advanced tab, click "Environment Variables."</li>
+                                    <li>Under "System Variables," find "Path," then click "Edit."</li>
+                                    <li>In "Variable value," add a semicolon (;) followed by the JDK path (e.g.,
+                                        <code>;C:\Program Files\Java\jdk-17.0.2\bin</code>). Click "OK."
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <p class="mt-5">With JDK installed and configured, you're ready to develop Java
+                                applications. Don't forget to download an IDE or text editor like Eclipse, IntelliJ
+                                IDEA, or Visual Studio Code to begin coding in Java.</p>
+                        </main>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..."
+                                aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button"
+                                onclick="search()">Go!</button>
+                        </div>
+                    </div>
+                    <!-- Search Results -->
+                    <div id="searchResults"></div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Web Design</a></li>
+                                    <li><a href="#!">HTML</a></li>
+                                    <li><a href="#!">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">JavaScript</a></li>
+                                    <li><a href="#!">CSS</a></li>
+                                    <li><a href="#!">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                 <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body">
+                        <p>Coming Soon..!</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy CSEdge Learn 2024</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../script.js"></script>
+    <!-- Script to copy code to clipboard -->
+    <script>
+        function copyToClipboard(text) {
+            var textarea = document.createElement("textarea");
+            textarea.textContent = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Copied to clipboard: " + text);
+        }
+    </script>
+</body>
+
+</html>
