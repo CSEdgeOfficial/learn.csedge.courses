@@ -10824,3 +10824,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.li_link{
+  margin: 10px;
+}
+
+.link{
+  display: inline-block;
+  background-color: #dfdcdc;
+  text-decoration: none;
+  color: #626fe7;
+  border-radius: 10px;
+  padding: .2rem;
+  margin: .2rem;
+}
+
+.link:hover{
+  background-color: #f1efef;
+}
+
