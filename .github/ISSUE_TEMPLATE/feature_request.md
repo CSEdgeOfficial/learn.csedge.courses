@@ -1,3 +1,6 @@
+Here's the fixed template for the "Feature Request" form:
+
+```yaml
 name: Feature Request 💡
 description: Have any new idea or new feature? Please suggest!
 title: "[Feature] <write a small description here>"
@@ -21,18 +24,18 @@ body:
   - type: checkboxes
     id: no-duplicate-issues
     attributes:
-      label: "Checklist"
+      label: Checklist
       options:
-        - label: "I have checked the existing issues."
+        - label: I have checked the existing issues.
           required: true
 
-        - label: "I follow [Contributing Guidelines](https://github.com/CSEdgeOfficial/learn.csedge.courses/blob/main/CODE_OF_CONDUCT.md) of this project."
+        - label: I follow [Contributing Guidelines](https://github.com/CSEdgeOfficial/learn.csedge.courses/blob/main/CODE_OF_CONDUCT.md) of this project.
           required: true
 
-        - label: "I am a GSSoC'24 contributor."
+        - label: I am a GSSoC'24 contributor.
           required: false
 
-        - label: "I want to work on this issue."
+        - label: I want to work on this issue.
           required: false
   
   - type: checkboxes
@@ -43,3 +46,6 @@ body:
       options:
         - label: I agree to follow this project's "[Code of Conduct](https://github.com/CSEdgeOfficial/learn.csedge.courses/blob/main/CODE_OF_CONDUCT.md)".
           required: true
+```
+
+This YAML configuration defines a form for submitting feature requests with fields for description, optional screenshots, a checklist to ensure no duplicate issues and agreement to the project's code of conduct.
