@@ -24,12 +24,12 @@ function search() {
     if (searchResults.length > 0) {
         let suggestions = "<ul>";
         searchResults.forEach(doc => {
-            suggestions += `<li><a href="${doc.url}">${doc.title}</a></li>`;
+            suggestions += `<a class="btn btn-outline-primary mt-2" href="${doc.url}">${doc.title}</a>`;
         });
         suggestions += "</ul>";
         document.getElementById("searchResults").innerHTML = suggestions;
     } else {
-        document.getElementById("searchResults").innerHTML = "No matching documents found.";
+        document.getElementById("searchResults").innerHTML = `<ul><a class="btn btn-outline-primary mt-2">No Matching Document Found.</a></ul>`;
     }
 }
 
