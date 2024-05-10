@@ -1,6 +1,3 @@
-Here's the fixed template for the "Feature Request" form:
-
-```yaml
 name: Feature Request 💡
 description: Have any new idea or new feature? Please suggest!
 title: "[Feature] <write a small description here>"
@@ -46,6 +43,3 @@ body:
       options:
         - label: I agree to follow this project's "[Code of Conduct](https://github.com/CSEdgeOfficial/learn.csedge.courses/blob/main/CODE_OF_CONDUCT.md)".
           required: true
-```
-
-This YAML configuration defines a form for submitting feature requests with fields for description, optional screenshots, a checklist to ensure no duplicate issues and agreement to the project's code of conduct.
