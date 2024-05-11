@@ -16,6 +16,7 @@
 
 1. **Fork and Clone the Repository**
    To get started with contributing to our project, fork the repo and then clone it to your local machine:
+
    ```bash
    git clone https://github.com/CSEdgeOffical/learn.csedge.courses.git
    cd learn.csedge.courses
@@ -26,6 +27,7 @@
 
 3. **Commit and Push**
    Once you've made your changes, commit them and push to your fork:
+
    ```bash
    git add .
    git commit -m "Describe your changes here"
@@ -38,6 +40,7 @@
 ### Contributing
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
+
 - Reporting a bug
 - Discussing the current state of the code
 - Submitting a fix
