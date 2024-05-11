@@ -4,26 +4,35 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta
       name="description"
-      content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities." />
+      content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities."
+    />
     <meta name="author" content="CSEdge" />
     <title>CSEdge - Learn: Unlocking Interns' Potential</title>
     <meta
       name="keywords"
-      content="CSEdge, Learn, Internship, Tutorials, Guides, Interns, Career, Development, Skills, Knowledge, Resources, Opportunities" />
+      content="CSEdge, Learn, Internship, Tutorials, Guides, Interns, Career, Development, Skills, Knowledge, Resources, Opportunities"
+    />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
     <!-- Favicon-->
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+    />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!--Google Site Search Verification-->
     <meta
       name="google-site-verification"
-      content="lnzqpbpjoknDdDMpcJhBthXHLR7jUWtfSXoGHbdpI40" />
+      content="lnzqpbpjoknDdDMpcJhBthXHLR7jUWtfSXoGHbdpI40"
+    />
   </head>
 
   <body>
@@ -39,11 +48,7 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <img
-          height="32px"
-          width="32px"
-          src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
-          alt="logo" />
+       
         <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
         <button
           class="navbar-toggler"
@@ -52,7 +57,8 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -75,180 +81,168 @@
         </div>
       </div>
     </nav>
-    <!-- Page header with logo and tagline-->
-    <header class="py-5 bg-light border-bottom mb-4">
-      <div class="container">
-        <div class="text-center my-5">
-          <h1 class="fw-bolder">Welcome to CSEdge Learn!</h1>
-          <p class="lead mb-0">
-            This website offers straightforward guides and tutorials for
-            interns, providing clear directions to complete tasks effectively.
-            Simplify your internship experience with our easy-to-follow articles
-            and docs.
-          </p>
+    <div class="card mb-4">
+   
+      <div class="card-body pr-2">
+        <div class="input-group">
+          <input
+            class="form-control"
+            type="text"
+            id="searchInput"
+            placeholder="Enter search term..."
+            aria-label="Enter search term..."
+            aria-describedby="button-search"
+          />
+          <button
+            class="btn btn-primary"
+            id="button-search"
+            type="button"
+            onclick="search()"
+          >
+            Go!
+          </button>
         </div>
       </div>
-    </header>
-    <!-- Page content-->
-    <div class="container">
-      <div class="row">
-        <!-- Blog entries-->
-        <div class="col-lg-8">
-          <!-- Featured blog post-->
-          <div class="card mb-4">
-            <a href="./posts/github/how-to-create-github-account.html"
-              ><img
-                class="card-img-top"
-                src="https://github.githubassets.com/assets/social-2deb6d7d43e7.jpg"
-                alt="How to Create GitHub Account "
-            /></a>
-            <div class="card-body">
-              <div class="small text-muted">January 24, 2024</div>
-              <h2 class="card-title">How to Create a GitHub Account</h2>
-              <p class="card-text">
-                Learn how to create a GitHub account in just a few simple steps.
-                GitHub is a platform used by millions of developers worldwide
-                for version control and collaboration.
-              </p>
-              <a
-                class="btn btn-primary"
-                href="./posts/github/how-to-create-github-account.html"
-                >Read more →</a
-              >
-            </div>
-          </div>
-          <!-- Nested row for non-featured blog posts-->
-          <div class="row">
-            <div class="col-lg-6">
-              <!-- Blog post-->
-              <div class="card mb-4">
-                <a
-                  href="./posts/linkedin/creating-professional-linkedin-account.html"
-                  ><img
-                    class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx3NudeL9WB5diyA7peE-rrrZ1OuFXrzSChgyKhr6iQ&s"
-                    alt="Professional LinkedIn account creation"
-                /></a>
-                <div class="card-body">
-                  <div class="small text-muted">April 25, 2024</div>
-                  <h2 class="card-title h4">
-                    Unlock the Power of Networking: Crafting Your Professional
-                    LinkedIn Profile
-                  </h2>
-                  <p class="card-text">
-                    Embark on a journey to create a compelling Professional
-                    LinkedIn account that opens doors to limitless
-                    opportunities. This step-by-step guide demystifies the
-                    process, empowering you to harness the full potential of
-                    LinkedIn's vast network, connecting millions worldwide.
-                  </p>
-                  <a
-                    class="btn btn-primary"
-                    href="./posts/linkedin/creating-professional-linkedin-account.html"
-                    >Read more →</a
-                  >
-                </div>
-              </div>
-              <!-- Blog post-->
-              <div class="card mb-4">
-                <a
-                  href="./posts/github/How-to-Apply-for-GitHub-Student-Developer-Pack.html"
-                  ><img
-                    class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNYDqYlvfORMgsjdtflgwHnjA-hHUwJPkFaLDn5zFwyQ&s"
-                    alt="GitHub Student Pro Account"
-                /></a>
-                <div class="card-body">
-                  <div class="small text-muted">April 25, 2024</div>
-                  <h2 class="card-title h4">
-                    Unlock Exclusive Benefits: Applying for GitHub Student Pro
-                    Account
-                  </h2>
-                  <p class="card-text">
-                    Discover the pathway to unlocking the full potential of your
-                    student journey by acquiring a GitHub Student Pro account.
-                    Dive into this comprehensive guide to understand the
-                    application process, eligibility criteria, and the plethora
-                    of benefits awaiting you. Elevate your coding experience and
-                    collaboration capabilities with GitHub's premium features
-                    tailored for students.
-                  </p>
-                  <a
-                    class="btn btn-primary"
-                    href="./posts/github/How-to-Apply-for-GitHub-Student-Developer-Pack.html"
-                    >Read more →</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <!-- Blog post-->
-              <div class="card mb-4">
-                <a href="./posts/azure/How-to-Create-an-Azure-Account.html"
-                  ><img
-                    class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplePLm0DvcyhLXZHdWe4gMVzpl6LsyfLYpsLxCHcGPQ&s"
-                    alt="Azure Student Account"
-                /></a>
-                <div class="card-body">
-                  <div class="small text-muted">April 25, 2024</div>
-                  <h2 class="card-title h4">
-                    Empower Your Learning: Creating Your Azure Student Account
-                  </h2>
-                  <p class="card-text">
-                    Embark on your cloud journey with Azure by unlocking the
-                    Azure Student account, your gateway to a world of learning
-                    and innovation. Dive into this comprehensive guide to
-                    discover the step-by-step process to create your Azure
-                    Student account and access $200 in free Azure credits.
-                    Explore the vast array of Azure services and resources
-                    tailored to support your educational endeavors, empowering
-                    you to build, experiment, and innovate without constraints.
-                  </p>
-                  <a
-                    class="btn btn-primary"
-                    href="./posts/azure/How-to-Create-an-Azure-Account.html"
-                    >Read more →</a
-                  >
-                </div>
-              </div>
+      <!-- Search Results -->
+      <div class="me-2 ms-1" id="searchResults"></div>
+    </div>
 
-              <!-- Blog post-->
-              <div class="card mb-4">
-                <a
-                  href="./posts/github/How-to-Make-Pull-Requests-on-GitHub.html"
-                  ><img
-                    class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloyzP9KVKtrLX6gDh5koAKVUHZ3prgr3b0YRlK-ORcg&s"
-                    alt="GitHub Pull Request"
-                /></a>
-                <div class="card-body">
-                  <div class="small text-muted">April 25, 2024</div>
-                  <h2 class="card-title h4">
-                    Collaborate and Contribute: Mastering Pull Requests in
-                    GitHub
-                  </h2>
-                  <p class="card-text">
-                    Unlock the power of collaboration with GitHub by mastering
-                    the art of creating Pull Requests. This comprehensive guide
-                    walks you through the step-by-step process of initiating a
-                    Pull Request, from forking a repository to submitting your
-                    changes for review. Learn how to contribute to open-source
-                    projects and collaborate effectively with peers, empowering
-                    you to make meaningful contributions to the global developer
-                    community. Ready to elevate your GitHub workflow? Let's dive
-                    in!
-                  </p>
-                  <a
-                    class="btn btn-primary"
-                    href="./posts/github/How-to-Make-Pull-Requests-on-GitHub.html"
-                    >Read more →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Pagination-->
+   
+    <section class="home" id="home">
+      <div class="home-text container">
+        <h2 class="home-title">Welcome to CSEdge Learn</h2>
+        <span class="home-subtitle">Your source of great content</span>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="contentBx">
+        <h2 class="titleText">Catch up with the trending topics</h2>
+        <p class="title-text">
+          This website offers straightforward guides and tutorials for interns,
+          providing clear directions to complete tasks effectively. Simplify
+          your internship experience with our easy-to-follow articles and docs.
+        </p>
+      </div>
+      <div class="imgBx">
+        <img src="images/about.png" alt="" class="fitBg" />
+      </div>
+    </section>
+    <div class="post container">
+      <!-- Post 1 -->
+      <div class="post-box tech">
+        <a href="./posts/github/how-to-create-github-account.html"
+          ><img
+            class="post-img"
+            src="https://github.githubassets.com/assets/social-2deb6d7d43e7.jpg"
+            alt="How to Create GitHub Account "
+        /></a>
+
+        <a href="#" class="post-title">How to Create a GitHub Account</a>
+        <span class="post-date">January 24, 2024</span>
+        <p class="post-description">
+          Learn how to create a GitHub account in just a few simple steps.
+          GitHub is a platform used by millions of developers worldwide for
+          version control and collaboration.
+        </p>
+      </div>
+      <!-- Post 2 -->
+      <div class="post-box food">
+        <a href="./posts/linkedin/creating-professional-linkedin-account.html"
+          ><img
+            class="post-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx3NudeL9WB5diyA7peE-rrrZ1OuFXrzSChgyKhr6iQ&s"
+            alt="Professional LinkedIn account creation"
+        /></a>
+        <a href="#" class="post-title"
+          >Unlock the Power of Networking: Crafting Your Professional LinkedIn
+          Profile</a
+        >
+        <span class="post-date">April 25, 2024</span>
+        <p class="post-description">
+          Embark on a journey to create a compelling Professional LinkedIn
+          account that opens doors to limitless opportunities. This step-by-step
+          guide demystifies the process, empowering you to harness the full
+          potential of LinkedIn's vast network, connecting millions worldwide.
+        </p>
+      </div>
+      <!-- Post 3 -->
+      <div class="post-box food">
+        <a
+          href="./posts/github/How-to-Apply-for-GitHub-Student-Developer-Pack.html"
+          ><img
+            class="post-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNYDqYlvfORMgsjdtflgwHnjA-hHUwJPkFaLDn5zFwyQ&s"
+            alt="GitHub Student Pro Account"
+        /></a>
+
+        <a href="#" class="post-title"
+          >Unlock Exclusive Benefits: Applying for GitHub Student Pro Account</a
+        >
+        <span class="post-date"> April 25, 2024</span>
+        <p class="post-description">
+          Discover the pathway to unlocking the full potential of your student
+          journey by acquiring a GitHub Student Pro account. Dive into this
+          comprehensive guide to understand the application process, eligibility
+          criteria, and the plethora of benefits awaiting you. Elevate your
+          coding experience and collaboration capabilities with GitHub's premium
+          features tailored for students.
+        </p>
+      </div>
+      <!-- Post 4 -->
+
+      <div class="post-img">
+        <a href="./posts/azure/How-to-Create-an-Azure-Account.html"
+          ><img
+            class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplePLm0DvcyhLXZHdWe4gMVzpl6LsyfLYpsLxCHcGPQ&s"
+            alt="Azure Student Account"
+        /></a>
+
+        <a href="#" class="post-title">
+          Empower Your Learning: Creating Your Azure Student Account</a
+        >
+        <span class="post-date">April 25, 2024</span>
+        <p class="post-description">
+          Embark on your cloud journey with Azure by unlocking the Azure Student
+          account, your gateway to a world of learning and innovation. Dive into
+          this comprehensive guide to discover the step-by-step process to
+          create your Azure Student account and access $200 in free Azure
+          credits. Explore the vast array of Azure services and resources
+          tailored to support your educational endeavors, empowering you to
+          build, experiment, and innovate without constraints.
+        </p>
+      </div>
+      <!-- Post 5 -->
+      <div class="post-box tech">
+        <a href="./posts/github/How-to-Make-Pull-Requests-on-GitHub.html"
+          ><img
+            class="post-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloyzP9KVKtrLX6gDh5koAKVUHZ3prgr3b0YRlK-ORcg&s"
+            alt="GitHub Pull Request"
+        /></a>
+
+        <a href="#" class="post-title"
+          >Collaborate and Contribute: Mastering Pull Requests in GitHub</a
+        >
+        <span class="post-date">April 25, 2024</span>
+        <p class="post-description">
+          Unlock the power of collaboration with GitHub by mastering the art of
+          creating Pull Requests. This comprehensive guide walks you through the
+          step-by-step process of initiating a Pull Request, from forking a
+          repository to submitting your changes for review. Learn how to
+          contribute to open-source projects and collaborate effectively with
+          peers, empowering you to make meaningful contributions to the global
+          developer community. Ready to elevate your GitHub workflow? Let's dive
+          in!
+        </p>
+      </div>
+
+
+
+
+
+   <!-- pagination -->
           <nav aria-label="Pagination">
             <hr class="my-0" />
             <ul class="pagination justify-content-center my-4">
@@ -275,26 +269,7 @@
         <!-- Side widgets-->
         <div class="col-lg-4">
           <!-- Search widget-->
-          <div class="card mb-4">
-            <div class="card-header">Search</div>
-            <div class="card-body pr-2">
-              <div class="input-group">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="searchInput"
-                  placeholder="Enter search term..."
-                  aria-label="Enter search term..."
-                  aria-describedby="button-search" />
-                <button
-                  class="btn btn-primary"
-                  id="button-search"
-                  type="button"
-                  onclick="search()">
-                  Go!
-                </button>
-              </div>
-            </div>
+         
             <!-- Search Results -->
             <div class="me-2 ms-1" id="searchResults"></div>
           </div>
@@ -304,8 +279,8 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-6">
-                  <ul class="list-unstyled mb-0">
-                    <li><a href="#!">Web Design</a></li>
+                  <ul class="list-unstyled mb-5">
+                    <li><a href="#!" >Web Design</a></li>
                     <li><a href="#!">HTML</a></li>
                     <li><a href="#!">Freebies</a></li>
                   </ul>
