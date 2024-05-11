@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>404 Not Found</title>
+    <style>
+        body {
+            background-image: url("images/404 Error Page.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        a {
+            position: absolute;
+            opacity: 0;
+            top: 95%;
+            left: 50%;
+            padding: 30px;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                background-image: url("images/404 Error Page Portrait.jpg");
+                background-size: cover;
+            }
+
+            a {
+                font-size: 50px;
+                /* Adjusted font size for better mobile readability */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">Go Home</a>
+</body>
+
+</html>

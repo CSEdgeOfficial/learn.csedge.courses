@@ -1,0 +1,137 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 15px 15px 15px 15px;
+    background-color: #ffffff;
+}
+
+nav img {
+    display: none;
+    cursor: pointer;
+}
+
+nav h1 {
+    font-size: 2rem;
+    padding-left: 50px;
+    margin: 0px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a:hover {
+    color: #222;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    nav img {
+        display: inline-block;
+        padding-right: 15px;
+    }
+
+    nav {
+        padding: 15px;
+        position: relative;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #f5f5f5;
+        flex-direction: column;
+        text-align: center;
+        transition: left 0.3s ease;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+    }
+
+    nav img {
+        display: block;
+    }
+
+    nav ul a {
+        color: #000000;
+        font-size: 20px;
+    }
+}
+
+#goTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#goTopBtn:hover {
+    background-color: #333;
+    /* Darker shade on hover */
+}
+
+#goTopBtn i {
+    font-size: 24px;
+    /* Increase icon size for better visibility */
+}
+
+
+/* General Styles */
+.section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 30px;
+    /* Space between logos */
+}
+
+.logo {
+    width: 100%;
+    /* Responsive width */
+    max-width: 200px;
+    /* Maximum size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .logos-container {
+        flex-direction: column;
+        /* Stack logos vertically on smaller screens */
+    }
+}
