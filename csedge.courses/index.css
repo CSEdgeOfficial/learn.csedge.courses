@@ -33,7 +33,6 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 }
-
 .hero div {
     display: flex;
     padding: 80px 150px;
@@ -109,7 +108,7 @@ h1 {
 .about-content div {
     padding: 40px;
     flex: 1;
-    text-align: left;
+    text-align: justify ;
     margin: 20px;
 }
 
@@ -621,6 +620,7 @@ i {
 
 /* Media Queries */
 @media screen and (max-width: 1000px) {
+  
     .hero {
         padding-top: 0;
     }
@@ -650,6 +650,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+    .about-content > div{
+        text-align: center;
+    }
     .hero {
         overflow: hidden;
         height: fit-content;
