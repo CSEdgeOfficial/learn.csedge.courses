@@ -10824,3 +10824,49 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
+.li_link{
+  margin: 10px;
+}
+
+.link{
+  /* display: inline-block; */
+  /* background-color: #dfdcdc; */
+  /* text-decoration: none; */
+  /* color: #626fe7; */
+  /* border-radius: 10px; */
+  padding: .2rem;
+  margin: .2rem;
+  color: #3498db;
+  text-shadow: 0 1px 0 #ecf8ff;
+  text-decoration: none;
+  border-bottom: 1px dashed #85c1e9;
+  display: inline-block;
+  position: relative;
+  padding: 0 0.2em;
+  transition: all 250ms;
+  z-index: 1000;
+  background: transparent;
+}
+
+.link::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 0%;
+  background: rgb(174, 214, 241); 
+  bottom: 0;
+  left: 0;
+  
+  position: absolute;
+  transition: height 250ms;
+}
+
+.link:hover{
+  background-color: transparent;
+}
+
+.link:hover::before{
+  height: 100%;
+}
