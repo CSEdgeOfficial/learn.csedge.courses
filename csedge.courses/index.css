@@ -793,17 +793,10 @@ i {
         font-size: medium;
     }
 }
-.contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color:  #f5f5f5f5;
-}
 
 .contact-form .form-group {
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .contact-form label {
@@ -892,6 +885,21 @@ label i {
     color: black;
     font-size: 16px; 
 }
-.contact-form-container i.fa-envelope {
-    font-size: 16px; 
+.contact-form-container {
+    flex: 1;
+    margin-left: 10px;
+    margin-bottom: 20px; 
+}
+
+.image {
+    flex: 1;
+    margin-right: 80px; 
+
+}
+
+.image img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: left; 
+
 }
