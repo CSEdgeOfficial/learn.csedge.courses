@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Javascript Basics - CSEdge." />
+        <meta name="keywords" content="Javascript Basics" />
+        <title>Javascript Basics</title>
+        <meta name="Dev-Soumya-Ranjan-Swain" content="CSEdge" />
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+        <link rel="stylesheet" href="javascript-basics.css">
+</head>
+
+<body>
+
+    <h1>Javascript Basics</h1>
+    <div class="code-snippet-container" style="margin-top: 30px;">
+        <div class="copy-banner">
+            <span class="language">JavaScript</span>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </div>
+        <div class="code-container">
+            <pre>
+      <code class="language-javascript">
+        //! variables (let, var, const)
+        let a = 1;
+        var b = 2;
+        const c = 3;
+        // c = 4; // will give error, can't change const
+
+        //! primitive data types(string, number, boolean)
+        let FirstName = "sonu";
+        let age = 21;
+        let isMarried = false;
+
+        //! conditional statement
+        if (isMarried) {
+            console.log(FirstName + " is married")
+        }
+        else console.log(FirstName + " is not married")
+
+        //! Loops
+        let res = 0;
+        for (let i = 0; i <= 100; i++) {
+            res += i;
+        }
+        console.log(res)
+
+        //! functions
+        function greet(name) {
+            return 'Hello, ' + name + '!';
+        }
+
+        console.log(greet('World'));
+      </code>
+    </pre>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script>
+        function copyCode(button) {
+            var code = document.querySelector('code');
+            var range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+
+            button.innerText = "Copied";
+            button.classList.add("copied");
+            setTimeout(function () {
+                button.innerText = "Copy Code";
+                button.classList.remove("copied");
+            }, 2000);
+        }
+    </script>
+
+</body>
+
+</html>
