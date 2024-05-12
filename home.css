@@ -971,38 +971,99 @@ i {
     background-color: #003d80;
 }
 
-/* Enhancement for Why CSEdge Internship Section */
-
-.why-internship {
+/* Enhanced Styles for Why CSEdge Internship Section */
+#Services {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    padding: 50px 20px;
+    border-radius: 20px; /* Increased border radius for a softer look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
 }
 
-.why-internship .section-heading {
-    margin-bottom: 50px;
-}
-
-.why-internship .section-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-.why-internship .section-content li {
-    width: 300px;
-}
-
-.why-internship .section-content li h3 {
-    font-size: 24px;
+#Services .section-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333; /* Dark text color for better readability */
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif; /* Modern sans-serif font */
 }
 
-.why-internship .section-content li p {
-    font-size: 16px;
-    line-height: 1.4;
-    color: #666;
+#Services .table {
+    width: 100%;
+    margin-top: 40px; /* Increased top margin for better spacing */
+    border-collapse: collapse;
+    background-color: transparent; /* Removed background color */
 }
 
+#Services th,
+#Services td {
+    padding: 20px 15px; /* Reduced padding for a cleaner look */
+    border-bottom: 1px solid #dee2e6; /* Light border color */
+    color: #333; /* Dark text color */
+}
+
+#Services th {
+    background-color: #e9ecef; /* Light gray background */
+}
+
+#Services tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* White background for even rows */
+}
+
+#Services tbody tr:nth-child(odd) {
+    background-color: #d1ecf1; /* Light blue background for odd rows */
+}
+
+#Services tbody tr:hover {
+    background-color: #dee2e6; /* Light gray background color on hover */
+}
+
+#Services th:first-child,
+#Services td:first-child {
+    text-align: left;
+    padding-left: 30px;
+}
+
+#Services th:last-child,
+#Services td:last-child {
+    text-align: center;
+}
+
+#Services i.uil {
+    font-size: 20px;
+}
+
+#Services .positive-attribute {
+    color: #28a745; /* Green for positive attributes */
+}
+
+#Services .negative-attribute {
+    color: #dc3545; /* Red for negative attributes */
+}
+
+#Services .positive-attribute i,
+#Services .negative-attribute i {
+    font-size: 24px;
+}
+
+/* Animation for hover effect */
+#Services tbody tr {
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+@media screen and (max-width: 768px) {
+    #Services {
+        padding: 30px 15px;
+    }
+
+    #Services .section-heading {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    #Services .table {
+        border-radius: 8px;
+    }
+}
