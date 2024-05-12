@@ -78,6 +78,10 @@
   --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+  --blue: #9ab3f5;
+  --purple: #9a1663;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 *,
@@ -253,6 +257,96 @@ small,
 .small {
   font-size: 0.875em;
 }
+
+/* start of css designing for search bar and categories */
+.search-bar{
+  padding-top: 0;
+  padding-bottom: 1rem;
+  display:flex;
+  align-items: center;
+  min-width: 700px;
+  border-radius: 50px;
+  background-color: var(--white);
+  margin-left: 10rem;
+  margin-right: 20rem;
+}
+.dropdown{
+  position: relative;
+  width: 280px;
+  border-radius: 50px;
+  border: 1px solid var(--white);
+  background-color: var(--purple);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.dropdown-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  padding: 1rem 1.5rem;
+}
+
+.dropdown-list{ 
+  z-index: 1;
+  position:absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  border-radius: 15px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--bs-gray-500);
+  transition: max-height 0.5s;
+}
+#list.show{
+  max-height: 400px;
+}
+.dropdown-list-item{
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1rem 0 1rem 1.5rem;
+  cursor: pointer;
+  transition: margin-left 0.2s ease, color 0.2s ease;
+}
+.dropdown-list-item:hover{
+  margin-left:0.5rem;
+  color: var(--purple);
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  width: 100%;
+  color: var(--purple);
+}
+
+.search-box input{
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--purple);
+  border: 0;
+  outline: 0;
+}
+.search-box i{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.search-box input::placeholder{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--purple);
+
+}
+/* end of css designing for search bar and categories */
+
+
 
 mark,
 .mark {
@@ -8655,7 +8749,7 @@ fieldset:disabled .btn {
 }
 
 .mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .mb-5 {
@@ -8774,8 +8868,8 @@ fieldset:disabled .btn {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 1 !important;
+  padding-bottom: 1 !important;
 }
 
 .pt-0 {
@@ -8956,6 +9050,7 @@ fieldset:disabled .btn {
 
 .fw-bolder {
   font-weight: bolder !important;
+  margin-bottom: 1rem;
 }
 
 .lh-1 {

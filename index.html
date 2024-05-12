@@ -9,6 +9,10 @@
       name="description"
       content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities." />
     <meta name="author" content="CSEdge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>CSEdge - Learn: Unlocking Interns' Potential</title>
     <meta
       name="keywords"
@@ -89,6 +93,48 @@
         </div>
       </div>
     </header>
+
+
+
+
+    <!--Search bar starts -->
+
+
+
+    <div class="search-bar">
+      <!-- Dropdown starts -->
+      <div class="dropdown">
+          <div id="drop-text" class="dropdown-text">
+              <span id="span">Categories</span>
+              <i id="icon" class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul id="list" class="dropdown-list">
+              <li class="dropdown-list-item">Everything</li>
+              <li class="dropdown-list-item">HTML</li>
+              <li class="dropdown-list-item">CSS</li>
+              <li class="dropdown-list-item">JavaScript</li>
+              <li class="dropdown-list-item">Web Design</li>
+              <li class="dropdown-list-item">Freebies</li>
+              <li class="dropdown-list-item">Tutorials</li>
+          </ul>
+      </div>    
+      <!-- Dropdown ends -->
+              <!-- Search box input start -->
+              <div class="search-box">
+                  <input type="text" id="search-input" placeholder="Search..."/>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <!-- Search box input ends-->
+
+  </div>
+
+
+  <!-- Search bar ends -->
+
+
+
+  
+
     <!-- Page content-->
     <div class="container">
       <div class="row">
@@ -272,54 +318,17 @@
             </ul>
           </nav>
         </div>
+
+
+
         <!-- Side widgets-->
-        <div class="col-lg-4">
-          <!-- Search widget-->
-          <div class="card mb-4">
-            <div class="card-header">Search</div>
-            <div class="card-body pr-2">
-              <div class="input-group">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="searchInput"
-                  placeholder="Enter search term..."
-                  aria-label="Enter search term..."
-                  aria-describedby="button-search" />
-                <button
-                  class="btn btn-primary"
-                  id="button-search"
-                  type="button"
-                  onclick="search()">
-                  Go!
-                </button>
-              </div>
-            </div>
-            <!-- Search Results -->
-            <div class="me-2 ms-1" id="searchResults"></div>
-          </div>
-          <!-- Categories widget-->
-          <div class="card mb-4">
-            <div class="card-header">Categories</div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6">
-                  <ul class="list-unstyled mb-0">
-                    <li><a href="#!">Web Design</a></li>
-                    <li><a href="#!">HTML</a></li>
-                    <li><a href="#!">Freebies</a></li>
-                  </ul>
-                </div>
-                <div class="col-sm-6">
-                  <ul class="list-unstyled mb-0">
-                    <li><a href="#!">JavaScript</a></li>
-                    <li><a href="#!">CSS</a></li>
-                    <li><a href="#!">Tutorials</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Recent Posts iamge slider widgets -->
+
+
+
+        
+ 
+
           <!-- Side widget-->
           <div class="card mb-4">
             <div class="card-header">Recent Posts</div>
@@ -361,6 +370,13 @@
       </div>
     </footer>
     <!-- Bootstrap core JS-->
+
+      <!-- Swiper JS -->
+  <script src="Responsive Card Slider/js/swiper-bundle.min.js "></script>
+
+  <!-- JavaScript -->
+  <script src="Responsive Card Slider/js/script.js"></script>
+    <script src="scriptforsearch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./posts/script.js"></script>
   </body>
