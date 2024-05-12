@@ -80,7 +80,7 @@ h1 {
 }
 
 .btn {
-    background-color: #333;
+    background-color: rgb(240, 158, 34);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -129,7 +129,7 @@ h1 {
 }
 
 .read-more-button {
-    background-color: #22CFB9;
+    background-color: rgb(192, 64, 96);
     color: white;
     padding: 10px 20px;
     margin-top: 15px;
@@ -304,6 +304,21 @@ section {
     transition: background-color 0.3s, transform 0.3s, color 0.3s;
     border-radius: 4px;
     border: none;
+}
+#python{
+    background-color: rgb(192, 64, 96) ;
+}
+
+#webdev{
+    background-color: rgb(192, 64, 96) ; 
+}
+
+#java{
+    background-color: rgb(192, 64, 96) ;
+}
+
+#coming-soon{
+    background-color: rgb(240, 158, 34)
 }
 
 .program-apply-button:hover {
