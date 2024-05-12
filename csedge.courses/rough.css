@@ -174,12 +174,6 @@ section {
     padding: 50px 40px;
 }
 
-#internship {
-    align-content: center;
-    background-color: #F8F8F8;
-    
-}
-
 #middle {
     opacity: 0;;
 }
@@ -193,7 +187,7 @@ section {
     display: none;
     }
 }
-
+ 
 .section-heading {
     font-size: 36px;
     text-align: center;
@@ -205,21 +199,7 @@ section {
     font-family: Arial, sans-serif;
     padding-bottom: 5%;
 }
-
-@media(max-width:576px){
-    .section-heading,.card-title {
-        font-size: 80%;
-    }
-
-    .card-duration{ 
-        font-size: 75%;
-    }
-
-    .program-description{
-        font-size: 70%;
-    }
-}
-
+  
 .internship-img {
     width:  auto;
     height: auto;
@@ -236,7 +216,7 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: #E8E8E8;
     transition: transform 0.5s, opacity 0.5s;
-
+    
 }
 
 .internship-card .card:hover .internship-img{
