@@ -32,6 +32,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    padding-top: 130px;
 }
 
 .hero div {
@@ -145,6 +146,7 @@ section {
 
 
 .section-heading {
+    margin-top: 45px;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -673,7 +675,7 @@ i {
 /* Media Queries */
 @media screen and (max-width: 1000px) {
     .hero {
-        padding-top: 0;
+        /* padding-top: 0; */
     }
 
     #Services ul {
@@ -700,7 +702,7 @@ i {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .hero {
         overflow: hidden;
         height: fit-content;
@@ -726,6 +728,10 @@ i {
 
     section{
         padding: 10px;
+    }
+
+    .section-heading {
+        padding-top: 20px;
     }
 
     .about-content {

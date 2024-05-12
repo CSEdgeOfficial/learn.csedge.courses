@@ -5,6 +5,11 @@ nav {
     color: #000000;
     padding: 15px 15px 15px 15px;
     background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    user-select: none;
 }
 
 nav img {
@@ -22,6 +27,21 @@ nav a {
     color: #000000;
     text-decoration: none;
     padding: 5px 20px;
+    position: relative;
+    font-size: 16.5px;
+    letter-spacing: 0.3px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #007bff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s ease;
+    border-radius: 5px;
 }
 
 nav ul {
@@ -32,11 +52,23 @@ nav ul {
 }
 
 nav ul li a:hover {
-    color: #222;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #007bff;
+    transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 768px) {
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 885px) {
+    nav a {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    
+}
+
+@media screen and (max-width: 860px) {
     nav img {
         display: inline-block;
         padding-right: 15px;
@@ -44,7 +76,7 @@ nav ul li a:hover {
 
     nav {
         padding: 15px;
-        position: relative;
+        /* position: relative; */
     }
 
     nav ul {
