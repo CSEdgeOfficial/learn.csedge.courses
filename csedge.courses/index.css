@@ -190,7 +190,7 @@ section {
 .internship-program {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 
@@ -246,8 +246,7 @@ section {
 }
 
 .internship-program img {
-    max-width: 100%;
-    max-height: 250px;
+    height: 35%;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -257,15 +256,15 @@ section {
 }
 
 .program-title {
-    font-size: 24px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 10px;
     font-weight: bold;
     text-align: center;
 }
 
 .program-duration {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 7px;
     color: #666;
     transition: color 0.3s ease;
 }
@@ -278,7 +277,7 @@ section {
     font-size: 16px;
     line-height: 1.2;
     text-align: justify;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 10px;
     font-family: 'Verdana', sans-serif;
     color: #333;
