@@ -56,6 +56,9 @@
             <li><a href="./Resources.html">Free Content</a></li>
             <li><a href="https://learn.csedge.courses">Blog</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><button onclick="darkMode()" class="dark-mode-button">Dark Mode</button></li>
+            <li><button onclick="lightMode()" class="light-mode-button">Light Mode</button></li>
+            <li></li>
         </ul>
     </nav>
     <!--Hero Section-->
@@ -368,7 +371,19 @@
         <p class="copyright">Copyright &copy; 2024 CSEdge.<br>All Rights Reserved Designed By Team CSEdge</p>
     </footer>
 
+    <script>
+        function darkMode() {
+            let element = document.body;
+            element.classList.add("dark-mode");
+        }
 
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
     <script>
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
