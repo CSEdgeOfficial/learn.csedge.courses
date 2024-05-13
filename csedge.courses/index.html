@@ -365,7 +365,7 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">Copyright &copy; 2024 CSEdge.<br>All Rights Reserved Designed By Team CSEdge</p>
+        <p class="copyright">Copyright &copy; <span id="currentYear"></span> CSEdge.<br>All Rights Reserved Designed By Team CSEdge</p>
     </footer>
 
 
@@ -516,6 +516,13 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         });
 
+    </script>
+    <script>
+        // Dynamically Update the Year in the Footer 
+        //Get current year 
+        var currentYear = new Date().getFullYear();
+        // Update the text inside the span element with id "currentYear"
+        document.getElementById("currentYear").textContent = currentYear;
     </script>
 </body>
 
