@@ -183,14 +183,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-java.min.js"></script>
     <script>
         function copyCode(button) {
-            var code = button.previousSibling;
+            var code = button.previousElementSibling.querySelector('code');
             var range = document.createRange();
             range.selectNode(code);
             window.getSelection().removeAllRanges();
             window.getSelection().addRange(range);
             document.execCommand('copy');
             window.getSelection().removeAllRanges();
-
+    
             button.innerText = "Copied";
             button.classList.add("copied");
             setTimeout(function () {
@@ -199,5 +199,6 @@
             }, 2000);
         }
     </script>
+    
 </body>
 </html>
