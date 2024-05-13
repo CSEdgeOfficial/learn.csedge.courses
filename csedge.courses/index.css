@@ -95,7 +95,7 @@ h1 {
     background-color: #f5f5f5f5;
     color: #000;
     text-align: center;
-    padding: 50px;
+    padding: 25px;
     height: 100vh;
 }
 
@@ -120,6 +120,14 @@ h1 {
 .about-content .about-image {
     flex: 1;
     text-align: center;
+    height: 600px;
+    width: 600px;
+    padding-top: 150px;
+    transition: all 1sec ease-out;
+}
+
+.about-content .about-image :hover {
+    transform: scale(1.1);
 }
 
 .about-content .about-image img {
