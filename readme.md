@@ -50,7 +50,7 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## Design
 
-This project's design can be viewed here: [Learn.CSEdge.Courses Design](https://link-to-design-resource)
+This project's design can be viewed here: [Learn.CSEdge.Courses Design](https://learn.csedge.courses)
 
 ## License
 
