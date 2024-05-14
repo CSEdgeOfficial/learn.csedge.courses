@@ -6,6 +6,87 @@ nav {
     padding: 15px 15px 15px 15px;
     background-color: #ffffff;
 }
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjust spacing between navbar items */
+}
+
+nav ul li a i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+nav ul li.logo {
+    margin-right: auto; /* Pushes logo to the far left */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 15px 15px 15px 15px;
+    background-color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjust spacing between navbar items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 20px;
+}
+
+nav ul li.logo {
+    margin-right: auto; /* Pushes logo to the far left */
+}
+
+.navbar-contact {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-contact a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 20px;
+}
+
+.navbar-contact a:hover {
+    color: #222;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+nav ul li.contact {
+    margin-top: 2px; /* Adjust this value as needed */
+}
+nav ul li.contact a i {
+    vertical-align: middle;
+}
+.navbar-icons {
+    color: #000000; /* or #333333 */
+}
 
 nav img {
     display: none;
