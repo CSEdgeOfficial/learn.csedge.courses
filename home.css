@@ -178,6 +178,16 @@ section {
     margin-bottom: 30px;
 }
 
+.internship-program li:hover {
+    box-shadow: 10px 10px black;
+}
+
+.internship-program button:hover{
+    color: lightblue;
+    font-weight: bold;
+    font-size: medium;
+}
+
 .internship-program li {
     list-style-type: none;
     width: 400px;
@@ -235,17 +245,17 @@ section {
 }
 
 .internship-program .program-title {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .internship-program .program-duration {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .internship-program .program-description {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
