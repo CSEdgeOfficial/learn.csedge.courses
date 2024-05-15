@@ -196,9 +196,9 @@ section {
 
 .internship-program li {
     list-style-type: none;
-    width: 450px;
+    width: 400px;
     height: 590px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
