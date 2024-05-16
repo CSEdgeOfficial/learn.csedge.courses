@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta
       name="description"
-      content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities." />
+      content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities."
+    />
     <meta name="author" content="CSEdge" />
     <link
       rel="stylesheet"
@@ -16,18 +22,21 @@
     <title>CSEdge - Learn: Unlocking Interns' Potential</title>
     <meta
       name="keywords"
-      content="CSEdge, Learn, Internship, Tutorials, Guides, Interns, Career, Development, Skills, Knowledge, Resources, Opportunities" />
+      content="CSEdge, Learn, Internship, Tutorials, Guides, Interns, Career, Development, Skills, Knowledge, Resources, Opportunities"
+    />
     <!-- Favicon-->
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+    />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!--Google Site Search Verification-->
     <meta
       name="google-site-verification"
-      content="lnzqpbpjoknDdDMpcJhBthXHLR7jUWtfSXoGHbdpI40" />
+      content="lnzqpbpjoknDdDMpcJhBthXHLR7jUWtfSXoGHbdpI40"
+    />
   </head>
 
   <body>
@@ -47,7 +56,8 @@
           height="32px"
           width="32px"
           src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
-          alt="logo" />
+          alt="logo"
+        />
         <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
         <button
           class="navbar-toggler"
@@ -56,24 +66,25 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="https://csedge.courses">Home</a>
+              <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://csedge.courses/about">About</a>
+              <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://csedge.courses#contact"
-                >Contact</a
+                ><i class="fa-solid fa-phone"></i> Contact</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#!">Blog</a>
+              <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
             </li>
           </ul>
         </div>
@@ -322,12 +333,41 @@
 
 
         <!-- Side widgets-->
+
         <!-- Recent Posts iamge slider widgets -->
 
 
 
         
  
+=======
+        <div class="col-lg-4">
+          <!-- Search widget-->
+          <div class="card mb-4">
+            <div class="card-header">Search</div>
+            <div class="card-body pr-2">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="searchInput"
+                  placeholder="Enter search term..."
+                  aria-label="Enter search term..."
+                  aria-describedby="button-search"
+                />
+                <button
+                  class="btn btn-primary"
+                  id="button-search"
+                  type="button"
+                  onclick="search()"
+                >
+                  Go!
+                </button>
+              </div>
+            </div>
+            <!-- Search Results -->
+            <div class="me-2 ms-1" id="searchResults"></div>
+          </div>
 
           <!-- Side widget-->
           <div class="card mb-4">
@@ -361,12 +401,66 @@
         </div>
       </div>
     </div>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
+
+    <!-- Site footer -->
+    <footer class="site-footer">
       <div class="container">
-        <p class="m-0 text-center text-white">
-          Copyright &copy CSEdge Learn 2024
-        </p>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About Us</h6>
+            <p class="text-justify">
+              This website offers straightforward guides and tutorials for
+              interns, providing clear directions to complete tasks effectively.
+              Simplify your internship experience with our easy-to-follow
+              articles and docs.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">Web Design</a></li>
+              <li>
+                <a href="#">JavaScript</a>
+              </li>
+              <li>
+                <a href="#">HTML</a>
+              </li>
+              <li>
+                <a href="#">CSS</a>
+              </li>
+              <li>
+                <a href="#">Freebies</a>
+              </li>
+              <li>
+                <a href="#">Tutorials</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="https://csedge.courses/about">About Us</a></li>
+              <li><a href="https://csedge.courses/#contact">Contact Us</a></li>
+              <li>
+                <a href="https://github.com/CSEdgeOfficial/learn.csedge.courses"
+                  >Contribute</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+     
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by  CSEdge Learn
+        
+              </p>
+            </div>
       </div>
     </footer>
     <!-- Bootstrap core JS-->
