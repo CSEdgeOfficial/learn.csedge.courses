@@ -50,7 +50,7 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## Design
 
-This project's design can be viewed here: [Learn.CSEdge.Courses Design](https://link-to-design-resource)
+This project's design can be viewed here: [Learn.CSEdge.Courses Design](https://learn.csedge.courses)
 
 ## License
 
@@ -60,6 +60,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ![Built With Love](https://forthebadge.com/images/badges/built-with-love.svg)
 ![Built By Developers](https://forthebadge.com/images/badges/built-by-developers.svg)
+
+# Our Contributors ✨
+<a href="https://github.com/CSEdgeOfficial/learn.csedge.courses/graphs/contributors">
+  <img align="center" src="https://contrib.rocks/image?max=100&repo=CSEdgeOfficial/learn.csedge.courses" />
+</a> 
 
 ## Connect with Us
 
