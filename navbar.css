@@ -19,6 +19,7 @@ nav ul {
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav ul li {
