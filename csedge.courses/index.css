@@ -804,12 +804,12 @@ i {
     justify-content: center; 
     display: none; 
     align-items: center; 
-    border-radius: 100%;
-    background-color: grey;
+    border-radius: 100%; /* Makes the button circular */
 }
 
 .go-top-btn img {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; /* Makes the image circular */
 }
 
