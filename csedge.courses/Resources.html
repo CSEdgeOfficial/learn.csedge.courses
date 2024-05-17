@@ -27,7 +27,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Canonical link tag -->
-    <link rel="canonical" href="https://www.csedge.courses/Resources.html"/>
+    <link rel="canonical" href="https://www.csedge.courses/Resources.html" />
     <!--Google Adsense-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
         crossorigin="anonymous"></script>
@@ -56,10 +56,37 @@
             <li><a href="Resources.html">Free Content</a></li>
             <li><a href="https://learn.csedge.courses">Blog</a></li>
             <li><a href="./index.html#faq">FAQ</a></li>
+            <li><button onclick="darkMode()" class="dark-mode-button">Dark Mode</button></li>
+            <li><button onclick="lightMode()" class="light-mode-button">Light Mode</button></li>
         </ul>
     </nav>
 
     <style>
+        .dark-mode {
+            .header {
+                color: #f5f5f5;
+            }
+
+            .card {
+                background-color: #666;
+            }
+
+            .video-card {
+                background-color: #666;
+            }
+            .video-card h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #f5f5f5;
+        }
+
+        .video-card p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #f5f5f5;
+        }
+        }
+
         .header {
             text-align: center;
             margin-top: 50px;
@@ -838,6 +865,19 @@
         </div>
         <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> CSEdge.<br>All Rights Reserved Designed By Team CSEdge</p>
     </footer>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            element.classList.add("dark-mode");
+        }
+
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
     <script src="./Internships/script.js"></script>
 </body>
 

@@ -5,6 +5,48 @@
     scroll-behavior: smooth;
 }
 
+.dark-mode {
+    background-color: #000;
+    color: #f5f5f5;
+
+    .section-heading {
+        color: #fff;
+    }
+
+    .program-description{
+        color: #f5f5f5;
+    }
+
+    .program-duration{
+        color: #f5f5f5;
+    }
+
+    #Services p {
+        color: #f5f5f5;
+    }
+
+    .internship-program li {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        background: #323232f5;
+    }
+    
+    #internship {
+        background: #000000;
+    }
+
+    .table {
+        background-color: #323232f5;
+    }
+
+    .faq {
+        background-color: #000000;
+    }
+
+    .faq .accordion-container {
+        background-color: #323232f5;
+    }   
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -695,7 +737,7 @@ i {
         display: none;
     }
 
-    section{
+    section {
         padding: 10px;
     }
 
@@ -703,7 +745,7 @@ i {
         flex-direction: column;
     }
 
-    .about-content div p{
+    .about-content div p {
         font-size: 15px;
     }
 
