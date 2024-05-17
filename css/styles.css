@@ -12801,8 +12801,50 @@ fieldset:disabled .btn {
   border-radius: 100%;
   background-color: #33353d;
 }
+.branding-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo-link {
+  margin-right: 10px;
+}
+.site-name-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.site-name-link:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.home-link {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.home-link:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.branding-section .logo-link img {
+  width: 50px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .copyright-text {
   margin: 0;
+  text-align: center;
 }
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
@@ -12868,15 +12910,5 @@ fieldset:disabled .btn {
   background-color: #00aced;
 }
 .social-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
-}
-@media (max-width: 767px) {
-  .social-icons li.title {
-    display: block;
-    margin-right: 0;
-    font-weight: 600;
-  }
+  background
 }
