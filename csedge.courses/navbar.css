@@ -30,10 +30,13 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
+nav ul li{
+    padding-right: 2rem;
+}
 nav ul li a:hover {
     color: #222;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  
 }
 
 @media screen and (max-width: 768px) {

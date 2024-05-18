@@ -1,6 +1,6 @@
 nav {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     color: #000000;
     padding: 15px 15px 15px 15px;
@@ -116,7 +116,8 @@ nav a {
 nav a::after {
     content: "";
     position: absolute;
-    background-color: #007bff;
+    background-color: #435365;
+    /* background-color: #007bff; */
     height: 3px;
     width: 0;
     left: 0;
