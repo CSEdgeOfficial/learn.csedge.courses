@@ -95,7 +95,19 @@ h1 {
 .btn:hover{
   background-color: #003d80;
 }
-
+/* .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} */
+.navitem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 .nav-links{
     display: flex;
     justify-content: space-between;
@@ -201,8 +213,7 @@ section {
 .internship-program {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .internship-program li {
@@ -221,7 +232,12 @@ section {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(230, 230, 230, 0.9) 100%);
     position: relative;
 }
-
+.internships{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1vw;
+}
 .internship-program li::before,
 .internship-program li::after {
     content: "";
