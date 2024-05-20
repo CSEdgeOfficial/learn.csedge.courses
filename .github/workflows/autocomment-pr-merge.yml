@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Post merge comment
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT_GITHUB }}
       run: |
         curl -H "Authorization: token $GITHUB_TOKEN" \
         -X POST \
