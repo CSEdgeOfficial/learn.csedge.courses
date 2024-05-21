@@ -196,10 +196,10 @@ section {
 
 .internship-program li {
     list-style-type: none;
-    width: 450px;
-    height: 590px;
+    width: 420px;
+    height: 650px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     display: flex;
@@ -243,6 +243,7 @@ section {
 .internship-program li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-image:linear-gradient( rgba(167, 167, 167, 0.3) , rgba(255, 255, 255, 0.9) );
 }
 
 .internship-program img {
@@ -253,7 +254,7 @@ section {
 }
 
 .internship-program li:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .program-title {
@@ -266,7 +267,7 @@ section {
 .program-duration {
     font-size: 20px;
     margin-top: 10px;
-    color: #666;
+    color: #8f8f8f;
     transition: color 0.3s ease;
 }
 
@@ -280,16 +281,16 @@ section {
     text-align: justify;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #333;
 }
 
 .program-apply-button {
-    background-color: #007bff;
+    background-image: linear-gradient(#AE0084, #F90090);
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     display: inline-block;
@@ -297,7 +298,7 @@ section {
 }
 
 .program-apply-button:hover {
-    background-color: #0056b3;
+    background-image: linear-gradient(#BE0086, #E3008D);
     transform: scale(1.05);
 }
 
@@ -610,15 +611,14 @@ footer {
 
 .social-icons {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 10px ;
 }
 
 .social-icons a {
     font-size: larger;
     text-decoration: none;
-    margin-right: 10px;
+    margin:30px 12% 0px 0px;
     color: #f5f5f5;
 }
 
