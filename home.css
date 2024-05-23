@@ -69,7 +69,7 @@ h1 {
 .hero img {
     position: absolute;
     left: 65vw;
-    top: 10;
+    top: 10vw;
     margin-right: 50PX;
     max-width: 500px;
     height: auto;
@@ -177,9 +177,13 @@ section {
     align-items: center;
     margin-bottom: 30px;
 }
-
+.internship-program ul
+{
+    align-content: center;
+}
 .internship-program li:hover {
     box-shadow: 10px 10px black;
+
 }
 
 .internship-program button:hover{

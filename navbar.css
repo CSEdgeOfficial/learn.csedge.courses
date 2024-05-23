@@ -1,10 +1,97 @@
 nav {
     display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: #000000;
+    padding: 15px 15px 15px 15px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjust spacing between navbar items */
+}
+
+nav ul li a i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+nav ul li.logo {
+    margin-right: auto; /* Pushes logo to the far left */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     color: #000000;
     padding: 15px 15px 15px 15px;
     background-color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjust spacing between navbar items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 20px;
+}
+
+nav ul li.logo {
+    margin-right: auto; /* Pushes logo to the far left */
+}
+
+.navbar-contact {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-contact a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 20px;
+}
+
+.navbar-contact a:hover {
+    color: #222;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+nav ul li.contact {
+    margin-top: 2px; /* Adjust this value as needed */
+}
+nav ul li.contact a i {
+    vertical-align: middle;
+}
+.navbar-icons {
+    color: #000000; /* or #333333 */
 }
 
 nav img {
@@ -22,6 +109,22 @@ nav a {
     color: #000000;
     text-decoration: none;
     padding: 5px 20px;
+    position: relative;
+    font-size: 16.5px;
+    letter-spacing: 0.3px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #435365;
+    /* background-color: #007bff; */
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s ease;
+    border-radius: 5px;
 }
 
 nav ul {
@@ -32,11 +135,23 @@ nav ul {
 }
 
 nav ul li a:hover {
-    color: #222;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #007bff;
+    transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 768px) {
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 885px) {
+    nav a {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    
+}
+
+@media screen and (max-width: 860px) {
     nav img {
         display: inline-block;
         padding-right: 15px;
@@ -44,7 +159,7 @@ nav ul li a:hover {
 
     nav {
         padding: 15px;
-        position: relative;
+        /* position: relative; */
     }
 
     nav ul {
