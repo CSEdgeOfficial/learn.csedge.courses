@@ -4,6 +4,7 @@
   <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <link rel="stylesheet" href="./button.css"/>
+  <link rel="stylesheet" href="blogcss.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
@@ -58,13 +59,11 @@
             <li class="nav-item">
               <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
             </li>
-            <li class="nav-item me-5 ">
-              <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
+            <li class="nav-item ">
+              <a class="nav-link" href="https://csedge.courses/about"><i class="fa-solid fa-circle-info"></i> About</a>
             </li>
-            <li class="nav-item me-5 ">
-              <a class="nav-link" href="https://csedge.courses#contact"
-                ><i class="fa-solid fa-phone"></i> Contact</a
-              >
+            <li class="nav-item ">
+              <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i> Contact</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
@@ -74,39 +73,70 @@
       </div>
     </nav>
   <!-- Page header with logo and tagline-->
-    <div class="container" >
-      <div class="text-center my-5">
-        <h1 class="fw-bolder" style="margin-bottom: 0%;">Welcome to CSEdge Learn!</h1>
-        <p class="lead mb-0">
-          This website offers straightforward guides and tutorials for
-          interns, providing clear directions to complete tasks effectively.
-          Simplify your internship experience with our easy-to-follow articles
-          and docs.
-        </p>
-      </div>
+    <div class="carouseldisplay">
+      <video class="carouselimagedsp" width="320" height="240" autoplay loop muted>
+        <source src="bgblog.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
-  </header>
-  <!-- Page content-->
-  <div class="container">
-    <div class="row">
-      <!-- Blog entries-->
-      <div class="col-lg-8">
-        <!-- Featured blog post-->
-        <div class="card mb-4">
-          <a href="./posts/github/how-to-create-github-account.html"><img class="card-img-top"
-              src="https://github.githubassets.com/assets/social-2deb6d7d43e7.jpg"
-              alt="How to Create GitHub Account " /></a>
-          <div class="card-body">
-            <div class="small text-muted">January 24, 2024</div>
-            <h2 class="card-title">How to Create a GitHub Account</h2>
-            <p class="card-text">
-              Learn how to create a GitHub account in just a few simple steps.
-              GitHub is a platform used by millions of developers worldwide
-              for version control and collaboration.
-            </p>
-            <a class="btn btn-primary" href="./posts/github/how-to-create-github-account.html">Read more →</a>
+
+    <div class="overlayforcarousel">
+      <h1 class="tagforcarousel">Empowering Tech <b>Enthusiasts</b></h1>
+      <p style="margin-top: 9px;">Get to know the latest technology and learn to implement them</p>
+    </div>
+
+    <!--blog div here-->
+      <div class="container2">
+        <a href="#" class="column">
+          <!-- Post-->
+          <div class="post-module">
+            <!-- Thumbnail-->
+            <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"></div>
+            <!-- Post Content-->
+            <div class="post-content">
+              <div class="category">CATEGORY</div>
+              <h1 class="title">Title Goes Here</h1>
+              <h2 class="sub_title">And Subtitle Goes Here.</h2>
+              <p class="description" style="display: none; height: 100px; opacity: 1;">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+              <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i></span></div>
+            </div>
           </div>
-        </div>
+        </a>
+
+        <a href="#" class="column">
+          <!-- Post-->
+          <div class="post-module">
+            <!-- Thumbnail-->
+            <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"></div>
+            <!-- Post Content-->
+            <div class="post-content">
+              <div class="category">CATEGORY</div>
+              <h1 class="title">Title Goes Here</h1>
+              <h2 class="sub_title">And Subtitle Goes Here.</h2>
+              <p class="description" style="display: none; height: 100px; opacity: 1;">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+              <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i></span></div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="column">
+          <!-- Post-->
+          <div class="post-module">
+            <!-- Thumbnail-->
+            <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"></div>
+            <!-- Post Content-->
+            <div class="post-content">
+              <div class="category">CATEGORY</div>
+              <h1 class="title">Title Goes Here</h1>
+              <h2 class="sub_title">And Subtitle Goes Here.</h2>
+              <p class="description" style="display: none; height: 100px; opacity: 1;">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+              <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i></span></div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
         <!-- Nested row for non-featured blog posts-->
         <div class="row">
           <div class="col-lg-6">
