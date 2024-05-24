@@ -12792,13 +12792,14 @@ fieldset:disabled .btn {
 }
 .site-footer h6 {
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     margin-top: 5px;
     letter-spacing: 2px;
 }
 .site-footer a {
     color: #737373;
+    text-decoration: none;
 }
 .site-footer a:hover {
     color: #3366cc;
@@ -12807,6 +12808,7 @@ fieldset:disabled .btn {
 .footer-links {
     padding-left: 0;
     list-style: none;
+    font-size: 18px;
 }
 .footer-links li {
     display: block;
@@ -12834,6 +12836,18 @@ fieldset:disabled .btn {
     margin-right: 0;
     border-radius: 100%;
     background-color: #33353d;
+}
+.copyright-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.copyright-container img {
+    width: 50px;
+    margin: 0 auto 10px;
 }
 .copyright-text {
     margin: 0;
