@@ -97,11 +97,36 @@
                             </section>
 
                             <section>
-                                <h3>2. Create a local database</h3>
+                                <h3>2. Create a cluster and connect to MongoDB compass</h3>
                                 <p>
-                                    Open MongoDB Compass and create a new connection.
-                                    <img src="../images/mongodb-connection.png"
-                                        alt="MongoDB Compass Connection Screenshot" height="250" width="500"> <br>
+                                    <ul>
+                                        <li>
+                                            Navigate to MongoDB Atlas <a href="https://www.mongodb.com/">(here)</a>
+                                        </li>
+                                        <li>
+                                            Sign In using your email address
+                                        </li>
+                                        <li>
+                                            Create a new cluster using a free tier
+                                        </li>
+                                        <li>
+                                            Create a new username and password
+                                        </li>
+                                        <li>
+                                            For connection click Compass <br>
+                                        </li>
+                                        <li>
+                                            Copy the MongoDB cluster url <br>
+                                            <img src="../images/mongodb-atlas-connection.png" alt="MongoDB Cluster URL" height="500" width="500">
+                                        </li>
+                                        <li>
+                                            Open MongoDB Compass and paste the url for new connection. Don't forget to replace the <code><username> and <password></code>
+                                            with your own username and password. <br>
+                                            <img src="../images/mongodb-connection.png"
+                                            alt="MongoDB Compass Connection Screenshot" height="250" width="500"> <br>
+                                        </li>
+                                    </ul>
+                                    <i>[If any querytxt or timeout error while connecting, try to create a new username and password] <br><br></i>
                                     Create a <code>.env</code> file inside the project folder. Once the MongoDB
                                     localhost connection was successfull, copy the connection link and replace the link
                                     below. The file <code>.env</code> file should looks like this.
@@ -291,6 +316,7 @@
                                     from render and include the route. <br> 
                                     For this project, the book catalog api end point is <code>/bookStack</code>
                                     <img src="../images/Final-output.png" alt="Output" height="500" width="800">
+                                    <i>[If you faced any eror in testing the api, try adding the ip address `0.0.0.0/0` to the MongoDB cluster network]</i>
                                 </p>
                             </section>
                             <section>
@@ -302,6 +328,9 @@
                                         </li>
                                         <li>
                                             The Entire Source code <a href="https://github.com/Rupa-Rd/BookCatalog-RestApi">(here)</a>
+                                        </li>
+                                        <li>
+                                            Play with the book catalog api <a href="https://www.postman.com/bold-space-532909-1/workspace/rest-api/collection/23650687-5c1274cd-d931-4f7a-bee3-ecd6a7ef0761?action=share&creator=23650687">(here)</a>
                                         </li>
                                     </ul>
                                 </p>
