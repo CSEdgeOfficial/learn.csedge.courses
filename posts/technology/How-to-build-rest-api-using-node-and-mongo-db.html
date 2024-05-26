@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -77,7 +78,7 @@
                                     Before you begin, ensure that you have installed Node and MongoDB Compass on your
                                     computer.
                                     You can install from the Node's official website <a
-                                        href="https://nodejs.org/en">(Link)</a> and MongoDB website <a
+                                        href="https://nodejs.org/en">(Link)</a> and MongoDB compass <a
                                         href="https://www.mongodb.com/products/tools/compass">(Link)</a>
                                 </p>
                                 <h3>Introduction</h3>
@@ -150,10 +151,12 @@
                                 <h3>6. Add CRUD operations to the Rest-Api</h3>
                                 <p>
                                     Create a middle ware <code>getBookDetails</code> for this project. This middleware
-                                    helps with code reuse in find the book by id while updating the book details and deleting the books from the database.
-                                    <h4>Middle-ware</h4>
-                                    <script src="https://gist.github.com/Rupa-Rd/3c5e08c827ec3d3fc9e64ae65a18f1f0.js"></script>
-                                    Update the <code>bookStack.js</code> file for CRUD operations.
+                                    helps with code reuse in find the book by id while updating the book details and
+                                    deleting the books from the database.
+                                <h4>Middle-ware</h4>
+                                <script
+                                    src="https://gist.github.com/Rupa-Rd/3c5e08c827ec3d3fc9e64ae65a18f1f0.js"></script>
+                                Update the <code>bookStack.js</code> file for CRUD operations.
                                 <ul>
                                     <!-- GET FUNCTION -->
                                     <h4>
@@ -178,7 +181,8 @@
                                         This <code>post</code> function will create a new book in the
                                         database.
                                         Add the following code to the bookStack.js file.
-                                        <script src="https://gist.github.com/Rupa-Rd/576bedfedf1086c4bf56e1bb70193e57.js"></script>
+                                        <script
+                                            src="https://gist.github.com/Rupa-Rd/576bedfedf1086c4bf56e1bb70193e57.js"></script>
                                     </p>
                                     </li>
                                     <!-- Update the book details by id -->
@@ -187,10 +191,12 @@
                                             Define <code>PATCH</code> function
                                     </h4>
                                     <p>
-                                        This <code>patch</code> function will update the exsisting book details with the new details by its id and save 
+                                        This <code>patch</code> function will update the exsisting book details with the
+                                        new details by its id and save
                                         it to the database.
                                         Add the following code to the bookStack.js file.
-                                        <script src="https://gist.github.com/Rupa-Rd/d97378d2fc3413e09595c423fcdbfb45.js"></script>
+                                        <script
+                                            src="https://gist.github.com/Rupa-Rd/d97378d2fc3413e09595c423fcdbfb45.js"></script>
                                     </p>
                                     </li>
                                     <!-- Delete a book detail by id -->
@@ -199,23 +205,28 @@
                                             Define <code>DELETE</code> function
                                     </h4>
                                     <p>
-                                        This <code>get</code> function will delete book details from the database by its id.
+                                        This <code>get</code> function will delete book details from the database by its
+                                        id.
                                         Add the following code to the bookStack.js file.
-                                        <script src="https://gist.github.com/Rupa-Rd/e1fdef6732a044ad9c1e65d951a95211.js"></script>
+                                        <script
+                                            src="https://gist.github.com/Rupa-Rd/e1fdef6732a044ad9c1e65d951a95211.js"></script>
                                     </p>
                                     </li>
-                                    </ul>
-                                    </p>
+                                </ul>
+                                </p>
                             </section>
 
                             <section>
                                 <h3>7. Test the API Locally</h3>
                                 <p>
-                                    Install a VSCode extension <code>Rest Client</code>. This extension is used to test 
+                                    Install a VSCode extension <code>Rest Client</code>. This extension is used to test
                                     the api locally inside the VSCode.
-                                    After installing the extension, create a <code>test.rest</code> to write the api calls.
-                                    <script src="https://gist.github.com/Rupa-Rd/24fffa0cce23c6a9ed4635b4aab63ce2.js"></script>
-                                    Note: Don't forget to put <code>###</code> before writing your own command, and replace the <code><id></code> by your own book id.
+                                    After installing the extension, create a <code>test.rest</code> to write the api
+                                    calls.
+                                    <script
+                                        src="https://gist.github.com/Rupa-Rd/24fffa0cce23c6a9ed4635b4aab63ce2.js"></script>
+                                    Note: Don't forget to put <code>###</code> before writing your own command, and
+                                    replace the <code><id></code> by your own book id.
 
                                 </p>
                             </section>
@@ -225,17 +236,20 @@
                                 <p>
                                     Once you are done with the API, push your code to your GitHub respository.
                                     To know more on how to push the code to Github repository, checkout these blogs
-                                    <ol>
-                                        <li><a href="../github/how-to-create-github-account.html">How to create a Github account for free</a></li>
-                                        <li><a href="../github/How-to-setup-your-github-local-repository.html">How to set up Git repository locally</a></li>
-                                    </ol>
+                                <ol>
+                                    <li><a href="../github/how-to-create-github-account.html">How to create a Github
+                                            account for free</a></li>
+                                    <li><a href="../github/How-to-setup-your-github-local-repository.html">How to set up
+                                            Git repository locally</a></li>
+                                </ol>
                                 </p>
                             </section>
 
                             <section>
                                 <h3>9. Deploy your API</h3>
                                 <p>
-                                    Once you push your code to the Github, deploy your api using serverless platforms like
+                                    Once you push your code to the Github, deploy your api using serverless platforms
+                                    like
                                     <code>Google Cloud and AWS</code>.
                                 </p>
                             </section>
@@ -248,8 +262,10 @@
                             </section>
 
                             <p class="mt-5">
-                                Congratulations! 🎉 You've just unlocked the power of creating your very own RESTful API.
-                                🌟 Now it's time to unleash your creativity and build APIs tailored to your unique ideas.
+                                Congratulations! 🎉 You've just unlocked the power of creating your very own RESTful
+                                API.
+                                🌟 Now it's time to unleash your creativity and build APIs tailored to your unique
+                                ideas.
                             </p>
                         </main>
                     </div>
