@@ -252,14 +252,49 @@
                             <section>
                                 <h3>9. Deploy your API</h3>
                                 <p>
-                                    Once you push your code to the Github, deploy your api using serverless platforms
-                                    like
-                                    <code>Google Cloud and AWS</code>.
+                                    Once you push your code to the Github, let's deploy our Rest-API on
+                                    <code>Render</code>. To know more about render <a href="">(here)</a>.
+                                    <strong>Note:</strong>
+                                    Before deploying, go to your project's <code>package.json</code> and under the scripts
+                                    include <code>"start":"node index.js",</code> line.
+                                    <h4>Steps to deploy</h4>
+                                    <ol>
+                                        <li>Navigate to <a href="">Render</a></li>
+                                        <li>Sign in using your GitHub account(it will be easy to pull your code)</li>
+                                        <li>
+                                            Create a new web service <br>
+                                            <img src="../images/render-service.png" alt="Render" width="500" height="300">
+                                        </li>
+                                        <li>
+                                            Provide your project's github url <br>
+                                            <img src="../images/render-repo-info.png" alt="Render" width="700" height="300">
+                                        </li>
+                                        <li>
+                                            In the next page, provide the below details
+                                            <img src="../images/project-details.png" alt="Render" width="700" height="300">
+                                        </li>
+                                        <li>
+                                            In the same page, enter the details environmental variables values.
+                                            
+                                        </li>
+                                        <li>
+                                            Click create content and wait for some time to deploy the api.
+                                        </li>
+                                    </ol>
                                 </p>
                             </section>
 
                             <section>
-                                <h3>10. Resources</h3>
+                                <h3>10. Test Api in Postman</h3>
+                                <p>
+                                    Navigate to Postman <a href="">(here)</a>. Paste your api link
+                                    from render and include the route. <br> 
+                                    For this project, the book catalog api end point is <code>/bookStack</code>
+                                    <img src="../images/Final-output.png" alt="Output" height="500" width="800">
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Resources</h3>
                                 <p>
                                     Find the code for the book catalog <a href="https://github.com/Rupa-Rd/BookCatalog-RestApi">here</a> for reference.
                                 </p>
