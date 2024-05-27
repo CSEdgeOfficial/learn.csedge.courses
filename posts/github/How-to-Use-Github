@@ -108,6 +108,7 @@
                             <ul>
                                 <li>
                                     Clone the repository to your local machine using Git.
+                                    <img src="learn.csedge.courses-main/Images/CloneRepo.png" alt="Clone repo">
                                 </li>
                                 <code>git clone https://github.com/<b>username/username</b>.github.io</br>
                                 cd <b>username</b>.github.io</code>
@@ -128,10 +129,12 @@
                                         <code>&lt;/body&gt;</code></br>
                                             <code> &lt;/html&gt;</code></br>
                                         </strong> </code></br>
+
                                 <li>Save the file and add it to your repository.</li>
                                 <code>git add <b>index.html</b><br></code>
                                 <code>git commit -m <strong>"Initial commit"</strong><br></code>
                                 <code>git push origin main<br></code>
+                                <img src="learn.csedge.courses-main/Images/saveRepo.png" alt="SaveRepository">
                             </ul>
                         </ol>
                     </section>
