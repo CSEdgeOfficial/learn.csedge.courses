@@ -12837,20 +12837,9 @@ fieldset:disabled .btn {
     border-radius: 100%;
     background-color: #33353d;
 }
-.copyright-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-.copyright-container img {
-    width: 50px;
-    margin: 0 auto 10px;
-}
 .copyright-text {
     margin: 0;
+    text-align: center;
 }
 @media (max-width: 991px) {
     .site-footer [class^="col-"] {
