@@ -182,11 +182,13 @@
                                 <code><b>title:</b> My GitHub Pages Site<br></code>
                                 <code><b>description:</b> A simple site hosted with GitHub Pages</strong><br></code>
                                 <code><b>theme:</b> minima<br><br></code>
+                                <img src="posts/images/config.png" alt="configfile">
                             </ul>
                             <strong><li>Add Content:</li></strong>
                             <ul>
                                 <li>
-                                    Create a <B>`_posts`</B> directory to add blog posts (if using Jekyll).
+                                    Create a <B>`_posts`</B> directory to add blog posts (if using Jekyll).<br>
+                                    <img src="posts/images/posts.png" alt="postsfile">
                                 </li>
                                 <li>
                                     Each post should follow the naming convention YYYY-MM-DD-title.md and contain front matter. <br>Example:<br>
@@ -204,6 +206,7 @@
                                 <code>git add .</code>
                                 <code>git commit -m <b>"Add Jekyll configuration and first post"</b><br></code>
                                 <code>git push origin main .<br><br></code>
+                                <img src="posts/images/commit file.png" alt="commitss">
                             </ul>
                         </ol>
                     </section>
