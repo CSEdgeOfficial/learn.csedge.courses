@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="CSEdge" />
+    <title>
+      Java AWT: A Comprehensive Guide
+    </title>
+    <meta
+      name="description"
+      content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities." />
+    <meta
+      name="keywords"
+      content="CSEdge, Learn, Internship, Tutorials, Guides, Interns, Career, Development, Skills, Knowledge, Resources, Opportunities" />
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img
+          height="32px"
+          width="32px"
+          src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+          alt="logo" />
+        <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://learn.csedge.courses"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+          <h1>
+           Mastering AWT Java: A to Z
+          </h1>
+          <!-- Featured blog post-->
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              src="https://miro.medium.com/v2/resize:fit:400/1*qp-tg5nRgXcdBAPOrMFrpg.jpeg"
+              alt="What is Java AWT(Abstract Window Toolkit)" />
+            <div class="card-body">
+              <main class="container">
+                <section>
+                
+                  <p>
+                    Java AWT (Abstract Window Toolkit) is an API to develop GUI or window-based applications in java.
+                     Java AWT components are platform-dependent i.e. components are displayed according to the view of operating system. 
+                     AWT is heavyweight i.e. its components are using the resources of OS. The AWT is part of the Java Foundation Classes (JFC) —
+                     the standard API for providing a graphical user interface (GUI) for a Java program.
+                     The java.awt package provides classes for AWT api such as TextField, Label, TextArea,RadioButton, CheckBox, Choice, List etc. 
+                     AWT is also the GUI toolkit for a number of Java ME profiles.
+                    For example, Connected Device Configuration profiles require Java runtimes on mobile telephones to support the Abstract Window Toolkit.
+                  </p>
+                  <br>
+                  <h2>Basic Level</h2> <br>
+                  <img
+              class="card-img-top"
+              src="https://static.javatpoint.com/core/images/awt-program-in-java.png"
+              alt="Java AWT hierarchy" />
+              <br><br>
+              <center> <h5><p> Java AWT Hierarchy</p></h5> </center>    
+               </section>
+                <br>
+                
+                <section>
+                  <h3>AWT Components</h3>
+                  <p>
+                    <ul>
+                    <li>Button: A clickable button.</li>
+<pre>
+button = new Button("Click Me");</pre>
+                    <li>Label: A non-editable text field.</li>
+                <pre>
+Label label = new Label("This is a label");</pre>
+                 <li> TextField: A single-line text input field.</li>
+                <pre>
+TextField textField = new TextField(20);</pre>
+                    <li>TextArea: A multi-line text input field.</li>
+<pre>TextArea textArea = new TextArea(5, 20);</pre>
+                   <li> Checkbox: A checkbox that can be selected or deselected.</li>
+                <pre>
+Checkbox checkbox = new Checkbox("Accept Terms");</pre>
+                
+                    </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>AWT containers</h3>
+                  <p>
+                    Containers are used to hold and organize components. Key containers include:
+                    <ul>
+                   <li> Frame: A top-level window with a title and border.  </li>
+                <pre>   
+Frame frame = new Frame("My Application");
+frame.setSize(400, 300);
+frame.setVisible(true);</pre>
+                 
+                    <li>Panel: A simple container that can group components together.</li>
+                <pre>
+Panel panel = new Panel();
+</pre>                    
+                    </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>AWT Event handling</h3>
+                  <p>
+                     Event handling is crucial for creating interactive applications. 
+                     Events are handled by implementing listener interfaces.
+                   <ul>
+                <li> ActionListener: For handling actions like button clicks.</li>
+            <pre>
+
+button.addActionListener(new ActionListener() {
+  public void actionPerformed(ActionEvent e) {
+    // Handle button click
+  }
+});</pre>
+                <li>  MouseListener: For handling mouse events.</li>
+            <pre>
+
+canvas.addMouseListener(new MouseAdapter() {
+  public void mouseClicked(MouseEvent e) {
+    // Handle mouse click
+  }
+});</pre>
+                
+                  </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>AWT Layout Managers</h3>
+                  <p>
+                    Layout managers control the positioning and sizing of components within a container.
+                    <ul>
+                    <li>FlowLayout: Arranges components in a left-to-right flow.</li>
+                <pre>
+panel.setLayout(new FlowLayout());</pre>
+                <li>  BorderLayout: Divides the container into five regions (North, South, East, West, Center).</li>
+            <pre>
+frame.setLayout(new BorderLayout());</pre>
+
+                </ul>
+                  </p>
+                  <!-- redirecting to intermediate page-->
+                  <pre> <center>
+<a href="intermediate-java-awt.html" class="button">Next -></a>
+                </center> </pre>
+                </section>
+              </main>
+            </div>
+          </div>
+        </div>
+        
+      
+    <!-- Side widgets-->
+    <div class="col-lg-4">
+        <!-- Search widget-->
+        <div class="card mb-4">
+          <div class="card-header">Search</div>
+          <div class="card-body">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="text"
+                id="searchInput"
+                placeholder="Enter search term..."
+                aria-label="Enter search term..."
+                aria-describedby="button-search" />
+              <button
+                class="btn btn-primary"
+                id="button-search"
+                type="button"
+                onclick="search()">
+                Go!
+              </button>
+            </div>
+          </div>
+          <!-- Search Results -->
+          <div id="searchResults"></div>
+        </div>
+        <!-- Categories widget-->
+        <div class="card mb-4">
+          <div class="card-header">Categories</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#!">Web Design</a></li>
+                  <li><a href="#!">HTML</a></li>
+                  <li><a href="#!">Freebies</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#!">JavaScript</a></li>
+                  <li><a href="#!">CSS</a></li>
+                  <li><a href="#!">Tutorials</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Side widget-->
+        <div class="card mb-4">
+          <div class="card-header">Recent Posts</div>
+          <div class="card-body">
+            <p>Coming Soon..!</p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+              crossorigin="anonymous"></script>
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-format="fluid"
+              data-ad-layout-key="-fb+5w+4e-db+86"
+              data-ad-client="ca-pub-8930077947690409"
+              data-ad-slot="9866674087"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+              crossorigin="anonymous"></script>
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-format="fluid"
+              data-ad-layout-key="-fb+5w+4e-db+86"
+              data-ad-client="ca-pub-8930077947690409"
+              data-ad-slot="9866674087"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+              crossorigin="anonymous"></script>
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-format="fluid"
+              data-ad-layout-key="-fb+5w+4e-db+86"
+              data-ad-client="ca-pub-8930077947690409"
+              data-ad-slot="9866674087"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">
+        Copyright &copy CSEdge Learn 2024
+      </p>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="../script.js"></script>
+</body>
+</html>
+
+    

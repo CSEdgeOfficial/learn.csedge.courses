@@ -1,0 +1,18 @@
+.go-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    justify-content: center; 
+    display: none; 
+    align-items: center; 
+    border-radius: 100%; /* Makes the button circular */
+}
+
+.go-top-btn img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; /* Makes the image circular */
+}

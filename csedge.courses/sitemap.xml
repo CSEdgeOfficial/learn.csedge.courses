@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://csedge.courses/</loc>
+        <lastmod>2024-05-06T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/index.html</loc>
+        <lastmod>2024-05-06T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/Internships/python.html</loc>
+        <lastmod>2024-04-25T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/Internships/Web-Development.html</loc>
+        <lastmod>2024-04-25T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/Internships/Full-Stack-Development.html</loc>
+        <lastmod>2024-04-25T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/Internships/Java.html</loc>
+        <lastmod>2024-04-25T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/Resources.html</loc>
+        <lastmod>2024-05-06T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/verify-id.html</loc>
+        <lastmod>2024-05-06T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/internship.html</loc>
+    <lastmod>2024-04-17T09:46:45+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://csedge.courses/about.html</loc>
+        <lastmod>2024-04-25T09:46:45+00:00</lastmod>
+    </url>
+    
+</urlset>
