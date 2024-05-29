@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="Learn how to initialize Git, add files, commit changes, and connect your local repo to your remote GitHub account." />
+    <meta name="keywords"
+        content="GitHub, Local repository, Version control, Git, Set up, Collaboration, Initialize, Commit, Remote repository, Developer tools" />
+    <title>
+        How to set up your local GitHub repository
+    </title>
+    <meta name="Rupa-Rd" content="CSEdge" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
+            <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://csedge.courses/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://csedge.courses#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://learn.csedge.courses">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8">
+                <h1>
+                    Building a RESTful API with Node.js and MongoDB: A Step-by-Step Guide
+                </h1>
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <img class="card-img-top" src="https://shorturl.at/hxiFR"
+                        alt="How to set up a local GitHub repository" />
+                    <div class="card-body">
+                        <main class="container">
+                            <section>
+
+                                <p>
+                                    A REST API (Representational State Transfer Application Programming Interface) is an
+                                    architectural style that defines a set of constraints for creating web services.
+                                    REST allows simple and flexible communication between clients (such as web browsers
+                                    or mobile apps) and servers.
+                                    It uses standard HTTP methods (GET, POST, PUT, PATCH, DELETE) for interactions.
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>Pre-requisites</h3>
+                                <p>
+                                    Before you begin, ensure that you have installed Node and MongoDB Compass on your
+                                    computer.
+                                    You can install the Node's from <a
+                                        href="https://nodejs.org/en">(here)</a> and MongoDB compass <a
+                                        href="https://www.mongodb.com/products/tools/compass">(here)</a>
+                                </p>
+                                <h3>Introduction</h3>
+                                <p>
+                                    In this article, we are going to see how to build a Rest Api for
+                                    <code>Book Catalog</code> using Node, express and MongoDB.
+                                </p>
+                                <h3>1. Initiate npm</h3>
+                                <p>
+                                    Create a new project <code>Rest-api</code> on VSCode. Open terminal and initiate npm
+                                    and install the necessary dependenices using the below command.
+                                    <script
+                                        src="https://gist.github.com/Rupa-Rd/da218e1211fdce19c498c28df3d45fdd.js"></script>
+
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>2. Create a cluster and connect to MongoDB compass</h3>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            Navigate to MongoDB Atlas <a href="https://www.mongodb.com/">(here)</a>
+                                        </li>
+                                        <li>
+                                            Sign In using your email address
+                                        </li>
+                                        <li>
+                                            Create a new cluster using a free tier
+                                        </li>
+                                        <li>
+                                            Create a new username and password
+                                        </li>
+                                        <li>
+                                            For connection click Compass <br>
+                                        </li>
+                                        <li>
+                                            Copy the MongoDB cluster url <br>
+                                            <img src="../images/mongodb-atlas-connection.png" alt="MongoDB Cluster URL" height="500" width="500">
+                                        </li>
+                                        <li>
+                                            Open MongoDB Compass and paste the url for new connection. Don't forget to replace the <code><username> and <password></code>
+                                            with your own username and password. <br>
+                                            <img src="../images/mongodb-connection.png"
+                                            alt="MongoDB Compass Connection Screenshot" height="250" width="500"> <br>
+                                        </li>
+                                    </ul>
+                                    <i>[If any querytxt or timeout error while connecting, try to create a new username and password] <br><br></i>
+                                    Create a <code>.env</code> file inside the project folder. Once the MongoDB
+                                    localhost connection was successfull, copy the connection link and replace the link
+                                    below. The file <code>.env</code> file should looks like this.
+                                    <script
+                                        src="https://gist.github.com/Rupa-Rd/16b39567e8ea1b6207ddc43d55386e9c.js"></script>
+
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>3. Create a Route for server</h3>
+                                <p>
+                                    Create a folder named <code>routes</code> and a file <code>bookStack.js</code>. Add
+                                    the below code inside the file.
+                                    <script
+                                        src="https://gist.github.com/Rupa-Rd/24a436353c09fdeddbed2ce36fc6b7c2.js"></script>
+
+
+                                </p>
+                            </section>
+                            <section>
+                                <h3>4. Create a Server and connect to database</h3>
+                                <p>
+                                    Create a <code>index.js</code> file and place this code.
+                                    <script
+                                        src="https://gist.github.com/Rupa-Rd/a87dbed6a625c96eb038ccdb2e43dd36.js"></script>
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>5. Create a database model</h3>
+                                <p>
+                                    Create a new folder names <code>model</code> and a file <code>bookCatalog.js</code>.
+                                    For this Book Catalog project, I've created four objects: <br>
+                                <ol>
+                                    <li><code>title</code> - Title of the book</li>
+                                    <li><code>author</code> - Author of the book</li>
+                                    <li><code>genre</code> - Genre of the book</li>
+                                    <li><code>addedDate</code> - Date of object creation(default current date)</li>
+                                </ol>
+                                <script
+                                    src="https://gist.github.com/Rupa-Rd/4d9cc86c1e603b0060091a2c2f85fa97.js"></script>
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>6. Add CRUD operations to the Rest-Api</h3>
+                                <p>
+                                    Create a middle ware <code>getBookDetails</code> for this project. This middleware
+                                    helps with code reuse in find the book by id while updating the book details and
+                                    deleting the books from the database.
+                                <h4>Middle-ware</h4>
+                                <script
+                                    src="https://gist.github.com/Rupa-Rd/3c5e08c827ec3d3fc9e64ae65a18f1f0.js"></script>
+                                Update the <code>bookStack.js</code> file for CRUD operations.
+                                <ul>
+                                    <!-- GET FUNCTION -->
+                                    <h4>
+                                        <li>
+                                            Define <code>GET</code> function
+                                    </h4>
+                                    <p>
+                                        This <code>get</code> function will return the exsisting book details in the
+                                        database.
+                                        Add the following code to the bookStack.js file.
+                                        <script
+                                            src="https://gist.github.com/Rupa-Rd/fc84705a795917e1eb75230fa13b5325.js"></script>
+                                    </p>
+                                    </li>
+
+                                    <!-- POST book by ID -->
+                                    <h4>
+                                        <li>
+                                            Define <code>POST</code> function
+                                    </h4>
+                                    <p>
+                                        This <code>post</code> function will create a new book in the
+                                        database.
+                                        Add the following code to the bookStack.js file.
+                                        <script
+                                            src="https://gist.github.com/Rupa-Rd/576bedfedf1086c4bf56e1bb70193e57.js"></script>
+                                    </p>
+                                    </li>
+                                    <!-- Update the book details by id -->
+                                    <h4>
+                                        <li>
+                                            Define <code>PATCH</code> function
+                                    </h4>
+                                    <p>
+                                        This <code>patch</code> function will update the exsisting book details with the
+                                        new details by its id and save
+                                        it to the database.
+                                        Add the following code to the bookStack.js file.
+                                        <script
+                                            src="https://gist.github.com/Rupa-Rd/d97378d2fc3413e09595c423fcdbfb45.js"></script>
+                                    </p>
+                                    </li>
+                                    <!-- Delete a book detail by id -->
+                                    <h4>
+                                        <li>
+                                            Define <code>DELETE</code> function
+                                    </h4>
+                                    <p>
+                                        This <code>get</code> function will delete book details from the database by its
+                                        id.
+                                        Add the following code to the bookStack.js file.
+                                        <script
+                                            src="https://gist.github.com/Rupa-Rd/e1fdef6732a044ad9c1e65d951a95211.js"></script>
+                                    </p>
+                                    </li>
+                                </ul>
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>7. Test the API Locally</h3>
+                                <p>
+                                    Install a VSCode extension <code>Rest Client</code>. This extension is used to test
+                                    the api locally inside the VSCode.
+                                    After installing the extension, create a <code>test.rest</code> to write the api
+                                    calls.
+                                    <script
+                                        src="https://gist.github.com/Rupa-Rd/24fffa0cce23c6a9ed4635b4aab63ce2.js"></script>
+                                    Note: Don't forget to put <code>###</code> before writing your own command, and
+                                    replace the <code><id></code> by your own book id.
+                                    <h4>Expected Ouput</h4>
+                                    Once you click the send request button in the <code>test.rest</code> file, the output should look similar to This
+                                    if there are book details already. If it returns <code>[]</code>, then try <code>post</code> method first and try 
+                                    <code>get</code> method. <br>
+                                    <img src="../images/api-return.png" alt="Api return" width="800">
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>8. Push to GitHub</h3>
+                                <p>
+                                    Once you are done with the API, push your code to your GitHub respository.
+                                    To know more on how to push the code to Github repository, checkout these blogs
+                                <ol>
+                                    <li><a href="../github/how-to-create-github-account.html">How to create a Github
+                                            account for free</a></li>
+                                    <li><a href="../github/How-to-setup-your-github-local-repository.html">How to set up
+                                            Git repository locally</a></li>
+                                </ol>
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>9. Deploy your API</h3>
+                                <p>
+                                    Once you push your code to the Github, let's deploy our Rest-API on
+                                    <code>Render</code>. To know more about render <a href="https://docs.render.com/">(here)</a>.
+                                    <strong>Note:</strong>
+                                    Before deploying, go to your project's <code>package.json</code> and under the scripts
+                                    include <code>"start":"node index.js",</code> line.
+                                    <h4>Steps to deploy</h4>
+                                    <ol>
+                                        <li>Navigate to <a href="https://render.com/">Render</a></li>
+                                        <li>Sign in using your GitHub account(it will be easy to pull your code)</li>
+                                        <li>
+                                            Create a new web service <br>
+                                            <img src="../images/render-service.png" alt="Render" width="500" height="300">
+                                        </li>
+                                        <li>
+                                            Provide your project's github url <br>
+                                            <img src="../images/render-repo-info.png" alt="Render" width="700" height="300">
+                                        </li>
+                                        <li>
+                                            In the next page, provide the below details
+                                            <img src="../images/project-details.png" alt="Render" width="700" height="300">
+                                        </li>
+                                        <li>
+                                            In the same page, enter the details environmental variables values.
+                                            
+                                        </li>
+                                        <li>
+                                            Click create content and wait for some time to deploy the api.
+                                        </li>
+                                    </ol>
+                                </p>
+                            </section>
+
+                            <section>
+                                <h3>10. Test Api in Postman</h3>
+                                <p>
+                                    Navigate to Postman <a href="https://www.postman.com/">(here)</a>. Paste your api link
+                                    from render and include the route. <br> 
+                                    For this project, the book catalog api end point is <code>/bookStack</code>
+                                    <img src="../images/Final-output.png" alt="Output" height="500" width="800">
+                                    <i>[If you faced any eror in testing the api, try adding the ip address `0.0.0.0/0` to the MongoDB cluster network]</i>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Resources</h3>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            The Book catalog Rest-Api <a href="https://bookcatalog-restapi.onrender.com/bookStack">(here)</a>
+                                        </li>
+                                        <li>
+                                            The Entire Source code <a href="https://github.com/Rupa-Rd/BookCatalog-RestApi">(here)</a>
+                                        </li>
+                                        <li>
+                                            Play with the book catalog api <a href="https://www.postman.com/bold-space-532909-1/workspace/rest-api/collection/23650687-5c1274cd-d931-4f7a-bee3-ecd6a7ef0761?action=share&creator=23650687">(here)</a>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </section>
+
+                            <p class="mt-5">
+                                Congratulations! 🎉 You've just unlocked the power of creating your very own RESTful
+                                API.
+                                🌟 Now it's time to unleash your creativity and build APIs tailored to your unique
+                                ideas.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..."
+                                aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button" onclick="search()">
+                                Go!
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Search Results -->
+                    <div id="searchResults"></div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Web Design</a></li>
+                                    <li><a href="#!">HTML</a></li>
+                                    <li><a href="#!">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">JavaScript</a></li>
+                                    <li><a href="#!">CSS</a></li>
+                                    <li><a href="#!">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body">
+                        <p>Coming Soon..!</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+                Copyright &copy CSEdge Learn 2024
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../script.js"></script>
+</body>
+
+</html>
