@@ -12,6 +12,75 @@ body {
     background-color: #f5f5f5f5;
 }
 
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
 /*Custome Scroll bar*/
 ::-webkit-scrollbar {
     width: 8px;
@@ -32,6 +101,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    padding-top: 130px;
 }
 
 .hero div {
@@ -79,16 +149,39 @@ h1 {
     animation: moveSideToSide 3s infinite alternate;
 }
 
+
+
 .btn {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: none;
-    border-radius: 113px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
 }
+.btn:hover{
+  background-color: #003d80;
+}
+/* .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} */
+.navitem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /*About Section styles*/
 #about {
@@ -98,6 +191,8 @@ h1 {
     padding: 50px;
     height: 100vh;
 }
+
+
 
 .about-content {
     display: flex;
@@ -145,6 +240,7 @@ section {
 
 
 .section-heading {
+    margin-top: 45px;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -174,6 +270,11 @@ section {
     background: linear-gradient(135deg, #f3f2ee 0%, #f9f6f6 100%);
 }
 
+/* Dark mode styles for #internship section */
+body.dark-mode #internship {
+    background: linear-gradient(135deg, #333333 0%, #111111 100%);
+}
+
 .section-heading {
     font-size: 36px;
     text-align: center;
@@ -185,11 +286,15 @@ section {
     font-family: Arial, sans-serif;
 }
 
+body.dark-mode .section-heading{
+    color: white;
+}
+
+
 .internship-program {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .internship-program li {
@@ -209,6 +314,16 @@ section {
     position: relative;
 }
 
+body.dark-mode .internship-program li{
+    color: #000;
+}
+
+.internships{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1vw;
+}
 .internship-program li::before,
 .internship-program li::after {
     content: "";
@@ -317,7 +432,9 @@ section {
 }
 
 
-
+body.dark-mode #Services{
+    color: black;
+}
 
 .section-content {
     display: flex;
@@ -426,6 +543,10 @@ section {
     justify-content: center;
     background-color: #f5f5f5;
     padding: 2rem;
+}
+body.dark-mode .faq{
+    background: linear-gradient(135deg, #333333 0%, #111111 100%);
+    color: #000;
 }
 
 .faq .container {
@@ -575,25 +696,29 @@ footer {
 .footer-container {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /*justify-content: space-between;*/
 
 }
 
-.footer-about {
+.footer2{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer-about {
+    display: inline;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 50%;
+    width: 100%;
+
 }
 
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 50%;
@@ -618,12 +743,13 @@ footer {
 }
 
 .footer-links ul {
-    list-style: none;
     padding: 10px;
 }
 
 .footer-links li {
     margin-bottom: 10px;
+    width: auto;
+    box-sizing: inherit;
 }
 
 .footer-links li a {
@@ -633,22 +759,26 @@ footer {
 }
 
 .footer-contact {
-    margin-top: 1rem;
-    width: 50%;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: dimgrey;
+    align-items: center;
+    font-size: medium;
 }
 
 .social-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-top: 10px;
 }
 
 .social-icons a {
-    font-size: larger;
+    font-size: medium;
     text-decoration: none;
-    margin-right: 10px;
-    color: #f5f5f5;
+    color: white;
 }
 
 i {
@@ -664,16 +794,16 @@ i {
     background-color: #4c5156;
     color: #fff;
     margin-bottom: 0;
-    padding: 30px;
+    padding: 10px;
     font-size: 2vh;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 /* Media Queries */
 @media screen and (max-width: 1000px) {
     .hero {
-        padding-top: 0;
+        /* padding-top: 0; */
     }
 
     #Services ul {
@@ -700,7 +830,7 @@ i {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .hero {
         overflow: hidden;
         height: fit-content;
@@ -726,6 +856,10 @@ i {
 
     section{
         padding: 10px;
+    }
+
+    .section-heading {
+        padding-top: 20px;
     }
 
     .about-content {

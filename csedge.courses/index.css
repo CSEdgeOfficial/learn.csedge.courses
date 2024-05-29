@@ -33,7 +33,6 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 }
-
 .hero div {
     display: flex;
     padding: 80px 150px;
@@ -109,7 +108,7 @@ h1 {
 .about-content div {
     padding: 40px;
     flex: 1;
-    text-align: left;
+    text-align: justify ;
     margin: 20px;
 }
 
@@ -643,6 +642,7 @@ i {
 
 /* Media Queries */
 @media screen and (max-width: 1000px) {
+  
     .hero {
         padding-top: 0;
     }
@@ -672,6 +672,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+    .about-content > div{
+        text-align: center;
+    }
     .hero {
         overflow: hidden;
         height: fit-content;
@@ -695,7 +698,7 @@ i {
         display: none;
     }
 
-    section{
+    section {
         padding: 10px;
     }
 
@@ -703,7 +706,7 @@ i {
         flex-direction: column;
     }
 
-    .about-content div p{
+    .about-content div p {
         font-size: 15px;
     }
 
@@ -793,3 +796,23 @@ i {
         font-size: medium;
     }
 }
+
+.go-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    justify-content: center; 
+    display: none; 
+    align-items: center; 
+    border-radius: 100%; /* Makes the button circular */
+}
+
+.go-top-btn img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; /* Makes the image circular */
+}
+
