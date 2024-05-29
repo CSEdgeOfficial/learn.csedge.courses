@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="CSEdge" />
+    <title>
+      Java AWT: A Comprehensive Guide
+    </title>
+    <meta
+      name="description"
+      content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities." />
+    <meta
+      name="keywords"
+      content="CSEdge, Learn, Internship, Tutorials, Guides, Interns, Career, Development, Skills, Knowledge, Resources, Opportunities" />
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img
+          height="32px"
+          width="32px"
+          src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+          alt="logo" />
+        <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://learn.csedge.courses"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+          <h2>
+           Advanced level
+          </h2>
+          <!-- Featured blog post-->
+          <div class="card mb-4">
+           <!--<img
+              class="card-img-top"
+              src="https://miro.medium.com/v2/resize:fit:400/1*qp-tg5nRgXcdBAPOrMFrpg.jpeg"
+              alt="What is Java AWT(Abstract Window Toolkit)" /> --> 
+            <div class="card-body"> 
+              <main class="container">
+                <section>
+                
+                  <p>
+                    In the advanced level of our guide, we venture into the more sophisticated 
+                    aspects of Java GUI development. This section is designed for developers
+                     who have a solid understanding of the basics and intermediate concepts and 
+                     are ready to tackle complex and custom solutions. You will learn how to 
+                     create custom components, implement advanced event handling, and utilize
+                    double buffering to enhance graphics performance. Additionally, we'll
+                    explore integrating AWT with Swing for a richer user interface experience 
+                    and creating custom layout managers for precise control over component placement.
+                    By mastering these advanced techniques, you will be capable of crafting highly
+                    responsive, efficient, and polished Java applications.
+                  </p>
+                </section>
+                <section>
+                  <h3>Custom Components
+                </h3>
+                  <p>Creating custom components involves extending AWT components and overriding their methods.
+                    <ul>
+                    <li>Custom Button: Extending the Button class.</li> <br>
+                   <pre>
+class CustomButton extends Button {
+  public void paint(Graphics g) {
+    super.paint(g);
+    // Custom painting code
+}
+ }</pre> 
+                    </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>Advanced Event Handling
+                </h3>
+                  <p>
+                    Handling multiple event types and implementing custom event handling logic.
+
+                    <ul>
+                   <li> KeyEvent Handling: For capturing and responding to key presses.</li>
+                   <pre>
+
+textField.addKeyListener(new KeyAdapter() {
+    public void keyPressed(KeyEvent e) {
+    // Handle key press
+ }
+   });
+            </pre>
+                
+                    </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>Double Buffering
+                </h3>
+                  <p>
+                    Double buffering is a technique used to prevent flickering by drawing
+                     graphics off-screen and then displaying them.
+                    
+                   <ul>
+                <li>
+                    Implementing Double Buffering:</li>
+                    <pre>
+
+public void update(Graphics g) {
+    Image offscreen = createImage(getWidth(), getHeight());
+    Graphics bufferGraphics = offscreen.getGraphics();
+    paint(bufferGraphics);
+    g.drawImage(offscreen, 0, 0, this);
+}</pre>
+                  </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3> Integration with Swing </h3>
+                  <p>
+                    While AWT provides the foundation, integrating with Swing components can 
+                    enhance the functionality and appearance of your GUI applications.
+
+
+                    <ul>
+                    <li>Using Swing Components: Swing offers a richer set of components that can be mixed with AWT.
+                    </li>
+                       <br> 
+                       <pre>
+import javax.swing.JButton;
+JButton swingButton = new JButton("Swing Button");</pre>
+                </ul>
+                  </p>
+                </section>
+                  <section>
+                    <h3>Custom Layout Managers
+
+                  </h3>
+                    <p>
+                      Double buffering is a technique used to prevent flickering by drawing
+                       graphics off-screen and then displaying them.
+                      
+                     <ul>
+                  <li>
+                    Creating your own layout manager involves extending the LayoutManager 
+                    interface and implementing custom logic for component layout.</li><br>
+                      
+                    Custom Layout Example: <br>
+                    <pre>
+
+class CustomLayout implements LayoutManager {
+public void addLayoutComponent(String name, Component comp) {}
+
+public void removeLayoutComponent(Component comp) {}
+                        
+public Dimension preferredLayoutSize(Container parent) {
+    return new Dimension(300, 200);
+}
+public Dimension minimumLayoutSize(Container parent) {
+    return new Dimension(100, 100);
+}
+public void layoutContainer(Container parent) {
+  // Custom layout logic
+}
+  }
+                </pre>
+                    </ul>
+                    <h3>Conclusion</h3>
+                    <p>
+                        AWT is a powerful toolkit for building Java GUI applications. By understanding the basics,
+                         exploring intermediate components and events, and mastering advanced 
+                         techniques, you can create robust and interactive applications. 
+                         Whether you're starting with simple buttons and text fields or implementing 
+                         custom components and layouts, AWT provides the foundation you need to build 
+                         effective Java GUIs.
+
+                    </p>
+                    </p>
+                 
+                  <!-- Redirecting to Advanced page-->
+              <pre><center>
+<a href="intermediate-java-awt.html" class="button">Previous</a>
+                    </center></pre>
+                </section>
+              </main>
+            </div>
+          </div>
+        </div>
+        <!-- redirecting to intermediate page-->
+        
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+          <!-- Search widget-->
+          <div class="card mb-4">
+            <div class="card-header">Search</div>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="searchInput"
+                  placeholder="Enter search term..."
+                  aria-label="Enter search term..."
+                  aria-describedby="button-search" />
+                <button
+                  class="btn btn-primary"
+                  id="button-search"
+                  type="button"
+                  onclick="search()">
+                  Go!
+                </button>
+              </div>
+            </div>
+            <!-- Search Results -->
+            <div id="searchResults"></div>
+          </div>
+          <!-- Categories widget-->
+          <div class="card mb-4">
+            <div class="card-header">Categories</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#!">Web Design</a></li>
+                    <li><a href="#!">HTML</a></li>
+                    <li><a href="#!">Freebies</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#!">JavaScript</a></li>
+                    <li><a href="#!">CSS</a></li>
+                    <li><a href="#!">Tutorials</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Side widget-->
+          <div class="card mb-4">
+            <div class="card-header">Recent Posts</div>
+            <div class="card-body">
+              <p>Coming Soon..!</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                crossorigin="anonymous"></script>
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-8930077947690409"
+                data-ad-slot="9866674087"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                crossorigin="anonymous"></script>
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-8930077947690409"
+                data-ad-slot="9866674087"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                crossorigin="anonymous"></script>
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-8930077947690409"
+                data-ad-slot="9866674087"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy CSEdge Learn 2024
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../script.js"></script>
+  </body>
+</html>
+
+    
