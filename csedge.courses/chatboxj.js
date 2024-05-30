@@ -1,3 +1,4 @@
+// Function to create a chat <li> element
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
@@ -9,16 +10,16 @@ const API_KEY = "PASTE-YOUR-API-KEY"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
 
 const predefinedAnswers = {
+    
     "What is CSEdge?": "CSEdge is an online internship platform that provides students with the opportunity to gain practical experience in the field of software development. We offer a variety of internship programs designed to help students develop their skills and enhance their employability.",
     "What kind of internship programs does CSEdge offer?": "CSEdge offers a variety of internship programs focused on software development. Our programs are designed to provide practical experience and skill development in various areas of software engineering.",
     "Why should I choose CSEdge for my internship?": "CSEdge internships are designed to help students gain practical experience and develop their skills in software development. We are MSME registered and our programs are AICTE approved, ensuring top-notch quality and relevance.",
     "Are CSEdge internship programs AICTE approved?": "Yes, our internship programs are AICTE approved, ensuring top-notch quality and relevance.",
     "Is CSEdge MSME registered?": "Yes, CSEdge is MSME registered, emphasizing our commitment to quality and continuous learning.",
     "How can I apply for an internship at CSEdge?": "You can apply for an internship at CSEdge by visiting our website and navigating to the internship programs section. Follow the instructions provided to submit your application.",
-    "What are the benefits of doing an internship at CSEdge?": "Internships at CSEdge provide practical experience in software development, helping you develop your skills and enhance your employability. Our programs are AICTE approved, ensuring they meet high standards of quality.",
+   
     "How long are the internship programs at CSEdge?": "The duration of our internship programs varies depending on the specific program. Please visit our website for detailed information on each program's duration.",
-    "Is there any fee to join the internship programs at CSEdge?": "For detailed information about the fees associated with our internship programs, please visit our website or contact our support team.",
-    "Can international students apply for internships at CSEdge?": "Yes, international students are welcome to apply for our internship programs. Please check the specific program details for any additional requirements."
+    
 };
 
 
@@ -105,4 +106,4 @@ chatInput.addEventListener("keydown", (e) => {
 
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
-chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));  
