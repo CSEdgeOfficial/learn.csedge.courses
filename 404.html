@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page not found</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/404.css">
+    <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+</head>
+<body>
+    <div class="not-found"> <!--This is a container div containing all the elements-->
+        <h1> <!--Logo and name-->
+            <img
+              height="50px"
+              width="50px"
+              src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+              alt="logo"
+            />
+            CSEdge
+        </h1>
+        <div class="not-found-info"> <!--Text info div-->
+            <h1>404 - Page not found</h1>
+            <h3>Try searching for something else.</h3>
+        </div>
+        <div class="card mb-4"> <!--Search box to retain people in the website-->
+            <div class="card-header">Search</div>
+            <div class="card-body pr-2">
+              <div class="input-group">
+                <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..."
+                  aria-label="Enter search term..." aria-describedby="button-search" />
+                <button class="btn btn-primary" id="button-search" type="button" onclick="search()">
+                  Go!
+                </button>
+              </div>
+        </div>
+        <!-- Search Results -->
+        <div class="me-2 ms-1" id="searchResults"></div>
+    </div>
+    <script src="./posts/script.js"></script>
+</body>
+</html>
