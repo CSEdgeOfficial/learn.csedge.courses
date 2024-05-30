@@ -312,6 +312,7 @@ body.dark-mode .section-heading{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(230, 230, 230, 0.9) 100%);
     position: relative;
+  
 }
 
 body.dark-mode .internship-program li{
@@ -324,6 +325,9 @@ body.dark-mode .internship-program li{
     justify-content: center;
     margin: 1vw;
 }
+
+
+
 .internship-program li::before,
 .internship-program li::after {
     content: "";
@@ -356,8 +360,14 @@ body.dark-mode .internship-program li{
 .internship-program li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ 
 }
-
+.inter_box{
+    transition-duration: 1s;
+}
+.inter_box:hover{
+    transform: scale(1.05);
+}
 .internship-program img {
     max-width: 100%;
     max-height: 250px;
@@ -462,6 +472,7 @@ body.dark-mode #Services{
     align-items: center;
     gap: 50px;
     padding: 50px;
+   
 }
 
 .contact-style {
@@ -477,11 +488,15 @@ body.dark-mode #Services{
     height: auto;
 }
 
+
 .contact-style #contact-img {
     width: 60%;
     height: auto;
     object-fit: cover;
     animation: moveUpDown 1.5s infinite alternate;
+}
+#logo{
+    box-shadow: 1px 1px 100px white;
 }
 
 /*Contact Form*/
@@ -567,6 +582,7 @@ body.dark-mode .faq{
     object-fit: cover;
     animation: moveUpDown 1.5s infinite alternate;
 }
+
 
 @keyframes moveUpDown {
     0% {
