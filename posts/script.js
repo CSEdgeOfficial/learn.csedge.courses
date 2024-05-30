@@ -28,10 +28,7 @@ const documents = [
 
 // Function to perform search
 function search() {
-  const searchTerm = document
-    .getElementById("searchInput")
-    .value.trim()
-    .toLowerCase();
+  const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
 
   // Clear search results if search term is empty
   if (searchTerm === "") {
@@ -39,9 +36,7 @@ function search() {
     return;
   }
 
-  const searchResults = documents.filter((doc) =>
-    doc.title.toLowerCase().includes(searchTerm)
-  );
+  const searchResults = documents.filter((doc) => doc.title.toLowerCase().includes(searchTerm));
 
   // Display search results
   if (searchResults.length > 0) {
@@ -52,11 +47,22 @@ function search() {
     suggestions += "</ul>";
     document.getElementById("searchResults").innerHTML = suggestions;
   } else {
-    document.getElementById(
-      "searchResults"
-    ).innerHTML = `<ul><a class="btn btn-outline-primary mt-2">No Matching Document Found.</a></ul>`;
+    document.getElementById("searchResults").innerHTML = `<ul><a class="btn btn-outline-primary mt-2">No Matching Document Found.</a></ul>`;
   }
 }
+
+//Function for setting the scrollProgress for articles
+function setScrollProgress() {
+  const navBarContainer = document.querySelector(".navbar > .container");
+
+  navBarContainer.innerHTML += '<div class="post__progress-bar"></div>';
+  const progressBar = document.querySelector(".post__progress-bar");
+  progressBar.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`;
+}
+
+window.addEventListener("scroll", () => {
+  setScrollProgress();
+});
 
 // Attach event listener to input field to trigger search on each character entry
 document.getElementById("searchInput").addEventListener("input", search);
