@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="CSEdge" />
+    <title>
+      Java AWT: A Comprehensive Guide
+    </title>
+    <meta
+      name="description"
+      content="Discover a treasure trove of knowledge at CSEdge Learn! Our comprehensive guides and tutorials empower interns with the tools they need to excel in their roles. Simplify your internship journey with our easy-to-follow articles and documentation, unlocking a world of opportunities." />
+    <meta
+      name="keywords"
+      content="CSEdge, Learn, Internship, Tutorials, Guides, Interns, Career, Development, Skills, Knowledge, Resources, Opportunities" />
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img
+          height="32px"
+          width="32px"
+          src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+          alt="logo" />
+        <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://learn.csedge.courses"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+          <h2>
+            Intermediate level
+          </h2>
+          <!-- Featured blog post-->
+          <div class="card mb-4">
+           <!--<img
+              class="card-img-top"
+              src="https://miro.medium.com/v2/resize:fit:400/1*qp-tg5nRgXcdBAPOrMFrpg.jpeg"
+              alt="What is Java AWT(Abstract Window Toolkit)" /> --> 
+            <div class="card-body"> 
+              <main class="container">
+                <section>
+                
+                  <p>
+                    In the intermediate level of our guide, we dive deeper into the intricacies of Java GUI development. 
+                    Building upon the foundational knowledge acquired in the basic level, this section introduces 
+                    more advanced components, event handling techniques, and layout management strategies.
+                    Here, you will explore how to create custom graphics, handle window events effectively, 
+                    and employ sophisticated layout managers to design complex user interfaces. 
+                    By mastering these intermediate-level concepts, you will be equipped with the
+                    skills needed to develop more interactive and visually appealing Java applications.
+                  </p>
+                </section>
+                <section>
+                  <h3>Advanced Components</h3>
+                  <p>More advanced AWT components offer additional functionality.
+
+                    <ul>
+                    <li>Choice: A dropdown menu.
+                    
+                        <pre>
+                            
+choice choice = new Choice();
+choice.add("Option 1");
+choice.add("Option 2");</li> <br></pre>
+                    <li>List: A list of items.</li><br>
+                    <pre>
+List list = new List(4, false);
+list.add("Item 1");
+list.add("Item 2");</pre>
+                   <li> Scrollbar: A scrollbar component.</li>
+                    
+                    </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>Window Events</h3>
+                  <p>
+                    Window events handle actions on windows, such as closing or resizing.
+
+                    <ul>
+                   <li> WindowAdapter: An adapter class for receiving window events</li>
+                   <pre>
+
+frame.addWindowListener(new WindowAdapter() {
+    public void windowClosing(WindowEvent e) {
+        System.exit(0);
+    }
+});
+                </pre>
+                    </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>Custom Graphics</h3>
+                  <p>
+                    Custom graphics can be drawn using the Graphics class.
+                    
+                   <ul>
+                <li>
+                    Drawing Shapes: Using methods like drawLine(), drawRect(), and drawOval().</li>
+                    <pre>
+
+public void paint(Graphics g) {
+    g.drawLine(10, 10, 50, 50);
+    g.drawRect(70, 10, 50, 50);
+    g.drawOval(130, 10, 50, 50);
+}
+                </pre>
+                
+                  </ul>
+                  </p>
+                </section>
+                <section>
+                  <h3>Layout Managers </h3>
+                  <p>
+                    More complex layout managers offer greater control over component placement.
+
+                    <ul>
+                    <li>GridLayout: Arranges components in a grid of equal-sized cells.
+                   <pre>
+panel.setLayout(new GridLayout(2, 3));</li>
+                        </pre>
+                <li>  GridBagLayout: A flexible layout manager for complex layouts.
+<pre>
+panel.setLayout(new GridBagLayout());
+                    </li></pre>
+                </ul>
+                  </p>
+                  <!-- Redirecting to Advanced page-->
+                  <center>
+                    <pre>
+<a href="baiscs-of-java-awt.html" class="button"> <- Previous</a>     <a href="advanced-java-awt.html" class="button">Next -> </a>
+                </pre>
+                    </center>
+                </section>
+              </main>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+          <!-- Search widget-->
+          <div class="card mb-4">
+            <div class="card-header">Search</div>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="searchInput"
+                  placeholder="Enter search term..."
+                  aria-label="Enter search term..."
+                  aria-describedby="button-search" />
+                <button
+                  class="btn btn-primary"
+                  id="button-search"
+                  type="button"
+                  onclick="search()">
+                  Go!
+                </button>
+              </div>
+            </div>
+            <!-- Search Results -->
+            <div id="searchResults"></div>
+          </div>
+          <!-- Categories widget-->
+          <div class="card mb-4">
+            <div class="card-header">Categories</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#!">Web Design</a></li>
+                    <li><a href="#!">HTML</a></li>
+                    <li><a href="#!">Freebies</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#!">JavaScript</a></li>
+                    <li><a href="#!">CSS</a></li>
+                    <li><a href="#!">Tutorials</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Side widget-->
+          <div class="card mb-4">
+            <div class="card-header">Recent Posts</div>
+            <div class="card-body">
+              <p>Coming Soon..!</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                crossorigin="anonymous"></script>
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-8930077947690409"
+                data-ad-slot="9866674087"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                crossorigin="anonymous"></script>
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-8930077947690409"
+                data-ad-slot="9866674087"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                crossorigin="anonymous"></script>
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-8930077947690409"
+                data-ad-slot="9866674087"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy CSEdge Learn 2024
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../script.js"></script>
+  </body>
+</html>
+
+    
