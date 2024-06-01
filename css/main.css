@@ -85,7 +85,7 @@ a {
 .float-child {
   float: left;
   width: calc(50% - var(--bs-gutter-xl)/2);
-  margin-bottom: 2rem; // Set the same bottom margin as the original `mb-4` class
+  margin-bottom: 2rem; 
 }
 
 /* Override Bootstrap defaults to allow floated child elements */

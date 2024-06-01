@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Learn how to initialize Git, add files, commit changes, and connect your local repo to your remote GitHub account." />
+    <meta name="keywords"
+        content="GitHub, Local repository, Version control, Git, Set up, Collaboration, Initialize, Commit, Remote repository, Developer tools" />
+    <title>GitHub Pages: Your Gateway to Free and Easy Website Hosting</title>
+    <meta name="vaishali-sharma-20" content="CSEdge" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+        <div class="container">
+            <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
+            <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item me-2">
+
+                        <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i>
+                            Contact</a>
+
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i>
+                            Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Page Content-->
+
+    <!--Page Content-->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8 py-6">
+                <h1 class="pt-5">GitHub Pages: Your Gateway to Free and Easy Website Hosting</h1>
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <main class="container">
+                            <section>
+                                <p>In the realm of web development, finding a free, dependable, and user-friendly
+                                    hosting solution can be difficult. GitHub Pages is an excellent option, particularly
+                                    for engineers and tech aficionados. It enables you to host static webpages straight
+                                    from a GitHub repository, offering a streamlined approach to exhibit your projects,
+                                    documentation, portfolios, and more. This post will explain what GitHub Pages is,
+                                    its features, and a step-by-step approach for creating your own website.</p>
+                            </section>
+                            <section>
+                                <h3>What is Github Pages?</h3>
+                                <p>GitHub Pages is a static site hosting service that lets you host web pages straight
+                                    from your GitHub repository. It supports custom domains, Jekyll, and other static
+                                    site generators, making it suitable for a variety of applications. Whether you're a
+                                    developer trying to display your work or a newbie looking to start a personal blog,
+                                    GitHub Pages provides an easy approach to get your site up and running.</p>
+                                <h4>Benefits of Using GitHub Pages </h4>
+                                <ul>
+                                    <li><b> Free Hosting:</b> GitHub Pages provides free hosting for your static
+                                        websites, which can be a significant advantage for personal projects or small
+                                        businesses.</li>
+                                    <li><b>Version Control:</b> Since your website is hosted on a GitHub repository, you
+                                        can utilize GitHub’s version control features to track changes, collaborate with
+                                        others, and revert to previous versions if needed.</li>
+                                    <li><b>Custom Domains:</b> You can link a custom domain to your GitHub Pages site,
+                                        giving your website a professional touch.</li>
+                                    <li><b>Integration with Jekyll:</b> GitHub Pages has built-in support for Jekyll, a
+                                        popular static site generator that simplifies content management and theme
+                                        customization.</li>
+                                    <li><b>Ease of Use:</b> Setting up a GitHub Pages site is straightforward and
+                                        doesn’t require extensive knowledge of web development.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>How to Host a Website Using GitHub Pages</h3>
+                                <p>Hosting a website using GitHub Pages is a simple process. Follow these steps:</p>
+                                <ol>
+                                    <li>Create a new repository on GitHub.</li>
+                                    <li>Clone the repository to your local machine.</li>
+                                    <li>Add your HTML, CSS, and JavaScript files to the repository.</li>
+                                    <li>Commit and push the changes to GitHub.</li>
+                                    <li>Enable GitHub Pages in the repository settings.</li>
+                                    <li>Select the branch and folder containing your website files.</li>
+                                    <li>Your website will be live at the provided GitHub Pages URL.</li>
+                                </ol>
+                                <p>By following these steps, you can easily host your website using GitHub Pages and
+                                    share it with others.</p>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4 pt-5">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..."
+                                aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button" onclick="search()">
+                                Go!
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Search Results -->
+                    <div id="searchResults"></div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Web Design</a></li>
+                                    <li><a href="#!">HTML</a></li>
+                                    <li><a href="#!">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">JavaScript</a></li>
+                                    <li><a href="#!">CSS</a></li>
+                                    <li><a href="#!">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body">
+                        <p>Coming Soon..!</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+                Copyright &copy CSEdge Learn 2024
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    </div>
+</body>
+
+</html>
