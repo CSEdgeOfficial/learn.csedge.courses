@@ -238,7 +238,7 @@
         </table>
     </section>
     <!--Contact Section-->
-   <!-- <section id="contact">
+<!--    <section id="contact">
         <h2 class="section-heading" data-aos="fade-up">Contact Us</h2>
         <p class="section-content" data-aos="fade-up">For more information or inquiries, please contact us:</p>
         <p class="section-content" data-aos="fade-up">Email: internship@csedge.courses</p>
@@ -254,67 +254,61 @@
                     style="color: #0085ff;"></i></a>
             <a href="https://youtube.com/@CSEdgeOfficial" target="_blank"><i class="fab fa-youtube fa-2x"
                     style="color: #0085ff;"></i></a>
+        </div>-->
+
+    <!--Form -->
+    <section id="form" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <form id="userinfo">
+                        <h3 class="FormHead"> Help Us Improve</h3>
+                        <div class="form-group">
+                            <label class="sr-only" for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email"  name="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="comment">Comment</label>
+                            <input type="text" class="form-control" id="comment" placeholder="Comments" name="Comment" style="height: 50px">
+                        </div>
+                        <!-- Star Rating-->
+                        <div class="rating-box">
+                            <p class="experience">How was your experience?</p>
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- button-->
+                        <div class="btn-group">
+
+
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <img src="image/form.png" class="formImage" about="image">
+                </div>
+            </div>
         </div>
-    </section>-->
-
-    <!-- Form section>-->
-    <section id="form">
- 
-<div class="container">
-    <div class="row">
-        <div class="col-8">
-            <form id="userinfo">
-                <h3 class="FormHead"> Help us Improve</h3>
-                <div class="form-group">
-                    <label class="sr-only" for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email"  name="email">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="comment">Comment</label>
-                    <input type="text" class="form-control" id="comment" placeholder="Comments" name="Comment" style="height: 50px">
-                </div>
-                <!-- Star Rating-->
-                <div class="rating-box">
-                    <p class="experience">How was your experience?</p>
-                    <div class="rate">
-                        <input type="radio" id="star5" name="rate" value="5" />
-                        <label for="star5" title="text">5 stars</label>
-                        <input type="radio" id="star4" name="rate" value="4" />
-                        <label for="star4" title="text">4 stars</label>
-                        <input type="radio" id="star3" name="rate" value="3" />
-                        <label for="star3" title="text">3 stars</label>
-                        <input type="radio" id="star2" name="rate" value="2" />
-                        <label for="star2" title="text">2 stars</label>
-                        <input type="radio" id="star1" name="rate" value="1" />
-                        <label for="star1" title="text">1 star</label>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <!-- button-->
-                <div class="btn-group">
-
-
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                </div>
-            </form>
-        </div>
-        <div class="col-2">
-            <img src="images/form.png" class="formImage" about="image">
-        </div>
-    </div>
-</div>
-
-
 
     </section>
-
-    
     <!--FAQ Section-->
     <section id="faq" class="faq">
         <h1 class="section-heading" data-aos="fade-up">FAQ</h1>
@@ -664,19 +658,18 @@
             duration: 1000
         });
     </script>
+    <!-- Form-->
+    <script>
+        const form = document.querySelector("#userinfo");
 
-    <!-- form data-->
-<script>
-    const form = document.querySelector("#userinfo");
+        form.addEventListener("submit", storeData);
+    </script>
 
-    form.addEventListener("submit", storeData);
-</script>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
