@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description"
-        content="Learn how to initialize Git, add files, commit changes, and connect your local repo to your remote GitHub account." />
+        content="Learn how to build a RESTful API using Node.js and MongoDB: A Step-by-Step Guide. Initialize Git, add files, commit changes, and connect your local repo to your remote GitHub account." />
     <meta name="keywords"
-        content="GitHub, Local repository, Version control, Git, Set up, Collaboration, Initialize, Commit, Remote repository, Developer tools" />
+        content="GitHub, Local repository, Version control, Git, Set up, Collaboration, Initialize, Commit, Remote repository, Developer tools, RESTful API, Node.js, MongoDB" />
     <title>
-        How to set up your local GitHub repository
+        Building a RESTful API with Node.js and MongoDB: A Step-by-Step Guide
     </title>
     <meta name="Rupa-Rd" content="CSEdge" />
     <!-- Favicon-->
@@ -20,28 +20,34 @@
 
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
         <div class="container">
             <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
-            <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+            <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://csedge.courses/about">About</a>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i>
+                            About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://csedge.courses#contact">Contact</a>
+                    <li class="nav-item me-2">
+
+                        <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i>
+                            Contact</a>
+
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://learn.csedge.courses">Blog</a>
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i>
+                            Blog</a>
                     </li>
                 </ul>
             </div>
@@ -77,9 +83,8 @@
                                 <p>
                                     Before you begin, ensure that you have installed Node and MongoDB Compass on your
                                     computer.
-                                    You can install the Node's from <a
-                                        href="https://nodejs.org/en">(here)</a> and MongoDB compass <a
-                                        href="https://www.mongodb.com/products/tools/compass">(here)</a>
+                                    You can install the Node's from <a href="https://nodejs.org/en">(here)</a> and
+                                    MongoDB compass <a href="https://www.mongodb.com/products/tools/compass">(here)</a>
                                 </p>
                                 <h3>Introduction</h3>
                                 <p>
@@ -99,39 +104,42 @@
                             <section>
                                 <h3>2. Create a cluster and connect to MongoDB compass</h3>
                                 <p>
-                                    <ul>
-                                        <li>
-                                            Navigate to MongoDB Atlas <a href="https://www.mongodb.com/">(here)</a>
-                                        </li>
-                                        <li>
-                                            Sign In using your email address
-                                        </li>
-                                        <li>
-                                            Create a new cluster using a free tier
-                                        </li>
-                                        <li>
-                                            Create a new username and password
-                                        </li>
-                                        <li>
-                                            For connection click Compass <br>
-                                        </li>
-                                        <li>
-                                            Copy the MongoDB cluster url <br>
-                                            <img src="../images/mongodb-atlas-connection.png" alt="MongoDB Cluster URL" height="500" width="500">
-                                        </li>
-                                        <li>
-                                            Open MongoDB Compass and paste the url for new connection. Don't forget to replace the <code><username> and <password></code>
-                                            with your own username and password. <br>
-                                            <img src="../images/mongodb-connection.png"
+                                <ul>
+                                    <li>
+                                        Navigate to MongoDB Atlas <a href="https://www.mongodb.com/">(here)</a>
+                                    </li>
+                                    <li>
+                                        Sign In using your email address
+                                    </li>
+                                    <li>
+                                        Create a new cluster using a free tier
+                                    </li>
+                                    <li>
+                                        Create a new username and password
+                                    </li>
+                                    <li>
+                                        For connection click Compass <br>
+                                    </li>
+                                    <li>
+                                        Copy the MongoDB cluster url <br>
+                                        <img src="../images/mongodb-atlas-connection.png" alt="MongoDB Cluster URL"
+                                            height="500" width="500">
+                                    </li>
+                                    <li>
+                                        Open MongoDB Compass and paste the url for new connection. Don't forget to
+                                        replace the <code><username> and <password></code>
+                                        with your own username and password. <br>
+                                        <img src="../images/mongodb-connection.png"
                                             alt="MongoDB Compass Connection Screenshot" height="250" width="500"> <br>
-                                        </li>
-                                    </ul>
-                                    <i>[If any querytxt or timeout error while connecting, try to create a new username and password] <br><br></i>
-                                    Create a <code>.env</code> file inside the project folder. Once the MongoDB
-                                    localhost connection was successfull, copy the connection link and replace the link
-                                    below. The file <code>.env</code> file should looks like this.
-                                    <script
-                                        src="https://gist.github.com/Rupa-Rd/16b39567e8ea1b6207ddc43d55386e9c.js"></script>
+                                    </li>
+                                </ul>
+                                <i>[If any querytxt or timeout error while connecting, try to create a new username and
+                                    password] <br><br></i>
+                                Create a <code>.env</code> file inside the project folder. Once the MongoDB
+                                localhost connection was successfull, copy the connection link and replace the link
+                                below. The file <code>.env</code> file should looks like this.
+                                <script
+                                    src="https://gist.github.com/Rupa-Rd/16b39567e8ea1b6207ddc43d55386e9c.js"></script>
 
                                 </p>
                             </section>
@@ -252,11 +260,13 @@
                                         src="https://gist.github.com/Rupa-Rd/24fffa0cce23c6a9ed4635b4aab63ce2.js"></script>
                                     Note: Don't forget to put <code>###</code> before writing your own command, and
                                     replace the <code><id></code> by your own book id.
-                                    <h4>Expected Ouput</h4>
-                                    Once you click the send request button in the <code>test.rest</code> file, the output should look similar to This
-                                    if there are book details already. If it returns <code>[]</code>, then try <code>post</code> method first and try 
-                                    <code>get</code> method. <br>
-                                    <img src="../images/api-return.png" alt="Api return" width="800">
+                                <h4>Expected Ouput</h4>
+                                Once you click the send request button in the <code>test.rest</code> file, the output
+                                should look similar to This
+                                if there are book details already. If it returns <code>[]</code>, then try
+                                <code>post</code> method first and try
+                                <code>get</code> method. <br>
+                                <img src="../images/api-return.png" alt="Api return" width="800">
                                 </p>
                             </section>
 
@@ -278,61 +288,68 @@
                                 <h3>9. Deploy your API</h3>
                                 <p>
                                     Once you push your code to the Github, let's deploy our Rest-API on
-                                    <code>Render</code>. To know more about render <a href="https://docs.render.com/">(here)</a>.
+                                    <code>Render</code>. To know more about render <a
+                                        href="https://docs.render.com/">(here)</a>.
                                     <strong>Note:</strong>
-                                    Before deploying, go to your project's <code>package.json</code> and under the scripts
+                                    Before deploying, go to your project's <code>package.json</code> and under the
+                                    scripts
                                     include <code>"start":"node index.js",</code> line.
-                                    <h4>Steps to deploy</h4>
-                                    <ol>
-                                        <li>Navigate to <a href="https://render.com/">Render</a></li>
-                                        <li>Sign in using your GitHub account(it will be easy to pull your code)</li>
-                                        <li>
-                                            Create a new web service <br>
-                                            <img src="../images/render-service.png" alt="Render" width="500" height="300">
-                                        </li>
-                                        <li>
-                                            Provide your project's github url <br>
-                                            <img src="../images/render-repo-info.png" alt="Render" width="700" height="300">
-                                        </li>
-                                        <li>
-                                            In the next page, provide the below details
-                                            <img src="../images/project-details.png" alt="Render" width="700" height="300">
-                                        </li>
-                                        <li>
-                                            In the same page, enter the details environmental variables values.
-                                            
-                                        </li>
-                                        <li>
-                                            Click create content and wait for some time to deploy the api.
-                                        </li>
-                                    </ol>
+                                <h4>Steps to deploy</h4>
+                                <ol>
+                                    <li>Navigate to <a href="https://render.com/">Render</a></li>
+                                    <li>Sign in using your GitHub account(it will be easy to pull your code)</li>
+                                    <li>
+                                        Create a new web service <br>
+                                        <img src="../images/render-service.png" alt="Render" width="500" height="300">
+                                    </li>
+                                    <li>
+                                        Provide your project's github url <br>
+                                        <img src="../images/render-repo-info.png" alt="Render" width="700" height="300">
+                                    </li>
+                                    <li>
+                                        In the next page, provide the below details
+                                        <img src="../images/project-details.png" alt="Render" width="700" height="300">
+                                    </li>
+                                    <li>
+                                        In the same page, enter the details environmental variables values.
+
+                                    </li>
+                                    <li>
+                                        Click create content and wait for some time to deploy the api.
+                                    </li>
+                                </ol>
                                 </p>
                             </section>
 
                             <section>
                                 <h3>10. Test Api in Postman</h3>
                                 <p>
-                                    Navigate to Postman <a href="https://www.postman.com/">(here)</a>. Paste your api link
-                                    from render and include the route. <br> 
+                                    Navigate to Postman <a href="https://www.postman.com/">(here)</a>. Paste your api
+                                    link
+                                    from render and include the route. <br>
                                     For this project, the book catalog api end point is <code>/bookStack</code>
                                     <img src="../images/Final-output.png" alt="Output" height="500" width="800">
-                                    <i>[If you faced any eror in testing the api, try adding the ip address `0.0.0.0/0` to the MongoDB cluster network]</i>
+                                    <i>[If you faced any eror in testing the api, try adding the ip address `0.0.0.0/0`
+                                        to the MongoDB cluster network]</i>
                                 </p>
                             </section>
                             <section>
                                 <h3>Resources</h3>
                                 <p>
-                                    <ul>
-                                        <li>
-                                            The Book catalog Rest-Api <a href="https://bookcatalog-restapi.onrender.com/bookStack">(here)</a>
-                                        </li>
-                                        <li>
-                                            The Entire Source code <a href="https://github.com/Rupa-Rd/BookCatalog-RestApi">(here)</a>
-                                        </li>
-                                        <li>
-                                            Play with the book catalog api <a href="https://www.postman.com/bold-space-532909-1/workspace/rest-api/collection/23650687-5c1274cd-d931-4f7a-bee3-ecd6a7ef0761?action=share&creator=23650687">(here)</a>
-                                        </li>
-                                    </ul>
+                                <ul>
+                                    <li>
+                                        The Book catalog Rest-Api <a
+                                            href="https://bookcatalog-restapi.onrender.com/bookStack">(here)</a>
+                                    </li>
+                                    <li>
+                                        The Entire Source code <a
+                                            href="https://github.com/Rupa-Rd/BookCatalog-RestApi">(here)</a>
+                                    </li>
+                                    <li>
+                                        Play with the book catalog api <a
+                                            href="https://www.postman.com/bold-space-532909-1/workspace/rest-api/collection/23650687-5c1274cd-d931-4f7a-bee3-ecd6a7ef0761?action=share&creator=23650687">(here)</a>
+                                    </li>
+                                </ul>
                                 </p>
                             </section>
 

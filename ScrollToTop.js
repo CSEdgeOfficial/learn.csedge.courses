@@ -17,5 +17,3 @@ goTopBtn.addEventListener('click', ()=>{
         behavior:"smooth"
     })
 })
-
-
