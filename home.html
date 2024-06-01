@@ -18,8 +18,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/Images/CSEDGE-LOGO32X32.png">
     <link rel="icon" href="./Images/CSEDGE-LOGO32X32.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--SEO Optimization-->
-    
+
     <title>CSEdge Internship</title>
     <meta name="description"
         content="Learn about CSEdge Internship programs and how we're dedicated to helping students and professionals gain real-world experience in software development, coding, and more. Discover our AICTE-accredited programs and how we stand out in the industry.">
@@ -44,138 +47,178 @@
 <body>
     <button id="goTopBtn" title="Go to top"><i class="uil uil-arrow-up"></i></button>
     <!--Navigation Bar-->
-    <nav>
+    <nav class="fixed-top">
 
         <h1 id="home">CSEdge</h1>
         <img style="outline: none;" src="./Images/Menu.svg" alt="Menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#AboutUS">About</a></li>
-            <li><a href="#internship">Internship</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="./Resources.html">Free Content</a></li>
-            <li><a href="https://learn.csedge.courses">Blog</a></li>
-            <li><a href="#faq">FAQ</a></li>
+        <ul class="nav-item navbar">
+            <li class="navitem"><a href="#hero"><i class="fas fa-home navbar-icons"></i> Home</a></li>
+
+            <li class="navitem"><a href="#AboutUS"><i class="fas fa-info-circle navbar-icons"></i> About us</a></li>
+            <li class="navitem"><a href="#internship"><i class="fas fa-user-graduate navbar-icons"></i> Internship</a></li>
+            <li class="navitem" class="contact"><a href="#contact"><i class="fa fa-envelope navbar-icons"></i> Contact</a></li>
+            <li class="navitem"><a href="./Resources.html"><i class="fas fa-book-open navbar-icons"></i> Free Content</a></li>
+      <!--     <li class="navitem"><a href="https://learn.csedge.courses"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>--> 
+            <li class="navitem"><a href="index.html"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>
+            <li class="navitem"><a href="#faq"><i class="fas fa-question-circle navbar-icons"></i> FAQ</a></li>
         </ul>
+
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+          </label>
     </nav>
+
     <!--Hero Section-->
-    <section class="hero">
-        <div>
+
+  
+    <section id="hero" class="hero">
+        <div  data-aos="fade-right"
+        data-aos-duration="2000">
+
             <h2>Unlock your<br> potential<br> with CSEdge </h2>
             <p>Where learning meets opportunity <br> in a month-long online internship<br>journey.</p>
-            <a href="#internship" class="btn">Apply Now</a>
+            <a href="#internship" class="btn" data-aos="zoom-in">Apply Now</a>
         </div>
         <img src="./Images/HomeImage.png" style="scale: 1.0;" alt="ARTWORK">
     </section>
     <!--About Section-->
     <section id="AboutUS">
-        <h2 class="section-heading">ABOUT</h2>
+        <h2 class="section-heading" data-aos="fade-up">ABOUT US</h2>
         <div class="about-content">
             <div>
-                <p><span style="color: #22CFB9; font-weight: bold;">CSEdge</span> is an online internship platform that
+                <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;"
+                        data-aos="fade-right">CSEdge</span> is an online internship platform that
                     provides students with the
                     opportunity to gain practical experience in the field of software development. We offer a variety of
                     internship programs that are designed to help students develop their skills and enhance their
                     employability.</p> <br>
-                <p>We believe that internships are a great way for students to gain practical
+                <p data-aos="fade-right">We believe that internships are a great way for students to gain practical
                     experience and develop their skills. Our programs are designed to help students gain practical
                     experience in the field of software development.</p> <br>
-                <p><span style="color: #22CFB9; font-weight: bold;">MSME Registered</span>
+                <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;">MSME Registered</span>
                     individuals on this journey of perpetual learning and boundless joy!</p> <br>
-                <p><span style="color: #22CFB9; font-weight: bold;">AICTE Approved</span> Our Internship Programs,
-                    Endorsed By AICTE, Ensure
-                    Top-Notch Quality And Relevance.</p>
-                <button class="read-more-button" id="aboutpage">Read More</button>
-            </div>
+
+                <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;">AICTE Approved</span> Our Internship Programs are
+                    endorsed By AICTE, ensuring
+                    top-notch quality and relevance.</p>
+
+                <button class="read-more-button" id="aboutpage" data-aos="fade-right">Read More</button>
             <div class="about-image">
-                <img src="./Images/AboutImage.png" style="scale: 1.2;" alt="About-US">
+                <img src="./Images/AboutImage.png" style="scale: 1.5;" alt="About-US" data-aos="zoom-in">
             </div>
         </div>
     </section>
     <!--Internship Section-->
     <section id="internship">
-        <h2 class="section-heading">INTERNSHIPS</h2>
+        <h2 class="section-heading" data-aos="fade-up">INTERNSHIPS</h2>
         <ul class="internship-program">
             <!--Python Internship-->
-            <li>
-                <img src="./Images/PythonLogo.png" alt="Python Internship">
-                <p class="program-title">Python Internship Program</p>
-                <p class="program-duration">1 Month(online)</p>
-                <p class="program-description">Join our Python Internship Program and gain practical experience in one
-                    of the most popular programming languages. Learn the fundamentals of Python, develop real-world
-                    projects, and enhance your coding skills. Get mentored by industry professionals and boost your
-                    career in the field of software development.</p>
+
+            <li class="internships" data-aos="fade-up">
+
+                <img src="./Images/PythonLogo.png" alt="Python Internship" data-aos="zoom-in">
+                <div style="transform: translateZ(20px)">
+                    <p class="program-title" data-aos="fade-up">Python Internship Program</p>
+                    <p class="program-duration" data-aos="fade-up">1 Month(online)</p>
+                    <p class="program-description" data-aos="fade-up">Join our Python Internship Program and gain
+                        practical experience in one
+                        of the most popular programming languages. Learn the fundamentals of Python, develop real-world
+                        projects, and enhance your coding skills. Get mentored by industry professionals and boost your
+                        career in the field of software development.</p>
+                </div>
                 <div class="program-buttons">
-                    <button id="python" class="program-apply-button">Read More..!</button>
-                    <button id="python-form" class="program-apply-button">Apply Now</button>
+                    <button id="python" class="program-apply-button" data-aos="fade-up">Read More..!</button>
+                    <button id="python-form" class="program-apply-button" data-aos="fade-up">Apply Now</button>
                 </div>
             </li>
             <!--Web Development Internship-->
-            <li>
-                <img src="./Images/HTMLLOGO.png" alt="Web Development Internship">
-                <p class="program-title">Web Development Internship Program</p>
-                <p class="program-duration">1 Month(online)</p>
-                <p class="program-description">Join our Web Development Internship Program and gain practical experience
+
+            <li class="internships" data-aos="fade-up">
+
+                <img src="./Images/HTMLLOGO.png" alt="Web Development Internship" data-aos="zoom-in">
+                <div style="transform: translateZ(20px)">
+                <p class="program-title" data-aos="fade-up">Web Development Internship Program</p>
+                <p class="program-duration" data-aos="fade-up">1 Month(online)</p>
+                <p class="program-description" data-aos="fade-up">Join our Web Development Internship Program and gain
+                    practical experience
                     in one of the most popular programming languages. Learn the fundamentals of web development, develop
                     real-world projects, and enhance your coding skills. Get mentored by industry professionals and
                     boost your career in software development.</p>
+                </div>
                 <div class="program-buttons">
-                    <button id="webdev" class="program-apply-button">Read More..!</button>
-                    <button id="web-dev-form" class="program-apply-button">Apply Now</button>
+                    <button id="webdev" class="program-apply-button" data-aos="fade-up">Read More..!</button>
+                    <button id="web-dev-form" class="program-apply-button" data-aos="fade-up">Apply Now</button>
                 </div>
             </li>
             <!--Java Internship-->
-            <li>
-                <img src="./Images/JavaLogo.png" alt="Java Internship">
-                <p class="program-title">Java Internship Program</p>
-                <p class="program-duration">1 Month(online)</p>
-                <p class="program-description">Join our Java Internship Program and gain practical experience in one of
+
+            <li class="internships" data-aos="fade-up">
+
+                <img src="./Images/JavaLogo.png" alt="Java Internship" data-aos="zoom-in">
+                <div style="transform: translateZ(20px)">
+                <p class="program-title" data-aos="fade-up">Java Internship Program</p>
+                <p class="program-duration" data-aos="fade-up">1 Month(online)</p>
+                <p class="program-description" data-aos="fade-up">Join our Java Internship Program and gain practical
+                    experience in one of
                     the most popular programming languages. Learn Java fundamentals, develop real-world projects, and
                     enhance your coding skills. Get mentored by industry professionals and boost your software
                     development career.</p>
+                </div>
                 <div class="program-buttons">
-                    <button id="java" class="program-apply-button">Read More..!</button>
-                    <button id="java-form" class="program-apply-button">Apply Now</button>
+                    <button id="java" class="program-apply-button" data-aos="fade-up">Read More..!</button>
+                    <button id="java-form" class="program-apply-button" data-aos="fade-up">Apply Now</button>
                 </div>
             </li>
             <!--UI Design Internship-->
-            <li>
-                <img src="./Images/UIUXLogo.png" alt="UI Design">
-                <p class="program-title">UI Design Internship Program</p>
-                <p class="program-duration">1 Month(online)</p>
-                <p class="program-description">Join our UI Design Internship Program and gain practical experience in
+
+            <li data-aos="fade-up" data-tilt style="transform-style: preserve-3d; transform: perspective(1000px);">
+
+            <li class="internships" data-aos="fade-up">
+
+                <img src="./Images/UIUXLogo.png" alt="UI Design" data-aos="zoom-in">
+                <div style="transform: translateZ(20px)">
+                <p class="program-title" data-aos="fade-up">UI Design Internship Program</p>
+                <p class="program-duration" data-aos="fade-up">1 Month(online)</p>
+                <p class="program-description" data-aos="fade-up">Join our UI Design Internship Program and gain
+                    practical experience in
                     the field of user interface design. Learn the principles of UI design, develop interactive
                     prototypes, and enhance your skills in creating visually appealing and user-friendly interfaces. Get
                     mentored by industry professionals and kickstart your career in UI design.</p>
-                <div class="program-buttons">
-                    <button class="program-apply-button">Coming Soon..!</button>
+                    </div>
+                <div class="program-buttons" data-aos="fade-up">
+                    <button class="program-apply-button" data-aos="fade-up">Coming Soon..!</button>
                     <!--<button class="program-apply-button">Coming Soon..!</button>-->
                 </div>
             </li>
             <!--Data Science Internship-->
-            <li>
-                <img src="./Images/DatascienceLogo.png" alt="Data Science Internship">
-                <p class="program-title">Data Science Internship Program</p>
-                <p class="program-duration">1 Month(online)</p>
-                <p class="program-description">Join our Data Science Internship Program and gain practical experience in
+
+            <li class="internships" data-aos="fade-up">
+
+                <img src="./Images/DatascienceLogo.png" alt="Data Science Internship" data-aos="zoom-in">
+                <div style="transform: translateZ(20px)">
+                <p class="program-title" data-aos="fade-up">Data Science Internship Program</p>
+                <p class="program-duration" data-aos="fade-up">1 Month(online)</p>
+                <p class="program-description" data-aos="fade-up">Join our Data Science Internship Program and gain
+                    practical experience in
                     one of the most in-demand fields. Learn data analysis, machine learning, and statistical modeling.
                     Develop real-world projects and enhance your skills in data science. Get mentored by industry
                     professionals and kickstart your career in the field of data science.</p>
-                <div class="program-buttons">
-                    <button class="program-apply-button">Coming Soon..!</button>
-                    <!--<button class="program-apply-button">Coming Soon.!</button>-->
+                    </div>
+                <div class="program-buttons" data-aos="fade-up">
+                    <button class="program-apply-button" data-aos="fade-up">Coming Soon..!</button>
                 </div>
             </li>
         </ul>
     </section>
     <!--Services Section-->
     <section id="Services">
-        <h2 class="section-heading">Why CSEdge Internship?</h2>
-        <p>At CSEdge, we prioritize the success of our interns. Here are some reasons why you
+        <h2 class="section-heading" data-aos="fade-up">Why CSEdge Internship?</h2>
+        <p data-aos="fade-up">At CSEdge, we prioritize the success of our interns. Here are some reasons why you
             should choose us:</p>
-        <table class="table">
+        <table class="table" data-aos="fade-up">
             <thead>
-                <tr>
+                <tr data-aos="fade-up">
                     <th scope="col">#</th>
                     <th scope="col"></th>
                     <th scope="col">CSEdge Internship</th>
@@ -183,37 +226,37 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr data-aos="fade-up">
                     <th scope="row">1</th>
                     <td>MSME Registered</td>
                     <td style="color: #22CFB9;"><i class="uil uil-check positive-attribute"></i></td>
                     <td style="color: #22CFB9;"><i class="uil uil-check positive-attribute"></i></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up">
                     <th scope="row">2</th>
                     <td>AICTE Accredited</td>
                     <td style="color: #22CFB9;"><i class="uil uil-check positive-attribute"></i></td>
                     <td><i class="uil uil-multiply negative-attribute"></i></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up">
                     <th scope="row">3</th>
                     <td>Recognized by Linkedin</td>
                     <td style="color: #22CFB9;"><i class="uil uil-check positive-attribute"></i></td>
                     <td><i class="uil uil-multiply negative-attribute"></i></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up">
                     <th scope="row">4</th>
                     <td>Whatsapp Support</td>
                     <td style="color: #22CFB9;"><i class="uil uil-check positive-attribute"></i></td>
                     <td><i class="uil uil-multiply negative-attribute"></i></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up">
                     <th scope="row">5</th>
                     <td>E-Certificate</td>
                     <td style="color: #22CFB9;"><i class="uil uil-check positive-attribute"></i></td>
                     <td><i class="uil uil-multiply negative-attribute"></i></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up">
                     <th scope="row">6</th>
                     <td>Free Resources</td>
                     <td style="color: #22CFB9;"><i class="uil uil-check positive-attribute"></i></td>
@@ -225,11 +268,11 @@
     </section>
     <!--Contact Section-->
     <section id="contact">
-        <h2 class="section-heading">Contact Us</h2>
-        <p class="section-content">For more information or inquiries, please contact us:</p>
-        <p class="section-content">Email: internship@csedge.courses</p>
+        <h2 class="section-heading" data-aos="fade-up">Contact Us</h2>
+        <p class="section-content" data-aos="fade-up">For more information or inquiries, please contact us:</p>
+        <p class="section-content" data-aos="fade-up">Email: internship@csedge.courses</p>
 
-        <div class="contact-icons">
+        <div class="contact-icons" data-aos="fade-up">
             <a href="mailto:cseedge@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"
                     style="color: #0085ff;"></i></a>
             <a href="https://www.linkedin.com/company/csedge/" target="_blank"><i class="fab fa-linkedin fa-2x"
@@ -244,17 +287,17 @@
     </section>
     <!--FAQ Section-->
     <section id="faq" class="faq">
-        <h1 class="section-heading">FAQ</h1>
+        <h1 class="section-heading" data-aos="fade-up">FAQ</h1>
         <div class="row">
-            <div class="image">
+            <div class="image" data-aos="fade-right">
                 <img class="faq-img" src="./Images/FAQ.png" alt="FAQ">
             </div>
-            <div class="accordion-container">
+            <div class="accordion-container" data-aos="fade-left">
                 <!--Question-1-->
                 <div class="accordion">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
-                        <h3>How to apply for internships?</h3>
+                        <h3>How do we apply for internships?</h3>
                     </div>
                     <div class="accordion-body">
                         <p>To apply for upcoming batch of internship you need to fill the interest form in that specific
@@ -266,12 +309,12 @@
                 <div class="accordion">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
-                        <h3>How To Fill The Interest Form?</h3>
+                        <h3>How do we fill the Interest Form?</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>You Will Get The Interest Form Of All The Internships Domain In Above Mentioned Internship
-                            Column. Please Click On Apply Now Button, Your Response Will Help Us To Understand Your
-                            Current Skills And Need For Training During The Internship If Any.
+                        <p>You will get the Interest Form of all the internships domain in above mentioned internship
+                            column. Please click on <b>Apply Now</b> button, your response will help us to understand your
+                            current skills and need for training during the internship if any.
                         </p>
                     </div>
                 </div>
@@ -279,12 +322,12 @@
                 <div class="accordion">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
-                        <h3>I Have Completed All The Necessary Steps, Whats Next?</h3>
+                        <h3>I have completed all the necessary steps, what's next?</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>If You Have Filled All The Required Field In Interest Form Correctly, You Will Receive A
-                            Selection Certificate From Us Before Your Internship Starts. All Importent Information And
-                            Anouncements Related To Internship Are Communicated Through Telegram or Gmail.
+                        <p>If you have filled all the required field in Interest Form correctly, you will receive a
+                            selection certificate from us before your internship starts. All important information and
+                            announcements related to internship are communicated through telegram or gmail.
                         </p>
                     </div>
                 </div>
@@ -292,10 +335,10 @@
                 <div class="accordion">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
-                        <h3>What Will Be The Duration Of Internship?</h3>
+                        <h3>What will be the duration of internship?</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>In Every Domain Duration Of Internship Is 4 Weeks.
+                        <p>In every domain, duration of internship is 4 weeks.
                         </p>
                     </div>
                 </div>
@@ -303,20 +346,66 @@
                 <div class="accordion">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
                         <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
-                        <h3>I Have Completed My Tasks Well Before Deadline.When Will I Get A Certificate?</h3>
+                        <h3>I have completed my tasks well before deadline. When will I get a certificate?</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>You Can Submit Your Task Through Task Submission Form If You Have Received It Or Wait For It
-                            To Be Shared. If You Have Submitted The Task Before The Deadline Please Expect Your
-                            Completion Certificate In The 1st Week Of Next Month.</p>
+                        <p>You can submit your task through task submission form if you have received it or wait for it
+                            to be shared. If you have submitted the task before the deadline, you may expect your
+                            completion certificate in the first week of next month.</p>
+                    </div>
+                </div>
+                <!--Question-6-->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
+                        <h3>Are there any prerequisites for the internship?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>There are no specific prerequisites. However, having basic knowledge in the respective domain will be beneficial.
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Question-7-->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
+                        <h3>Can I apply for multiple internship domains?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Yes, you can apply for multiple internship domains, but you must fill out separate Interest Forms for each domain.
+                        </p>
+                    </div>
+                </div>
+                <!--Question-8-->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
+                        <h3>Will there be any support during the internship?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Yes, mentors will be available to guide you throughout the internship period.
+                        </p>
+                    </div>
+                </div>
+                <!--Question-9-->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span><img src="./Images/Expand-more.svg" alt="Expand"></span>
+                        <h3>How will my performance be evaluated?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Your performance will be evaluated based on the tasks you complete during the internship and feedback from your mentors.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <!--Footer Section-->
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" data-aos="fade-up">
             <div class="footer-about">
                 <h4>About CSEdge</h4>
                 <p>CSEdge is an online internship platform that provides students with the opportunity to gain practical
@@ -341,7 +430,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#internship">Internships</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="./verify-id.html">Verify Certificate</a></li>
@@ -365,7 +454,10 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">Copyright &copy; 2024 CSEdge.<br>All Rights Reserved Designed By Team CSEdge</p>
+        <p class="copyright">Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> CSEdge.<br>All Rights Reserved Designed By Team
+            CSEdge
+        </p>
     </footer>
 
 
@@ -489,6 +581,27 @@
         });
     </script>
 
+    <script>
+        const togglebutton = document.getElementById("dark-mode-toggle");
+
+        togglebutton.addEventListener('click', ()=>{
+            document.body.classList.toggle('dark-mode');
+        });
+
+        if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+            const savedTheme = localStorage.getItem('theme');
+        if (savedTheme && savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleButton.checked = true; // Ensure the toggle switch matches the dark mode state
+        }
+    </script>
+
+    
+
     <!--Toggle Script-->
     <script>
         function toggleReadMore(sectionId) {
@@ -517,6 +630,14 @@
         });
 
     </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <script src="vanilla-tilt.js"></script>
 </body>
 
 </html>

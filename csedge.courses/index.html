@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,8 +18,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/Images/CSEDGE-LOGO32X32.png">
     <link rel="icon" href="./Images/CSEDGE-LOGO32X32.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <!--SEO Optimization-->
-    
+
     <title>CSEdge Internship</title>
     <meta name="description"
         content="Learn about CSEdge Internship programs and how we're dedicated to helping students and professionals gain real-world experience in software development, coding, and more. Discover our AICTE-accredited programs and how we stand out in the industry.">
@@ -32,6 +36,11 @@
     <meta name="google-adsense-account" content="ca-pub-8930077947690409">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VC9ZHQ7GVC"></script>
+   <!--chatbox-->
+   <link rel="stylesheet" href="chatboxc.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+   <script src="chatboxj.js" defer></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -42,20 +51,50 @@
 </head>
 
 <body>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>Chatbot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Welcome to CSEdge 👋<br>How can I help you today?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+  
+    
+  
     <button id="goTopBtn" title="Go to top"><i class="uil uil-arrow-up"></i></button>
     <!--Navigation Bar-->
-    <nav>
-
+    <nav class="fixed-top z-1">
+       
         <h1 id="home">CSEdge</h1>
         <img style="outline: none;" src="./Images/Menu.svg" alt="Menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#AboutUS">About</a></li>
-            <li><a href="#internship">Internship</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="./Resources.html">Free Content</a></li>
-            <li><a href="https://learn.csedge.courses">Blog</a></li>
-            <li><a href="#faq">FAQ</a></li>
+        <ul class=" ">
+            <li><a href="#home"><i class="fa-solid fa-house" style="color: #000306;"></i>Home</a></li> 
+
+            <li><a href="#AboutUS"> <i class="fa-solid fa-circle-info" style="color: #000306;"></i>About</a></li>
+
+            <li><a href="#internship"><i class="fa-brands fa-google-scholar" style="color: #000000;"></i>Internship</a></li>
+
+            <li><a href="#contact"><i class="fa-solid fa-phone" style="color: #000306;"></i>Contact</a></li>
+            
+            <li><a href="./Resources.html"><i class="fa-solid fa-book" style="color: #000000;"></i>Free Content</a></li>
+
+            <li><a href="https://learn.csedge.courses"><i class="fa-solid fa-blog" style="color: #000306;" ></i> Blog</a></li>
+
+            <li><a href="#faq"><i class="fa-solid fa-circle-question" style="color: #000000;"></i>FAQ</a></li>
         </ul>
     </nav>
     <!--Hero Section-->
@@ -402,7 +441,7 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">Copyright &copy; 2024 CSEdge.<br>All Rights Reserved Designed By Team CSEdge</p>
+        <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> CSEdge.<br>All Rights Reserved Designed By Team CSEdge</p>
     </footer>
 
 
