@@ -30,7 +30,39 @@
         text-overflow: ellipsis;
         -webkit-line-clamp: 3;
       }
+      /* Preloader styles */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Change the background color as needed */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader animation styles */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
     </style>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
       <div class="container">
@@ -413,7 +445,19 @@
 
     <script src="ScrollToTop.js"></script>
   </button>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  // Ensure that the page is fully loaded before removing the preloader
+  window.onload = function() {
+      var preloader = document.getElementById('preloader');
+      var content = document.getElementById('content');
 
+      preloader.style.display = 'none';
+      content.style.display = 'block';
+  };
+});
+
+</script>
 </body>
 
 </html>
