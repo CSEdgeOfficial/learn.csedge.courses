@@ -57,7 +57,6 @@ function setScrollProgress() {
 
   navBarContainer.innerHTML += '<div class="post__progress-bar"></div>';
   const progressBar = document.querySelector(".post__progress-bar");
-  progressBar.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`;
 }
 
 window.addEventListener("scroll", () => {
