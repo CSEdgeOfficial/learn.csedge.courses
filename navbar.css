@@ -69,6 +69,10 @@ nav ul li.logo {
     margin-right: auto; /* Pushes logo to the far left */
 }
 
+.navbar-ham-switch{
+    display: flex;
+}
+
 .navbar-contact {
     display: flex;
     align-items: center;
