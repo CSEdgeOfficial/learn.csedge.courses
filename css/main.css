@@ -73,26 +73,3 @@ a {
     /* Increase icon size for better visibility */
 }
 
-/* Utilize column gaps when stretching columns */
-.align-items-stretch > .col {
-  @media (min-width: 992px) {
-    padding-left: var(--bs-gutter-xl);
-    padding-right: var(--bs-gutter-xl);
-  }
-}
-
-/* Prevent uneven gaps when floating children */
-.float-child {
-  float: left;
-  width: calc(50% - var(--bs-gutter-xl)/2);
-  margin-bottom: 2rem; 
-}
-
-/* Override Bootstrap defaults to allow floated child elements */
-.row>.float-child {
-  box-sizing: border-box;
-  position: relative;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-}
