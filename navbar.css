@@ -201,7 +201,7 @@ nav ul li a:hover::after {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 1;
     border: none;
     outline: none;
     background-color: #555;
