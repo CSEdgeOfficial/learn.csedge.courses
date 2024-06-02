@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Style Sheets-->
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Style Sheets-->
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/Images/CSEDGE-LOGO32X32.png">
-    <link rel="icon" href="./Images/CSEDGE-LOGO32X32.png" type="image/png" sizes="32x32">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!-- AOS.js -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--SEO Optimization-->
-
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/Images/CSEDGE-LOGO32X32.png">
+        <link rel="icon" href="./Images/CSEDGE-LOGO32X32.png" type="image/png" sizes="32x32">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!-- AOS.js -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--SEO Optimization-->
+        
     <title>CSEdge Internship</title>
     <meta name="description"
-        content="Learn about CSEdge Internship programs and how we're dedicated to helping students and professionals gain real-world experience in software development, coding, and more. Discover our AICTE-accredited programs and how we stand out in the industry.">
+    content="Learn about CSEdge Internship programs and how we're dedicated to helping students and professionals gain real-world experience in software development, coding, and more. Discover our AICTE-accredited programs and how we stand out in the industry.">
     <meta name="keywords"
-        content="CSEdge, online internship, software development internship, coding skills, AICTE accredited internship, csedge internship, internship for coding, internship for developers">
+    content="CSEdge, online internship, software development internship, coding skills, AICTE accredited internship, csedge internship, internship for coding, internship for developers">
     <meta name="author" content="CSEdge">
     <link rel="canonical" href="https://csedge.courses" />
     <meta name="robots" content="index, follow">
@@ -39,81 +39,83 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
+        
         gtag('config', 'G-VC9ZHQ7GVC');
-    </script>
+        </script>
 </head>
 
-<body>
+<body onload="myFunction()">
+   
+    <div id="loader"></div>
     <button id="goTopBtn" title="Go to top"><i class="uil uil-arrow-up"></i></button>
     <!--Navigation Bar-->
     <nav class="fixed-top">
-
+        
         <h1 id="home">CSEdge</h1>
         <div class="navbar-ham-switch">
-           <img style="outline: none;" src="./Images/Menu.svg" alt="Menu">
-           <ul class="nav-item navbar">
-               <li class="navitem"><a href="#hero"><i class="fas fa-home navbar-icons"></i> Home</a></li>
-   
-               <li class="navitem"><a href="#AboutUS"><i class="fas fa-info-circle navbar-icons"></i> About us</a></li>
-               <li class="navitem"><a href="#internship"><i class="fas fa-user-graduate navbar-icons"></i> Internship</a></li>
-               <li class="navitem" class="contact"><a href="#contact"><i class="fa fa-envelope navbar-icons"></i> Contact</a></li>
-               <li class="navitem"><a href="./Resources.html"><i class="fas fa-book-open navbar-icons"></i> Free Content</a></li>
-        <!--   <li class="navitem"><a href="https://learn.csedge.courses"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>--> 
-               <li class="navitem"><a href="index.html"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>
-               <li class="navitem"><a href="#faq"><i class="fas fa-question-circle navbar-icons"></i> FAQ</a></li>
-           </ul>
-           <label class="switch">
-            <input type="checkbox" id="dark-mode-toggle">
-            <span class="slider round"></span>
-          </label>
+            <img style="outline: none;" src="./Images/Menu.svg" alt="Menu">
+            <ul class="nav-item navbar">
+                <li class="navitem"><a href="#hero"><i class="fas fa-home navbar-icons"></i> Home</a></li>
+                
+                <li class="navitem"><a href="#AboutUS"><i class="fas fa-info-circle navbar-icons"></i> About us</a></li>
+                <li class="navitem"><a href="#internship"><i class="fas fa-user-graduate navbar-icons"></i> Internship</a></li>
+                <li class="navitem" class="contact"><a href="#contact"><i class="fa fa-envelope navbar-icons"></i> Contact</a></li>
+                <li class="navitem"><a href="./Resources.html"><i class="fas fa-book-open navbar-icons"></i> Free Content</a></li>
+                <!--   <li class="navitem"><a href="https://learn.csedge.courses"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>--> 
+                <li class="navitem"><a href="index.html"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>
+                <li class="navitem"><a href="#faq"><i class="fas fa-question-circle navbar-icons"></i> FAQ</a></li>
+            </ul>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
         </div>
-
+        
         
     </nav>
-
+    
     <!--Hero Section-->
-
-  
+    
+    
     <section id="hero" class="hero">
         <div  data-aos="fade-right"
         data-aos-duration="2000">
-
-            <h2>Unlock your<br> potential<br> with CSEdge </h2>
-            <p>Where learning meets opportunity <br> in a month-long online internship<br>journey.</p>
-            <a href="#internship" class="btn" data-aos="zoom-in">Apply Now</a>
-        </div>
-        <img src="./Images/HomeImage.png" style="scale: 1.0;" alt="ARTWORK">
-    </section>
-    <!--About Section-->
-    <section id="AboutUS">
-        <h2 class="section-heading" data-aos="fade-up">ABOUT US</h2>
-        <div class="about-content">
-            <div>
-                <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;"
-                        data-aos="fade-right">CSEdge</span> is an online internship platform that
-                    provides students with the
-                    opportunity to gain practical experience in the field of software development. We offer a variety of
-                    internship programs that are designed to help students develop their skills and enhance their
-                    employability.</p> <br>
+        
+        <h2>Unlock your<br> potential<br> with CSEdge </h2>
+        <a href="#internship" class="btn" data-aos="zoom-in">Apply Now</a>
+    </div>
+    <img src="./Images/HomeImage.png" style="scale: 1.0;" alt="ARTWORK">
+</section>
+<!--About Section-->
+<section id="AboutUS">
+    <h2 class="section-heading" data-aos="fade-up">ABOUT US</h2>
+    <div class="about-content">
+        <div>
+            <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;"
+                data-aos="fade-right">CSEdge</span> is an online internship platform that
+                provides students with the
+                opportunity to gain practical experience in the field of software development. We offer a variety of
+                internship programs that are designed to help students develop their skills and enhance their
+                employability.</p> <br>
                 <p data-aos="fade-right">We believe that internships are a great way for students to gain practical
                     experience and develop their skills. Our programs are designed to help students gain practical
                     experience in the field of software development.</p> <br>
-                <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;">MSME Registered</span>
-                    individuals on this journey of perpetual learning and boundless joy!</p> <br>
-
-                <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;">AICTE Approved</span> Our Internship Programs are
-                    endorsed By AICTE, ensuring
-                    top-notch quality and relevance.</p>
-
-                <button class="read-more-button" id="aboutpage" data-aos="fade-right">Read More</button>
-            <div class="about-image">
-                <img src="./Images/AboutImage.png" style="scale: 1.5;" alt="About-US" data-aos="zoom-in">
-            </div>
-        </div>
-    </section>
-    <!--Internship Section-->
-    <section id="internship">
+                    <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;">MSME Registered</span>
+                        individuals on this journey of perpetual learning and boundless joy!</p> <br>
+                        
+                        <p data-aos="fade-right"><span style="color: #22CFB9; font-weight: bold;">AICTE Approved</span> Our Internship Programs are
+                            endorsed By AICTE, ensuring
+                            top-notch quality and relevance.</p>
+                            
+                            <button class="read-more-button" id="aboutpage" data-aos="fade-right">Read More</button>
+                            <div class="about-image">
+                                <img src="./Images/AboutImage.png" style="scale: 1.5;" alt="About-US" data-aos="zoom-in">
+                            </div>
+                            <p>Where learning meets opportunity <br> in a month-long online internship<br>journey.</p>
+                            </div>
+                        </section>
+                        <!--Internship Section-->
+                        <section id="internship">
         <h2 class="section-heading" data-aos="fade-up">INTERNSHIPS</h2>
         <ul class="internship-program">
             <!--Python Internship-->
@@ -641,6 +643,16 @@
         });
     </script>
     <script src="vanilla-tilt.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const preloader = document.getElementById('loader');
+            function myFunction() {
+                preloader.style.display = 'none';
+            }
+            window.onload = myFunction;
+        });
+    </script>
+ 
 </body>
 
 </html>

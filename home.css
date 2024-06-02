@@ -17,6 +17,28 @@ body.dark-mode {
     color: white;
 }
 
+#loader {
+    width: 60px;
+    position: fixed;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#FF69B4 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    z-index: 100;
+    animation: l3 1s infinite linear;
+    margin-top: 30%;
+    margin-left: 50%;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
