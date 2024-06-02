@@ -295,6 +295,7 @@ body.dark-mode .section-heading{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 1;
 }
 
 .internship-program li {
