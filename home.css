@@ -177,6 +177,27 @@ h1 {
     justify-content: center;
     margin: auto;
 }
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    
+}
+
+/* Logo image styles */
+.Logoimg {
+    height: 100px;
+    width: 225px;
+    background-image: url('Images/CSEDGE-NEWLOGO.png');
+    background-size: cover; /* Ensure the image covers the entire div */
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+.fixed-top h1{
+    margin-left: -500px;
+}
 .nav-links{
     display: flex;
     justify-content: space-between;
