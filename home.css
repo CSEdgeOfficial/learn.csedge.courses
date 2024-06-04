@@ -151,6 +151,7 @@ h1 {
 
 
 
+
 .btn {
     background-color: #333;
     color: #fff;
@@ -164,18 +165,25 @@ h1 {
 .btn:hover{
   background-color: #003d80;
 }
-/* .navbar{
+
+.fixed-top{
+    padding: 0px;
+}
+
+.navbar{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-} */
+    
+}
 .navitem{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: auto;
+    padding-right: 0px;
 }
 
 .container {
@@ -186,22 +194,26 @@ h1 {
 
 /* Logo image styles */
 .Logoimg {
-    height: 100px;
-    width: 225px;
+    height: 60px;
+    width: 145px;
     background-image: url('Images/CSEDGE-NEWLOGO.png');
     background-size: cover; /* Ensure the image covers the entire div */
     border-radius: 10px;
     margin-right: 100px;
+    margin-left: 20px;
 }
 
-.fixed-top h1{
-    margin-left: -500px;
+.navitem a{
+    font-size: large;
 }
 .nav-links{
     display: flex;
     justify-content: space-between;
 }
 
+.navbar-ham-switch {
+    padding-right: 20px;
+}
 
 /*About Section styles*/
 #about {
