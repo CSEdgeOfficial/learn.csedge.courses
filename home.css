@@ -855,123 +855,129 @@ body.dark-mode .faq{
     /* Tomato red color */
 }
 
-
 /* Styles for Footer */
-footer {
-    background-color: #24292d;
-    padding: 30px 0 0 0;
-    text-align: center;
-    color: #f5f5f5;
-    border-top: 2px solid #2f363e;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.footer-container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-between;*/
-
-}
-
-.footer2{
-    display: flex;
-    flex-direction: row;
-}
-.footer-about {
-    display: inline;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .f1{
+    padding: 3rem 1rem;
+    background: rgb(56, 56, 56);
+    position: relative;
+    min-height: 350px;
     width: 100%;
+    }
+    
+    .social_media:hover {
+      color: yellow;
+    }
+    .container1 {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .social {
+      font-size: x-large;
+    }
+    .row1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .col1{
+      min-width: 250px;
+      color:#f2f2f2f2;
+      font-family: poppins;
+      padding:0 2rem;
+    }
+    .col1 .h11 {
+        color: yellow;
+    }
 
-}
+    .col1 .logo{
+      width: 100px;
+      margin-bottom:25px;
+    }
+    .col1 h3{
+        font-weight: 800;
+      color: yellow;
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
+    }
 
-.footer-links {
-    display: inline;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 50%;
-
-}
-
-.footer-container h4 {
-    font-weight: bolder;
-}
-
-.footer-container .btn {
-    background-color: #4c5156;
-    font-size: smaller;
-    padding: 10px;
-    color: #f5f5f5;
-    border-radius: 5px;
-}
-
-.footer-about p {
-    width: 100%;
-    padding: 20px;
-}
-
-.footer-links ul {
-    padding: 10px;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-    width: auto;
-    box-sizing: inherit;
-}
-
-.footer-links li a {
-    text-decoration: none;
-    color: #f5f5f5;
-
-}
-
-.footer-contact {
-    padding: 10px;
-    margin: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: dimgrey;
-    align-items: center;
-    font-size: medium;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.social-icons a {
-    font-size: medium;
-    text-decoration: none;
-    color: white;
-}
-
-i {
-    color: #f5f5f5;
-    margin-right: 5px;
-}
-
-.contact-icons a i {
-    color: #f5f5f5;
-}
-
-.copyright {
-    background-color: #4c5156;
-    color: #fff;
-    margin-bottom: 0;
-    padding: 10px;
-    font-size: 2vh;
-    font-weight: bold;
-    margin-top: 0px;
-}
-
+   
+    .col1 h3::after{
+      content: '';
+      height:2px;
+      width:0px;
+      background-color: rgb(208, 255, 0);
+      position: absolute;
+      bottom: 0;
+      left:0;
+      transition: 0.3s ease;
+    
+    }
+    .col1 h3:hover::after{
+      width: 35px;
+    }
+    .col1 .social a i{
+      color:rgb(255, 255, 255);
+      margin-top:2rem;
+      margin-right: 5px;
+      transition: 0.3s ease;
+      font-size: 1.8rem;
+    }
+    .col1 .social a i:hover{
+      transform: scale(1.5);
+      color: yellow;
+    }
+    .col1 .links a{
+        font-weight: 200;
+      display: block;
+      text-decoration: none;
+      color:#f2f2f2;
+      margin-bottom: 5px;
+      position: relative;
+      transition: 0.3s ease;
+    }
+    .col1 .links a::before{
+      content:'';
+      height: 16px;
+      width:3px;
+      position: absolute;
+      top:5px;
+      left:-10px;
+      background-color: rgb(255, 255, 0);
+      transition: 0.5s ease;
+      opacity: 0;
+    }
+    .col1 .links a:hover::before{
+      opacity: 1;
+    }
+    .col1 .links a:hover{
+      transform: translateX(-8px);
+      color:yellow;
+    }
+    .col1 .contact-details{
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    .col1 .contact-details i{
+      margin: 10px;
+    }
+   
+    .copyright {
+        color: rgb(169, 169, 169);
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        margin-left: 4rem;
+    }
+    
 /* Media Queries */
 @media screen and (max-width: 1000px) {
     .hero {
