@@ -449,6 +449,128 @@ body.dark-mode #Services{
     list-style: none;
 }
 
+
+
+/* Styles for testimonials */
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.testimonials-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.prev-button {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+body.dark-mode .prev-button button{
+    color: white;
+}
+
+.next-button {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+body.dark-mode .next-button button{
+    color: white;
+}
+
+.testimonials {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.testimonials-content {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    gap: 1.5rem;
+}
+
+.testimonial {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #22CFB9;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 245, 245, 0.96);
+}
+
+body.dark-mode .testimonial{
+    background-color: black;
+}
+
+.testimonial img {
+    border-radius: 50%;
+}
+
+.testimonial .name {
+    font-weight: bold;
+}
+
+.testimonial .position {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+body.dark-mode .testimonial .position{
+    color: darkgray;
+}
+
+.stars {
+    color: #ffd700;
+}
+
+.stars .fa-star-half-alt {
+    position: relative;
+}
+
+.stars .fa-star-half-alt:before {
+    content: "\f089";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: #ffd700;
+}
+
+@media screen and (max-width:768px) {
+    .testimonial{
+        width: 265px;
+    }
+}
+
+
 /* Styles for Contact */
 
 .fa-linkedin,
