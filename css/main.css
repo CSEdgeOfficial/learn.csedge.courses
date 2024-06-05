@@ -1,0 +1,75 @@
+/* Remove default hyperlink style */
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Footer CSS */
+  .site-footer {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+  }
+  
+  .site-footer h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .site-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .site-footer li {
+    margin-bottom: 10px;
+  }
+  
+  .site-footer a {
+    color: #777;
+  }
+  
+  .site-footer a:hover {
+    color: #333;
+  }
+  
+  .site-footer hr {
+    margin: 20px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .site-footer .copyright-text {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  
+  #goTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    
+}
+
+#goTopBtn:hover {
+    background-color: #333;
+    /* Darker shade on hover */
+}
+
+#goTopBtn i {
+    font-size: 24px;
+    position: relative;
+    left: 2px;
+    /* Increase icon size for better visibility */
+}
+

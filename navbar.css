@@ -69,6 +69,10 @@ nav ul li.logo {
     margin-right: auto; /* Pushes logo to the far left */
 }
 
+.navbar-ham-switch{
+    display: flex;
+}
+
 .navbar-contact {
     display: flex;
     align-items: center;
@@ -197,7 +201,7 @@ nav ul li a:hover::after {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 1;
     border: none;
     outline: none;
     background-color: #555;

@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://learn.csedge.courses/</loc>
-  </url>
-
-  <url>
-    <loc>http://learn.csedge.courses/posts/github/how-to-create-github-account.html</loc>
+    <loc>https://learn.csedge.courses/</loc>
   </url>
   <url>
-    <loc>http://learn.csedge.courses/posts/linkedin/creating-professional-linkedin-account.html</loc>
+    <loc>https://learn.csedge.courses/posts/github/how-to-create-github-account.html</loc>
   </url>
   <url>
-    <loc>http://learn.csedge.courses/posts/github/How-to-Apply-for-GitHub-Student-Developer-Pack.html</loc>
+    <loc>https://learn.csedge.courses/posts/linkedin/creating-professional-linkedin-account.html</loc>
   </url>
   <url>
-    <loc>http://learn.csedge.courses/posts/github/How-to-Make-Pull-Requests-on-GitHub.html</loc>
+    <loc>https://learn.csedge.courses/posts/github/How-to-Apply-for-GitHub-Student-Developer-Pack.html</loc>
   </url>
   <url>
-    <loc>http://learn.csedge.courses/posts/azure/How-to-Create-an-Azure-Account.html</loc>
+    <loc>https://learn.csedge.courses/posts/github/How-to-Make-Pull-Requests-on-GitHub.html</loc>
   </url>
   <url>
-    <loc>http://learn.csedge.courses/posts/technology/how-to-create-JSON-Server.html</loc>
+    <loc>https://learn.csedge.courses/posts/azure/How-to-Create-an-Azure-Account.html</loc>
   </url>
-
-  </urlset>
+  <url>
+    <loc>https://learn.csedge.courses/posts/technology/how-to-create-JSON-Server.html</loc>
+  </url>
+  <url>
+    <loc>https://learn.csedge.courses/posts/master-github.html</loc>
+  </url>
+  <url>
+    <loc>https://learn.csedge.courses/posts/github/How-to-host-website-using-github-pages.html</loc>
+  </url>
+  <url>
+    <loc>https://learn.csedge.courses/posts/technology/How-to-build-rest-api-using-node-and-mongo-db.html</loc>
+  </url>
+</urlset>
