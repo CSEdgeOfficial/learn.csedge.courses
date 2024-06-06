@@ -223,7 +223,53 @@ nav ul li a:hover::after {
     left: 2px;
     /* Increase icon size for better visibility */
 }
-
+/* .social  {
+    border: 2px solid var(--pure);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    opacity: 0;
+} */
+/* @keyframes moveIn { 
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.social svg path {
+    fill: var(--pure);  
+  }
+  
+  .social div:hover svg path {
+      fill: var(--dark);
+      transition: all .5s ease-in-out;
+  }
+  
+  .social div:hover {
+      background: var(--pure);
+  }
+    */
+  /* .social {
+      position:absolute;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+      border-right: 1px solid var(--gray);
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+       min-height: 90vh; 
+       opacity:0;
+  } */
 
 /* General Styles */
 .section-heading {

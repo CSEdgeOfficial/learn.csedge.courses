@@ -1,3 +1,83 @@
+ /* .social {
+    border: 2px solid var(--pure);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    opacity: 0;
+} 
+
+@keyframes moveIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.social svg path {
+  fill: var(--pure);  
+}
+
+.social div:hover svg path {
+    fill: var(--dark);
+    transition: all .5s ease-in-out;
+}
+
+.social div:hover {
+    background: var(--pure);
+}
+
+.hero {
+    position: relative;
+} */
+
+.social {
+    border: 2px solid var(--pure);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--gray);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 110vh;
+    border-radius: 50%;
+    
+} 
+@keyframes moveIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.social svg path {
+  fill: var(--pure);  
+}
+
+.social div:hover svg path {
+    fill: var(--dark);
+    transition: all .5s ease-in-out;
+}
+
+.social div:hover {
+    background: var(--pure);
+}
+
+
+
+
 .go-top-btn {
     position: fixed;
     bottom: 40px;
