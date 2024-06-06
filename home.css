@@ -1012,3 +1012,50 @@ body.dark-mode .faq{
         font-size: medium;
     }
 }
+
+.newsletter {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.newsletter input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+
+.newsletter button {
+    padding: 20px 30px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color#218838;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(88, 90, 88);
+}
