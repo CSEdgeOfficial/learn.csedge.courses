@@ -570,19 +570,6 @@ body.dark-mode #Services{
     color: #B23121 !important;
 }
 
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .contact-content {
-        flex-direction: column;
-    }
-    
-    .col {
-        flex: 1 1 100%;
-    }
-}
-
-
 /* Styles for FAQ */
 
 .faq {
@@ -1004,11 +991,26 @@ body.dark-mode .faq{
         width: 100%;
     }
 
-    .footer-container {
+    /* .footer-container {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         font-size: medium;
+    } */
+
+    .row1{
+        font-size: smaller;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .col {
+        flex: 1 1 100%;
     }
 }
 
