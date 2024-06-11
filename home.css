@@ -177,6 +177,7 @@ h1 {
     justify-content: center;
     margin: auto;
 }
+
 .nav-links{
     display: flex;
     justify-content: space-between;
@@ -1012,3 +1013,4 @@ body.dark-mode .faq{
         font-size: medium;
     }
 }
+
