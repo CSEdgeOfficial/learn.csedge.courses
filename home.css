@@ -264,10 +264,19 @@ section {
     object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
 /* Styles for Internship */
 #internship {
     padding: 50px 20px;
     background: linear-gradient(135deg, #f3f2ee 0%, #f9f6f6 100%);
+    transition: background-color 0.3s ease; /* Add transition for background color change */
 }
 
 /* Dark mode styles for #internship section */
@@ -284,12 +293,12 @@ body.dark-mode #internship {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: Arial, sans-serif;
+    transition: color 0.3s ease; /* Add transition for text color change */
 }
 
 body.dark-mode .section-heading{
     color: white;
 }
-
 
 .internship-program {
     display: flex;
@@ -313,6 +322,7 @@ body.dark-mode .section-heading{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(230, 230, 230, 0.9) 100%);
     position: relative;
+    overflow: hidden;
 }
 
 body.dark-mode .internship-program li{
@@ -325,6 +335,7 @@ body.dark-mode .internship-program li{
     justify-content: center;
     margin: 1vw;
 }
+
 .internship-program li::before,
 .internship-program li::after {
     content: "";
@@ -375,18 +386,69 @@ body.dark-mode .internship-program li{
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
+    transition: color 0.3s ease; /* Add transition for text color change */
 }
 
 .program-duration {
     font-size: 20px;
     margin-top: 10px;
     color: #666;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Add transition for text color change */
 }
 
 .internship-program li:hover .program-duration {
     color: #007bff;
 }
+
+/* Additional styles for interactivity and animations */
+.program-buttons {
+    margin-top: 20px;
+    opacity: 0; /* Hide buttons by default */
+    transition: opacity 0.3s ease; /* Add transition for button opacity */
+}
+
+.internship-program li:hover .program-buttons {
+    opacity: 1; /* Show buttons on hover */
+}
+
+.program-apply-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.program-apply-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.program-apply-button:active {
+    background-color: #004494;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .program-description {
     font-size: 16px;
@@ -955,6 +1017,19 @@ body.dark-mode .faq{
         justify-content: center;
         gap: 20px
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .benefit-icon {
         height: auto;
