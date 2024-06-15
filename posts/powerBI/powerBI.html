@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="description"
+      content="Kickstart your Data Analytics journey by learning Microsoft's Power BI. Learn the basics of Power BI by this step-by-step guide for beginners." />
+    <meta
+      name="keywords"
+      content="Data Visualization, Power BI Desktop, Business Intelligence, Power Query, Data Modeling, DAX (Data Analysis Expressions), dashboard , Data Sources, Power BI Premium , Custom Visuals, Real-Time Data" />
+    <title>
+      Learn Power BI
+    </title>
+    <meta name="author" content="CSEdge" />
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img
+          height="32px"
+          width="32px"
+          src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+          alt="logo" />
+        <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://learn.csedge.courses"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page content-->
+    <main class="container">
+      <h2 class="mb-4 mt-4"> Unlocking Insights: A Beginner's Guide to Power BI </h2>
+      <hr class="mb-4" /> 
+      <article>
+        <div class="row">
+          <div class="col-sm">
+            <p> In today's data-driven world, the ability to harness and interpret vast amounts of information is crucial for making informed decisions. Power BI, a powerful business analytics tool from Microsoft, is designed to do just that—transform raw data into meaningful insights that drive strategic actions.</p>
+            <p> In this blog, we will embark on a journey to uncover the full potential of Power BI. From understanding its core features and functionalities to exploring advanced techniques for creating compelling visualizations and reports, we'll guide you every step of the way. Our goal is to empower you to leverage Power BI to its fullest, enabling you to make data-driven decisions with confidence and clarity.</p>
+          </div>
+          <div class="col-sm"> 
+            <img src="powerBI.png" alt="Power BI image" height="100%" width="100%">
+          </div>
+        </div>
+        <div class="mt-4"> 
+          <ol>
+            <li> <a href="#section1"> What is Power BI ? </a></li>
+            <li> <a href="#section2"> Getting Started with Power BI: Installation and Set up</a></li>
+            <li> <a href="#section3"> Understanding the Interface </a> </li>
+            <li> <a href="#section4"> Connecting to Data Sources: Importing Data </a> </li>
+            <li> <a href="#section5"> Data Transformation with Power Query  </a></li>
+            <li> <a href="#section6"> Data Modelling: Understanding Data Relationships </a> </li>
+            <li> <a href="#section7"> Sharing and Collaboration: Publishing and Sharing Reports </a></li>
+        </div>
+      </article>
+      <article id="section1"> 
+        <hr class="mb-4 mt-4" /> 
+        <h4> What is Power BI ?</h4>
+        <p> Business intelligence is the process of analysing business data and presenting it in user-friendly graphical ways such as dashboards, reports, charts, graphs, etc. Business intelligence (BI) tools that help in building business intelligence reports that help the business owners to drive changes, eliminate inefficiencies, and adapt to the market changes. </p>
+        <p> Among these, Power BI has emerged to one of the most powerful and efficient business intelligence tool. Power BI is a Data Visualization and Business Intelligence tool developed by Microsoft, that converts data from different data sources to interactive dashboards and BI reports.</p>
+        <p> Power BI suite provides multiple software, connector, and services - Power BI desktop, Power BI service based on Saas, and mobile Power BI apps available for different platforms that convert the raw data into meaningful, immersive, and interactive insights.</p>
+      </article>
+      <article id="section2"> 
+        <hr class="mb-4 mt-4" /> 
+        <h4> Getting Started with Power BI: Installation and set up </h4>
+
+        <div> 
+          <p> Step-1: Visit the official Power BI website from any browser </p>
+          <p> Step 2: From the Power BI service, in the upper right corner, select the Download icon and then choose Power BI Desktop. </p>
+          <img src="https://learn.microsoft.com/en-us/power-bi/fundamentals/media/desktop-getting-started/gsg_download.png">
+          <p> Step-3: Select preferred language and Click on Download. </p>
+          <p> Step-5: Choose the set up option according to your system configuration on the next webpage.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222170613/4.JPG" height="300px" width="40%">
+          <p> Step-6: Now check for the executable file in downloads in your system and run it.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222170634/5.JPG" height="300px" width="40%">
+          <p> Step-7: It will prompt confirmation to run the file on your system. Click on Run. </p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222170652/6.JPG" height="300px" width="40%">
+          <p> Step-8: Next screen will appear, select language, and click on Next. </p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222170710/7.JPG" height="300px" width="40%">
+          <p> Step-9: It will prompt confirmation to make changes to your system. Click on Yes.</p>
+          <p> Step-10: The system will prepare for installation. Setup screen will appear, click on Next.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222170810/10.JPG">
+          <p> Step-11: The next screen will be of License Agreement, check the box, I accept the terms in License Agreement and click on Next.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222170829/11.JPG">
+          <p> Step-12: Choose the destination folder and click on Next.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222170849/12.JPG">
+          <p> Step-13: The last screen will appear to click on the Install button. Then, click on Finish to finish the installation process. </p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211222171005/15.JPG">
+          <p> Step-14: Power BI is successfully installed on the system and an icon is created on the desktop. Run the software and see the interface.</p>
+        </div>
+        
+      </article>
+      <article id="section3">
+        <hr class="mb-4 mt-4" /> 
+        <h4> Understanding the Interface </h4>
+        <p>When you launch the application, Power BI will start with a blank report. Let's go over the components of the Power BI Desktop:</p>
+        <img src="https://images.datacamp.com/image/upload/v1718118404/image_d5d5fdaaa5.png" height="600px" width="90%">
+        <ol class="p-4">
+          <li>Ribbon - the top ribbon contains most of the controls and options needed for building the report.</li>
+          <li>Views - this is made up of the report view, the data view, and the model view.</li>
+          <li>Canvas - this is the main design area where visualizations and other elements are added.</li>
+          <li>Page selector - for navigation to other pages in the report. </li>
+          <li>Filters - fields can be added here to filter the data.</li>
+          <li>Visualizations - this contains the list of available visualizations.</li>
+          <li>Fields - this section contains the tables and fields that are available in the data model.</li>
+        </ol>
+
+      </article>
+      <article id="section4">
+        <hr class="mb-4 mt-4" /> 
+        <h4>Connecting to Data Sources: Importing Data</h4>
+        <p> To get started with Power BI Desktop, the first step is to connect to data. There are many different data sources you can connect to from Power BI Desktop.</p>
+        <p> To connect the Data: </p>
+        <ol> 
+          <li> From the Home ribbon, select Get Data > More. </li>
+          <li> The Get Data window appears, showing the many categories to which Power BI Desktop can connect. </li>
+          <img src="https://learn.microsoft.com/en-us/power-bi/fundamentals/media/desktop-getting-started/getdataweb.png" height="500px" width="60%">
+          <li> When you select a data type, you're prompted for information, such as the URL and credentials, necessary for Power BI Desktop to connect to the data source on your behalf.</li>
+          <img src="https://learn.microsoft.com/en-us/power-bi/fundamentals/media/desktop-getting-started/getting-started-8.png" height="300px" width="60%">
+          <li> After you connect to one or more data sources, you may want to transform the data so it's useful for you. </li>
+        </ol>
+
+      </article>
+      <article id="section5">
+        <hr class="mb-4 mt-4" /> 
+        <h4> Data Transformation with Power Query </h4>
+        <p>To get to Power Query Editor, select Transform data from the Home tab of Power BI Desktop.</p>
+        <p> The ribbon in Power Query Editor consists of four tabs: Home, Transform, Add Column, View, Tools, and Help.</p>
+        <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-with-data-connection.png" height="400px" width="80%">
+
+        <ul class="p-4">
+          <li> The Home tab contains the common query tasks.</li>
+          <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-ribbon.png" width="70%" class="p-3">
+          <li> To connect to data and begin the query building process, select New Source. A menu appears, providing the most common data sources.</li>
+          <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-new-source-menu.png" height="300px" class="p-3">
+          <li>
+            <p> The Transform tab provides access to common data transformation tasks, such as: </p>
+            <ul>
+              <li> Adding or removing columns </li>
+              <li> Changing data types </li>
+              <li> Splitting columns </li>
+              <li> Other data-driven tasks </li>
+            </ul>
+            <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-transform-ribbon.png" width="70%" class="p-3"> 
+          </li>
+          <li> The Add Column tab provides more tasks associated with adding a column, formatting column data, and adding custom columns. The following image shows the Add Column tab.</li>
+          <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-add-column-ribbon.png" width="70%" class="p-3"> 
+          <li> The View tab on the ribbon is used to toggle whether certain panes or windows are displayed. It's also used to display the Advanced Editor. The following image shows the View tab. </li>
+          <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-view-ribbon.png" width="70%" class="p-3"> 
+        </ul>
+      </article>
+  
+      <article id="section6"> 
+        <hr class="mb-4 mt-4" />  
+        <h4> Data Modelling: Understanding Data Relationships </h4>
+        <h6> What is Data Modelling ? </h6>
+        <p> Data modeling is the process of analyzing and defining all the different data types your business collects and produces, as well as the relationships between those bits of data.</p>
+        <p> By using text, symbols, and diagrams, data modeling concepts create visual representations of data as it’s captured, stored, and used at your business.  </p>
+        <p> With Model view in Power BI Desktop, you can view and work with complex semantic models that contain many tables. </p>
+
+        <h6> Use Model view </h6>
+        <p> To access Model view, select the Model icon found on the left side of Power BI Desktop, as shown in the following image. </p>
+        <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-modeling-view/modeling-view-02.png" class="p-3" >
+        <p> With Model view, you can create diagrams of your model that contain only a subset of the tables in your model.  </p>
+        <p> To create a new diagram with only a subset of the tables, select the + button next to the All tables tab along the bottom of the Power BI Desktop window.</p>
+        <p> You can then drag a table from the Data pane onto the diagram surface. Right-click the table, and then select Add related tables from the menu that appears.</p>
+        <p> When you do, tables that are related to the original table are displayed in the new diagram. The following image shows how related tables are displayed after selecting the Add related tables menu option.</p>
+        <img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-modeling-view/modeling-view-05.png" class="p-3" width="80%" height="600px">
+      </article>
+
+      <article id="section7"> 
+        <hr class="mb-4 mt-4" />  
+        <h4> Sharing and Collaboration: Publishing and Sharing Reports </h4>
+        <h6> Sharing Reports </h6>
+        <p>  You’ll need a Power BI Pro or Premium Per User license to share content; users will need the same license to view the content. Reports and dashboards may be shared with internal and external users. To share your report or dashboard, select ‘Share’ from the top navigation, complete the form, and share it with your team.</p>
+        <img src="https://learn.microsoft.com/en-us/power-bi/collaborate-share/media/service-share-dashboards/power-bi-share-new-look.png" class="p-3">
+        <h6> Collaboration in Power BI </h6>
+        <p> As the usage of Microsoft Teams increases, it makes sense to streamline conversations and meetings about reports in one place.Adding Power BI reports to Teams reduces the need to switch between apps during meetings. This saves time and ensures everyone is viewing the same data. </p>
+        <p> To do this, add a report or dashboard to a team or channel using the ‘Share in Teams’ option. </p>
+      </article>
+      <article>
+        <hr class="mb-4 mt-4" />  
+        <h4> References </h4>
+        <p> https://www.geeksforgeeks.org/how-to-install-power-bi-on-windows/?ref=lbp </p>
+        <p> https://learn.microsoft.com/en-us/power-bi/fundamentals/service-get-started </p>
+        <p> https://www.tutorialspoint.com/power_bi/index.html </p>
+      </article>
+    </main>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy CSEdge Learn 2024
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../script.js"></script>
+  </body>
+</html>
