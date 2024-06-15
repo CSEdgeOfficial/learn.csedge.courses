@@ -30,7 +30,74 @@
 
   <!--Google Site Search Verification-->
   <meta name="google-site-verification" content="lnzqpbpjoknDdDMpcJhBthXHLR7jUWtfSXoGHbdpI40" />
+  <style>
+    /* CSS for Navbar hover effects */
+    .navbar-nav .nav-link {
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+<<<<<<< HEAD
+    .navbar-nav .nav-link:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+  </style>
 </head>
+
+  <body>
+    <style>
+      .card-text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+      }
+    </style>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+      <div class="container">
+        <img
+          height="32px"
+          width="32px"
+          src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+          alt="logo"
+        />
+        <a class="navbar-brand" href="./home.html">CSEdge Learn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item me-5 ">
+              <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
+            </li>
+            <li class="nav-item me-5 ">
+              <a class="nav-link" href="https://csedge.courses#contact"
+                ><i class="fa-solid fa-phone"></i> Contact</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-blog"></i> Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page header with logo and tagline-->
+    <header class="py-5 bg-light border-bottom mb-4">
 
 <body>
   <style>
@@ -47,9 +114,12 @@
     <div class="container">
       <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
       <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <button  class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -69,9 +139,42 @@
             <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
           </li>
         </ul>
+=======
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex justify-content-center">
+            <li class="nav-item me-2">
+              <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="https://csedge.courses#contact"
+                ><i class="fa-solid fa-phone"></i> Contact</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  <!-- Page header with logo and tagline-->
+    <div class="container" >
+      <div class="text-center my-5">
+        <h1 class="fw-bolder" style="margin-top: 80px;">Welcome to CSEdge Learn!</h1>
+        <p class="lead mb-0">
+          This website offers straightforward guides and tutorials for
+          interns, providing clear directions to complete tasks effectively.
+          Simplify your internship experience with our easy-to-follow articles
+          and docs.
+        </p>
+>>>>>>> 11dd44abba6d427dbd14757272378d66af253d44
+      </div>
+
     </div>
-  </nav>
+  
   <!-- Page header with logo and tagline-->
   <div class="container">
     <div class="text-center my-5">
@@ -276,6 +379,26 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-6">
+            <!-- Blog post-->
+            <div class="card mb-4">
+              <a href="./posts/power BI/powerBI.html"><img class="card-img-top"
+                  src="powerBI.png"
+                  alt="Professional LinkedIn account creation" /></a>
+              <div class="card-body">
+                <div class="small text-muted">April 25, 2024</div>
+                <h2 class="card-title h4">
+                  Power BI for Beginners: Your First Dashboard Step-by-Step
+                </h2>
+                <p class="card-text">
+                  In this step-by-step guide, we will walk you through the basics of Power BI, from connecting to your data sources to designing interactive and visually appealing dashboards.
+                </p>
+                <a class="btn btn-primary" href="./posts/power BI/powerBI.html">Read more
+                  →</a>
+              </div>
+            </div>
+            <!-- Blog post-->
+          </div>
         </div>
         <!-- Pagination-->
         <nav aria-label="Pagination">
@@ -285,7 +408,7 @@
               <a class="page-link" href="#!" tabindex="-1" aria-disabled="true">Previous</a>
             </li>
             <li class="page-item" aria-current="page">
-              <a class="page-link" href="#!">1</a>
+              <a class="page-link" href="./posts/master-docker.html">1</a>
             </li>
             <li class="page-item"><a class="page-link" href="./posts/master-github.html">2</a></li>
             <li class="page-item"><a class="page-link" href="#!">3</a></li>
@@ -468,6 +591,8 @@
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./ScrollToTop.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
 
 </body>
 
