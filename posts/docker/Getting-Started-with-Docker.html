@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="description"
+      content="Learn the basics of Docker and containerization. Follow our step-by-step guide to understand how Docker works, its benefits, and how to get started with containerization." />
+    <meta
+      name="keywords"
+      content="Docker, containerization, containers, virtualization, software development, DevOps, cloud computing" />
+    <title>Introduction to Docker: Getting Started with Containerization</title>
+    <meta name="author" content="CSEdge" />
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img
+          height="32px"
+          width="32px"
+          src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+          alt="logo" />
+        <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://csedge.courses#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://learn.csedge.courses"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+          <h1>Introduction to Docker: Getting Started with Containerization</h1>
+          <!-- Featured blog post-->
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9c86XqMxw9dWml9RDSIlcfih-UMxIgRkOCQ&s"
+              alt="Introduction to Docker: Getting Started with Containerization" />
+            <div class="card-body">
+              <main class="container">
+                <section>
+                  
+                  <p>
+                    Docker has revolutionized the way we build, ship, and run
+                    applications. It provides a lightweight, portable
+                    environment called a container that packages the
+                    application code along with its dependencies. This allows
+                    developers to build once and run anywhere, making it easier
+                    to maintain consistency across different environments.
+                  </p>
+                  <p>
+                    In this guide, we'll explore the fundamentals of Docker,
+                    including how it works, its benefits, and how to get started
+                    with containerization.
+                  </p>
+                </section>
+                <section>
+                  <h3>What is Docker?</h3>
+                  <p>
+                    Docker is an open-source platform that automates the
+                    deployment of applications inside containers. Containers
+                    are lightweight, standalone, executable packages that
+                    include everything needed to run a piece of software,
+                    including the code, runtime, libraries, and dependencies.
+                    Unlike traditional virtual machines, containers share the
+                    host system's kernel and run as isolated processes,
+                    providing greater efficiency and portability.
+                  </p>
+                </section>
+
+                <section>
+                  <h3>Benefits of Docker</h3>
+                  <ul>
+                    <li><strong>Portability:</strong> Docker containers can run
+                      on any platform that supports Docker, making it easy to
+                      deploy applications across different environments.</li>
+                    <li><strong>Consistency:</strong> Containers ensure that
+                      applications run the same way in development, testing,
+                      and production environments, reducing the risk of
+                      configuration errors.</li>
+                    <li><strong>Isolation:</strong> Containers provide
+                      isolation between applications, preventing conflicts
+                      caused by dependencies and ensuring security.</li>
+                    <li><strong>Efficiency:</strong> Docker containers are
+                      lightweight and start quickly, allowing for rapid
+                      development and deployment cycles.</li>
+                    <li><strong>Scalability:</strong> Docker's
+                      containerization model enables easy scaling of
+                      applications by adding or removing containers as needed.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h3>Getting Started with Docker</h3>
+                  <p>
+                    To start using Docker, you'll need to install the Docker
+                    Engine on your system. Once installed, you can use the
+                    Docker CLI to manage containers, images, networks, and
+                    volumes. Docker provides extensive documentation and
+                    tutorials to help you get up and running quickly, so don't
+                    hesitate to dive in and start experimenting!
+                  </p>
+                </section>
+
+                <p class="mt-5">
+                  Containerization has become an essential tool for modern
+                  software development, enabling teams to build, ship, and run
+                  applications more efficiently. With Docker, you can embrace
+                  containerization and take your development workflow to the
+                  next level. Happy containerizing!
+                </p>
+              </main>
+            </div>
+          </div>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+          <!-- Search widget-->
+          <div class="card mb-4">
+            <div class="card-header">Search</div>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="searchInput"
+                  placeholder="Enter search term..."
+                  aria-label="Enter search term..."
+                  aria-describedby="button-search" />
+                <button
+                  class="btn btn-primary"
+                  id="button-search"
+                  type="button"
+                  onclick="search()">
+                  Go!
+                </button>
+              </div>
+            </div>
+            <!-- Search Results -->
+            <div
+        </div>
+    </div>
+    <!-- Categories widget-->
+    <div class="card mb-4">
+      <div class="card-header">Categories</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!">Web Design</a></li>
+              <li><a href="#!">HTML</a></li>
+              <li><a href="#!">Freebies</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!">JavaScript</a></li>
+              <li><a href="#!">CSS</a></li>
+              <li><a href="#!">Tutorials</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Side widget-->
+    <div class="card mb-4">
+      <div class="card-header">Recent Posts</div>
+      <div class="card-body">
+        <p>Coming Soon..!</p>
+      </div>
+    </div>
+    <div class="card mb-4">
+      <div class="card-body">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+          crossorigin="anonymous"></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-8930077947690409"
+          data-ad-slot="9866674087"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+          crossorigin="anonymous"></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-8930077947690409"
+          data-ad-slot="9866674087"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+          crossorigin="anonymous"></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-8930077947690409"
+          data-ad-slot="9866674087"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+<div class="container">
+  <p class="m-0 text-center text-white">
+    Copyright &copy CSEdge Learn 2024
+  </p>
+</div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="../script.js"></script>
+</body>
+</html>
