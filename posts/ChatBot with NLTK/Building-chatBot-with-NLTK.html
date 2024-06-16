@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+            name="description"
+            content="Develop an interactive chatbot utilizing the Natural Language Toolkit (NLTK) to facilitate text analysis and generate appropriate responses. This intelligent chatbot is designed to participate in fundamental dialogues and provide answers to commonly posed inquiries, showcasing proficiency in natural language processing and text classification techniques. Leveraging NLTK’s robust features, the chatbot exemplifies the practical application of these skills in creating conversational AI interfaces." />
+    <meta
+            name="keywords"
+            content="Chatbot, Interactive, NLTK, Text Analysis, Response Generation, Dialogue, FAQ, NLP, Text Classification, Conversational AI" />
+    <title>
+        ChatBot with NLTK
+    </title>
+    <meta name="vaishali-sharma" content="CSEdge" />
+    <!-- Favicon-->
+    <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <img
+                height="32px"
+                width="32px"
+                src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+                alt="logo" />
+        <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://csedge.courses/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://csedge.courses#contact"
+                    >Contact</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="https://learn.csedge.courses"
+                    >Blog</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mb-4 mt-4">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <h1>
+                Building an Intelligent Chatbot with NLTK
+            </h1>
+            <!-- Featured blog post-->
+            <div class="card mb-4">
+                <img
+                        class="card-img-top"
+                        src="../images/chatbot.png"
+                        alt="ChatBot-with-NLTK" />
+                <div class="card-body">
+                    <main class="container">
+                        <section>
+
+                            <p>
+                                Creating a chatbot involves understanding and processing human language, which can be achieved through Natural Language Processing (NLP). Python’s NLTK library is a powerful tool for NLP that provides easy-to-use interfaces to over 50 corpora and lexical resources.
+                            </p>
+                            <br>
+                            <h2>Step-by-Step Guide:</h2> <br>
+                            <img
+                                    class="card-img-top"
+                                    src="../images/flowchart-chatbot.png"
+                                    alt="flowchat-chatbot" />
+                            <br>
+                            <br>
+                            <ol>
+                                <li><h5>Environment Setup:</h5></li>
+                                <ul>
+                                    <li><strong>Python installation:</strong> Ensure you have Python installed on your system. Python 3.x versions are recommended. </li>
+                                    <li><strong>NLTK Installation:</strong> Install the NLTK package using pip:<br>
+                                    <code>
+                                        pip install nltk<br>
+                                    </code>
+                                    </li>
+                                    <li><strong>Data Sets and Tokenizers:</strong> Download necessary NLTK data sets and tokenizers which are essential for processing natural language: <br>
+                                        <br><strong>Python Code</strong> <br><code>
+                                        <pre>
+import nltk
+nltk.download('popular')
+                                        </pre>
+                                    </code>
+                                    </li>
+                                </ul>
+                                <li><h5>Designing Conversaiton Patters:</h5></li>
+                                <ul>
+                                    <li><strong>Patterns and Intents: </strong>Define a dictionary with various intents such as ‘greetings’, ‘goodbyes’, and ‘faq’. Each intent contains a list of possible patterns and responses:<br>
+                                        <br><strong>Python Code</strong> <br><code>
+                                        <pre>
+CONVERSATION_PATTERNS = {
+    "greetings": {
+        "patterns": ["hello", "hi", "hey"],
+        "responses": ["Hello!", "Hi there!", "Hey!"]
+    },
+    "goodbyes": {
+        "patterns": ["bye", "goodbye", "see you"],
+        "responses": ["Goodbye!", "See you later!", "Bye!"]
+    },
+    // Add more intents as needed
+}
+                                        </pre>
+                                    </code></li>
+                                </ul>
+                                <li><h5>Text Processing:</h5></li>
+                                <ul>
+                                    <li>
+                                        <strong>Tokenization: </strong>Split the text into individual words or tokens.
+                                    </li>
+                                    <li><strong>Stemming and Lemmatization: </strong> Reduce words to their root form to understand the general meaning without tense or plurality.<br>
+                                        <br><strong>Python Code</strong> <br><code>
+                                      <pre>
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+
+def process_input(input_text):
+    tokens = nltk.word_tokenize(input_text)
+    lemmas = [lemmatizer.lemmatize(token.lower()) for token in tokens]
+    return lemmas
+                                      </pre>
+                                    </code></li>
+                                </ul>
+                                <li><h5>Classification Model:</h5></li>
+                                <ul>
+                                    <li><strong>Training Data Preparation: </strong> Prepare the dta for training by associating each pattern with its corresponding intent.</li>
+                                    <li><strong>Model Training: </strong>Use a classification algorithm like Naive Bayes to train the model on the prepared data.<br>
+                                        <br><strong>Python Code</strong> <br>
+                                    <code>
+                                      <pre>
+from nltk import NaiveBayesClassifier
+
+def train_classifier(patterns):
+    training_data = []
+    for intent, data in patterns.items():
+        for pattern in data['patterns']:
+            tokens = process_input(pattern)
+            training_data.append((tokens, intent))
+    classifier = NaiveBayesClassifier.train(training_data)
+    return classifier
+                                      </pre></code></li>
+                                </ul>
+                                <li><h5>Response Generation:</h5></li>
+                           <ul>
+                               <li><strong>Response Selection: </strong> Based on the classified intent, select an appropriate response from the predefined list.</li>
+                               <li><strong>Chatbot Functionality: </strong> Implement the chatbot functionality that takes user input, processes it, classifies it, and then generates a response.
+                                   <br><br><strong>Python Code</strong> <br>
+                               <code>
+                                  <pre>
+import random
+
+def generate_response(classifier, user_input):
+    category = classifier.classify(process_input(user_input))
+    if category in CONVERSATION_PATTERNS:
+        return random.choice(CONVERSATION_PATTERNS[category]['responses'])
+    else:
+        return "I'm not sure how to respond to that."
+
+// Example usage:
+classifier = train_classifier(CONVERSATION_PATTERNS)
+user_input = "hello"
+print(generate_response(classifier, user_input))</pre>
+                               </code></li>
+                           </ul>
+                            </ol>
+                        </section>
+                        <br>
+                        <section>
+                            <h3>Integrating Web Scraping:</h3>
+                            <p>With your interest in web scraping and HTML parsing, you can enhance your chatbot by integrating real-time data extraction. For instance, you could use BeautifulSoup to scrape news headlines or weather information and provide it as part of the chatbot’s responses.</p>
+
+                        <h3>Conclusion:</h3>
+                        <p> Building a chatbot with NLTK is an enriching experience that hones your skills in NLP. It lays the groundwork for more complex AI projects and opens up possibilities for integrating various functionalities like web scraping.</p></section>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input
+                                class="form-control"
+                                type="text"
+                                id="searchInput"
+                                placeholder="Enter search term..."
+                                aria-label="Enter search term..."
+                                aria-describedby="button-search" />
+                        <button
+                                class="btn btn-primary"
+                                id="button-search"
+                                type="button"
+                                onclick="search()">
+                            Go!
+                        </button>
+                    </div>
+                </div>
+                <!-- Search Results -->
+                <div id="searchResults"></div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Web Design</a></li>
+                                <li><a href="#!">HTML</a></li>
+                                <li><a href="#!">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Recent Posts</div>
+                <div class="card-body">
+                    <p>Coming Soon..!</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <script
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                    <ins
+                            class="adsbygoogle"
+                            style="display: block"
+                            data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86"
+                            data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <script
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                    <ins
+                            class="adsbygoogle"
+                            style="display: block"
+                            data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86"
+                            data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <script
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                    <ins
+                            class="adsbygoogle"
+                            style="display: block"
+                            data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86"
+                            data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">
+            Copyright &copy CSEdge Learn 2024
+        </p>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="../script.js"></script>
+</body>
+</html>
+
+
+</div>
+</div>
+</body>
+</html>
