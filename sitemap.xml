@@ -30,4 +30,13 @@
   <url>
     <loc>https://learn.csedge.courses/posts/technology/How-to-build-rest-api-using-node-and-mongo-db.html</loc>
   </url>
+  <url>
+    <loc>https://learn.csedge.courses/posts/python/WebScrapingWithBeautifulSoup.html</loc>
+  </url>
+  <url>
+    <loc>https://learn.csedge.courses/posts/python/ExampleOfBuildingWebScrapingApplication.html</loc>
+  </url>
+  <url>
+    <loc>https://learn.csedge.courses/posts/python/Building-chatBot-with-NLTK.html</loc>
+  </url>
 </urlset>
