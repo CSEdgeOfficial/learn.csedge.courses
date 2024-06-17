@@ -4819,6 +4819,10 @@ fieldset:disabled .btn {
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
 }
+.card-body:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover */
+}
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
