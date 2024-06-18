@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}

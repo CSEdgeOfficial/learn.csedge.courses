@@ -1,0 +1,92 @@
+name: Technical Writing Submission ✍️
+description: Want to share your technical knowledge? Submit your article here!
+title: '[Topic] <Insert topic here>'
+labels: ''
+assignees: ''
+
+body:
+  - type: paragraph
+    content: |
+      #### Summary
+
+      **A brief overview of the topic and the key points covered in the article.**
+
+  - type: textarea
+    name: |
+      summary
+    id: summary
+    label: Summary
+    validationMessage: Please provide a summary of the article.
+    required: true
+
+  - type: paragraph
+    content: |
+      #### Body
+
+      **The full text of the article, divided into sections for easier reading.**
+
+  - type: textarea
+    name: |
+      body
+    id: body
+    label: Body
+    validationMessage: Please provide the full text of the article.
+    required: true
+
+  - type: paragraph
+    content: |
+      #### References
+
+      **A list of sources consulted while writing the article.**
+
+  - type: textarea
+    name: |
+      references
+    id: references
+    label: References
+    validationMessage: Please provide a list of references.
+    required: false
+
+  - type: paragraph
+    content: |
+      #### Supplementary Material
+
+      **Any additional images, graphs, or code snippets related to the article.**
+
+  - type: textarea
+    name: |
+      supplementary_material
+    id: supplementary_material
+    label: Supplementary Material
+    validationMessage: Please provide any additional material.
+    required: false
+
+  - type: checkboxes
+    name: |
+      agreement
+    id: agreement
+    label: Agreement
+    options:
+      - label: I confirm that I wrote the article myself and hold the rights to publish it.
+        name: confirmation
+        required: true
+
+      - label: I permit CSEdge Learn to publish the article on its website and social media platforms.
+        name: publication
+        required: true
+
+      - label: I acknowledge that the editorial team reserves the right to make minor edits for clarity and consistency.
+        name: editing
+        required: true
+
+      - label: I have reviewed the "[Contributing Guidelines](https://github.com/CSEdgeOfficial/learn.csedge.courses/blob/main/CONTRIBUTING.md)" of this project.
+        name: contributing_guidelines
+        required: true
+
+      - label: I am a GSSoC'24 contributor.
+        name: gsoc_contributor
+        required: false
+
+required:
+  - summary
+  - body

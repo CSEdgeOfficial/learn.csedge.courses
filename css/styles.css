@@ -3228,7 +3228,7 @@ textarea.form-control.is-invalid {
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
   color: var(--bs-btn-color);
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
@@ -8778,6 +8778,11 @@ fieldset:disabled .btn {
   padding-bottom: 3rem !important;
 }
 
+.py-6 {
+  padding-top: 5rem !important;
+  padding-bottom: 3rem !important;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -12608,4 +12613,63 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+.navbar-toggler{
+  width:20px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+  border:0
+}
+.navbar-toggler span{
+  margin: 0;
+  padding: 0;
+}
+.toggler-icon{
+   display: block;
+   position: absolute;
+   height: 5px;
+   width: 100%;
+   background: white;
+   border-radius: 1px;
+   opacity: 1;
+   left:0;
+   transform: rotate(0deg);
+   transition: .25s ease-in-out;
+}
+.middle-bar{
+  margin:0px;
+}
+.navbar-toggler .top-bar{
+  margin-top: 0;
+  transform: rotate(135deg);
+
+}
+.navbar-toggler .middle-bar{
+  opacity: 0;
+  filter:alpha(opacity=0)
+
+}
+.navbar-toggler .bottom-bar{
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+.navbar-toggler.collapsed .top-bar{
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+  margin-top: 20px;
+  transform: rotate(0deg);
 }

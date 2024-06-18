@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="./button.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Master the art of Docker with CSEdge Learn! Our comprehensive guides and tutorials provide step-by-step instructions to help you navigate the platform with ease. Unlock your potential as a developer and explore the world of containerization." />
+  <title>Mastering Docker with CSEdge Learn</title>
+  <meta name="keywords"
+    content="CSEdge, Learn, Docker, Tutorials, Guides, Containerization, Development, Skills, Knowledge, Resources, Opportunities" />
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="../css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css">
+  <!--Google Site Search Verification-->
+  <meta name="google-site-verification" content="lnzqpbpjoknDdDMpcJhBthXHLR7jUWtfSXoGHbdpI40" />
+</head>
+
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+    <div class="container">
+      <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
+      <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex">
+          <li class="nav-item me-2">
+            <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
+          </li>
+          <li class="nav-item me-2">
+
+            <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page content-->
+  <div id="content" class="container py-6">
+    <div class="row">
+      <!-- Blog entries-->
+      <div class="col-lg-8">
+        <!-- Featured blog post-->
+
+        <!-- Nested row for non-featured blog posts-->
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Blog post-->
+            <div class="card mb-4">
+              <a href="./docker/Getting-Started-with-Docker.html"><img class="card-img-top"
+                  src="data:image/png;base64,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"
+                  alt="Docker Logo" /></a>
+              <div class="card-body">
+                <div class="small text-muted">June 12, 2024</div>
+                <h2 class="card-title h4">
+                  Introduction to Docker: Getting Started with Containerization
+                </h2>
+                <p class="card-text">
+                  Dive into the world of containerization with Docker, the industry-standard platform for developing,
+                  shipping, and running applications. This guide will take you through the basics of Docker, including
+                  installation, running containers, creating Dockerfiles, and managing containerized applications. Whether
+                  you're a developer, sysadmin, or IT professional, Docker can streamline your workflow and enhance
+                  scalability and portability across different environments.
+                </p>
+                <a class="btn btn-primary" href="./docker/Getting-Started-with-Docker.html">Read more →</a>
+              </div>
+            </div>
+
+            
+            <!-- Add more Docker blog posts here -->
+
+          </div>
+        </div>
+        <!-- Pagination-->
+        <nav aria-label="Pagination">
+          <hr class="my-0" />
+          <ul class="pagination justify-content-center my-4">
+            <li class="page-item">
+              <a class="page-link" href="../index.html" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item" aria-current="page">
+              <a class="page-link" href="../index.html">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#!">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Side widgets-->
+      <div class="col-lg-4">
+        <!-- Search widget-->
+        <div class="card mb-4">
+          <div class="card-header">Search</div>
+          <div class="card-body pr-2">
+            <div class="input-group">
+              <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..."
+                aria-label="Enter search term..." aria-describedby="button-search" />
+              <button class="btn btn-primary" id="button-search" type="button" onclick="search()">
+                Go!
+              </button>
+            </div>
+          </div>
+          <!-- Search Results -->
+          <div class="me-2 ms-1" id="searchResults"></div>
+        </div>
+
+        <!-- Side widget-->
+        <div class="card mb-4">
+          <div class="card-header">Recent
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="btn" href="./posts/docker/Getting-Started-with-Docker.html">Introduction to Docker: Getting Started with Containerization</a>
+            </li>
+            <!-- Add more recent Docker posts here -->
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+            crossorigin="anonymous"></script>
+          <!-- Resp -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8930077947690409"
+            data-ad-slot="9318061513" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          <!-- Add more ad units or widgets here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About Us</h6>
+        <p class="text-justify">
+          This website offers straightforward guides and tutorials for interns, providing clear directions to complete tasks effectively. Simplify your internship experience with our easy-to-follow articles and docs.
+        </p>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="#">Containerization</a></li>
+          <li><a href="#">Docker</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <!-- Add more categories here -->
+        </ul>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="https://csedge.courses/about">About Us</a></li>
+          <li><a href="https://csedge.courses/#contact">Contact Us</a></li>
+          <li><a href="https://github.com/CSEdgeOfficial/learn.csedge.courses">Contribute</a></li>
+          <li><a href="./csedge.courses/privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <!-- Copyright Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="copyright-text">
+          Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved by CSEdge Learn
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<button id="goTopBtn" title="Go to top"><i class="uil uil-arrow-up"></i></button>
+
+</body>
+
+</html>
