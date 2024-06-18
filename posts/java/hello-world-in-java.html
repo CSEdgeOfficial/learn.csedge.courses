@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,12 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
     <link rel="stylesheet" href="hello-world-in-java.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
             <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,59 +47,73 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-8">
-                <article>
-                    <h1>First Java Program</h1>
-                    <section>
-                        <h2>Introduction</h2>
-                        <p>In this article, we will learn how to write and run a simple "Hello World" program in Java. This program is often the first example taught to beginners in Java programming as it demonstrates the basic structure and syntax of a Java program.</p>
-                    </section>
-                    <section>
-                        <h2>Prerequisites</h2>
-                        <p>To follow along with this tutorial, you need:</p>
-                        <ul>
-                            <li>A computer with a text editor installed</li>
-                            <li>Java Development Kit (JDK) installed</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h2>Step 1: Writing the Java Code</h2>
-                        <p>Open your favorite text editor and create a new file named <code>HelloWorld.java</code>.</p>
-                        <p>Now, add the following Java code to the file:</p>
-                        <div class="code-container">
-                            <pre><code class="language-java">public class HelloWorld {
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h1>First Java Program</h1>
+                        <section>
+                            <h2>Introduction</h2>
+                            <p>In this article, we will learn how to write and run a simple "Hello World" program in
+                                Java. This program is often the first example taught to beginners in Java programming as
+                                it demonstrates the basic structure and syntax of a Java program.</p>
+                        </section>
+                        <section>
+                            <h2>Prerequisites</h2>
+                            <p>To follow along with this tutorial, you need:</p>
+                            <ul>
+                                <li>A computer with a text editor installed</li>
+                                <li>Java Development Kit (JDK) installed</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Step 1: Writing the Java Code</h2>
+                            <p>Open your favorite text editor and create a new file named <code>HelloWorld.java</code>.
+                            </p>
+                            <p>Now, add the following Java code to the file:</p>
+                            <div class="code-container">
+                                <pre><code class="language-java">public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, world!");
     }
 }</code></pre>
-                            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
-                        </div>
-                        <p>This Java code defines a class named <code>HelloWorld</code> with a <code>main</code> method. Inside the <code>main</code> method, it prints "Hello, world!" to the console using <code>System.out.println()</code>.</p>
-                    </section>
-                    <section>
-                        <h2>Step 2: Compiling the Java Code</h2>
-                        <p>Now that we have written our Java code, we need to compile it into bytecode that can be executed by the Java Virtual Machine (JVM).</p>
-                        <p>Open a terminal or command prompt, navigate to the directory containing <code>HelloWorld.java</code>, and run the following command:</p>
-                        <div class="code-container">
-                            <pre><code class="language-java">javac HelloWorld.java</code></pre>
-                            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
-                        </div>
-                        <p>If there are no syntax errors in your code, this command will generate a file named <code>HelloWorld.class</code>.</p>
-                    </section>
-                    <section>
-                        <h2>Step 3: Running the Java Program</h2>
-                        <p>Now that we have compiled our Java code, we can run it using the <code>java</code> command.</p>
-                        <p>In the same terminal or command prompt, run the following command:</p>
-                        <div class="code-container">
-                            <pre><code class="language-java">java HelloWorld</code></pre>
-                            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
-                        </div>
-                        <p>This command will execute the <code>HelloWorld</code> class, and you should see the output <code>Hello, world!</code> printed to the console.</p>
-                    </section>
-                    <section>
-                        <h2>Conclusion</h2>
-                        <p>Congratulations! You have successfully written and run a "Hello World" program in Java. This simple program serves as a foundation for learning more advanced concepts in Java programming.</p>
-                    </section>
-                </article>
+                                <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+                            </div>
+                            <p>This Java code defines a class named <code>HelloWorld</code> with a <code>main</code>
+                                method. Inside the <code>main</code> method, it prints "Hello, world!" to the console
+                                using <code>System.out.println()</code>.</p>
+                        </section>
+                        <section>
+                            <h2>Step 2: Compiling the Java Code</h2>
+                            <p>Now that we have written our Java code, we need to compile it into bytecode that can be
+                                executed by the Java Virtual Machine (JVM).</p>
+                            <p>Open a terminal or command prompt, navigate to the directory containing
+                                <code>HelloWorld.java</code>, and run the following command:</p>
+                            <div class="code-container">
+                                <pre><code class="language-java">javac HelloWorld.java</code></pre>
+                                <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+                            </div>
+                            <p>If there are no syntax errors in your code, this command will generate a file named
+                                <code>HelloWorld.class</code>.</p>
+                        </section>
+                        <section>
+                            <h2>Step 3: Running the Java Program</h2>
+                            <p>Now that we have compiled our Java code, we can run it using the <code>java</code>
+                                command.</p>
+                            <p>In the same terminal or command prompt, run the following command:</p>
+                            <div class="code-container">
+                                <pre><code class="language-java">java HelloWorld</code></pre>
+                                <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+                            </div>
+                            <p>This command will execute the <code>HelloWorld</code> class, and you should see the
+                                output <code>Hello, world!</code> printed to the console.</p>
+                        </section>
+                        <section>
+                            <h2>Conclusion</h2>
+                            <p>Congratulations! You have successfully written and run a "Hello World" program in Java.
+                                This simple program serves as a foundation for learning more advanced concepts in Java
+                                programming.</p>
+                        </section>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-4">
                 <!-- Sidebar content -->
@@ -108,9 +126,11 @@
                         <!-- Search form -->
                         <div class="input-group">
                             <!-- Search input -->
-                            <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                            <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..."
+                                aria-label="Enter search term..." aria-describedby="button-search" />
                             <!-- Search button -->
-                            <button class="btn btn-primary" id="button-search" type="button" onclick="search()">Go!</button>
+                            <button class="btn btn-primary" id="button-search" type="button"
+                                onclick="search()">Go!</button>
                         </div>
                     </div>
                     <!-- Search Results -->
@@ -156,16 +176,28 @@
                     <div class="card-body">
                         <!-- Google Ads -->
                         <!-- Ad unit 1 -->
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409" crossorigin="anonymous"></script>
-                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409" data-ad-slot="9866674087"></ins>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                         <!-- Ad unit 2 -->
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409" crossorigin="anonymous"></script>
-                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409" data-ad-slot="9866674087"></ins>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                         <!-- Ad unit 3 -->
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409" crossorigin="anonymous"></script>
-                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409" data-ad-slot="9866674087"></ins>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                     </div>
                 </div>
@@ -190,7 +222,7 @@
             window.getSelection().addRange(range);
             document.execCommand('copy');
             window.getSelection().removeAllRanges();
-    
+
             button.innerText = "Copied";
             button.classList.add("copied");
             setTimeout(function () {
@@ -199,6 +231,7 @@
             }, 2000);
         }
     </script>
-    
+
 </body>
+
 </html>
