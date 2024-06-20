@@ -1109,6 +1109,7 @@ body.dark-mode .faq{
         align-items: center;
         font-size: medium;
     }
+<<<<<<< HEAD
 }
 
 @keyframes spin {
@@ -1118,4 +1119,6 @@ body.dark-mode .faq{
     100% {
         transform: rotate(360deg);
     }
+=======
+>>>>>>> 7f31953525328db860891866a9be48f4a15ff4b5
 }
