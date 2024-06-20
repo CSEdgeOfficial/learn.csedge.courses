@@ -42,15 +42,15 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VC9ZHQ7GVC"></script>
     <script>
- window.addEventListener('load', function () {
-            const preloader = document.getElementById('preloader');
-            preloader.style.display = 'none';
-        });
+//  window.addEventListener('load', function () {
+//             const preloader = document.getElementById('preloader');
+//             preloader.style.display = 'none';
+//         });
 
-        setTimeout(function () {
+setTimeout(function () {
             const preloader = document.getElementById('preloader');
             preloader.style.display = 'none';
-        }, 50000); // Adjust the delay in milliseconds
+        }, 1000);
 
 
         window.dataLayer = window.dataLayer || [];
@@ -63,7 +63,8 @@
 
 <body>
     <div id="preloader">
-        <div id="loader"></div>
+        <img src="csedge.courses/Images/CSEDGELOGO.png" alt="Company Logo" class="logo">
+        <h1>CSEDGE OFFICIAL</h1>
     </div>
     <button id="goTopBtn" title="Go to top"><i class="uil uil-arrow-up"></i></button>
     <!--Navigation Bar-->

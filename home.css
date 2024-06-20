@@ -24,15 +24,52 @@ body {
     align-items: center;
 }
 
-#loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+#preloader .logo {
+    width: 300px; /* Adjust the width of the logo */
+    height: auto;
+    animation: fadeIn 1s ease-out;
 }
 
+#preloader h1 {
+    margin-top: 10px;
+    font-size: 24px; /* Adjust the font size of the company name */
+    color: #333333;
+    opacity: 0;
+    animation: slideIn 1s ease-out;
+    animation-delay: 0.5s; /* Delay the animation for better effect */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 body.dark-mode {
@@ -1109,16 +1146,4 @@ body.dark-mode .faq{
         align-items: center;
         font-size: medium;
     }
-<<<<<<< HEAD
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-=======
->>>>>>> 7f31953525328db860891866a9be48f4a15ff4b5
 }
