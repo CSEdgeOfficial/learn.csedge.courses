@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+            name="description"
+            content="A deep learning model to classify images using TensorFlow and Keras. Use a pre-trained model or build your own convolutional neural network (CNN)." />
+    <meta
+            name="keywords"
+            content="Image Classification, TensorFlow, Keras, Deep Learning, Convolutional Neural Networks (CNN), Data Augmentation, Transfer Learning, Model Evaluation, Pre-trained Models, On-device Machine Learning" />
+    <title>
+        Image Classification with TensorFlow/Keras
+    </title>
+    <meta name="vaishali-sharma" content="CSEdge" />
+    <!-- Favicon-->
+    <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <img
+                height="32px"
+                width="32px"
+                src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png"
+                alt="logo" />
+        <a class="navbar-brand" href="../.././index.html">CSEdge Learn</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://learn.csedge.courses">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://csedge.courses/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://csedge.courses#contact"
+                    >Contact</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="https://learn.csedge.courses">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mb-4 mt-4">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <h1>
+                Image Classification with TensorFlow/Keras
+            </h1>
+            <!-- Featured blog post-->
+            <div class="card mb-4">
+                <img
+                        class="card-img-top"
+                        src="../images/Image_Classification.png"
+                        alt="Image Classification with TensorFlow" />
+                <div class="card-body">
+                    <main class="container">
+                        <section>
+                            <p>Image classification is a fundamental task in computer vision, where the goal is to assign a label (class) to an input image. In this tutorial, we’ll explore how to build an image classification model using TensorFlow and Keras. You can either use a pre-trained model or create your own custom convolutional neural network (CNN).</p>
+                            <br>
+                            <h2>Pre-requisites</h2>
+                            <p>Before we dive into the implementation, make sure you have the following installed:</p>
+                            <ul>
+                                <li>Python (preferably Python 3.6 or later)</li>
+                                <li>TensorFlow (install using pip install tensorflow)</li>
+                                <li>Keras (included with TensorFlow)</li>
+                            </ul>
+                            <h2>Workflow Overview</h2>
+                            <ol>
+                                <h6><li>Data Preparation</li></h6>
+                                <ul>
+                                    <li>Collect a labeled dataset of images. For example, you can use the <a href="https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz">Flower Photos dataset</a>.</li>
+                                    <li>Organize the data into subdirectories, each representing a different class (e.g., roses, tulips, dandelions).</li>
+                                </ul>
+                               <h6><li>Load and Preprocess Data:</li></h6>
+                                <ul>
+                                   <li>Use <code>tf.keras.utils.image_dataset_from_directory</code> to efficiently load images from disk.</li>
+                                    <li>Resize images to a consistent size (e.g., 180x180 pixels).</li>
+                                    <li>Normalize pixel values to the range [0, 1].</li>
+                                </ul>
+                                <h6><li>Model Building:</li></h6>
+                                <ul>
+                                   <li>Choose between using a pre-trained model (transfer learning) or building your own CNN from scratch.</li>
+                                    <li>For transfer learning, load a pre-trained model (e.g., MobileNetV2, ResNet50) and fine-tune it for your specific task.</li>
+                                    <li>For custom CNN, design your architecture with convolutional layers, pooling layers, and fully connected layers.</li>
+                                </ul>
+                                <h6><li>Compile and Train the Model:</li></h6>
+                                <ul>
+                                   <li>Compile the model with an appropriate optimizer, loss function, and evaluation metric.</li>
+                                    <li>Train the model on your labeled dataset.</li>
+                                    <li>Monitor training progress and adjust hyperparameters as needed.</li>
+                                </ul>
+                                <h6><li>Evaluate and Improve:</li></h6>
+                                <ul>
+                                   <li>Evaluate the model’s performance on a validation set.</li>
+                                    <li>Address overfitting by using techniques like data augmentation and dropout.</li>
+                                    <li>Fine-tune the model based on evaluation results.</li>
+                                </ul>
+                                <h6><li>Prediction and Deployment:</li></h6>
+                                <ul>
+                                   <li>Use the trained model to predict labels for new images.</li>
+                                    <li>Convert the model to TensorFlow Lite format for deployment on mobile devices or embedded systems.</li>
+                                </ul>
+                            </ol>
+                            <h2>Example Code</h2>
+                            <p>Below is a simplified example of building an image classification model using a custom CNN:</p>
+                            <strong>Python:</strong><br>
+                            <pre>
+                                <code>
+import tensorflow as tf
+from tensorflow.keras import layers
+
+# Load and preprocess data
+data_dir = "/path/to/flower_photos"
+batch_size = 32
+img_height, img_width = 180, 180
+
+train_ds = tf.keras.utils.image_dataset_from_directory(
+    data_dir,
+    validation_split=0.2,
+    subset="training",
+    seed=42,
+    image_size=(img_height, img_width),
+    batch_size=batch_size,
+)
+
+# Build a simple CNN
+model = tf.keras.Sequential([
+    layers.Conv2D(32, (3, 3), activation="relu", input_shape=(img_height, img_width, 3)),
+    layers.MaxPooling2D(),
+    layers.Flatten(),
+    layers.Dense(128, activation="relu"),
+    layers.Dense(num_classes, activation="softmax"),  # num_classes = number of flower classes
+])
+
+# Compile the model
+model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+
+# Train the model
+model.fit(train_ds, epochs=10)
+
+# Evaluate the model (on validation set)
+validation_ds = tf.keras.utils.image_dataset_from_directory(
+    data_dir,
+    validation_split=0.2,
+    subset="validation",
+    seed=42,
+    image_size=(img_height, img_width),
+    batch_size=batch_size,
+)
+model.evaluate(validation_ds)
+
+                            </code>
+                            </pre>
+
+                        <p>Remember to replace <code>/path/to/flower_photos</code> with the actual path to your dataset directory.</p>
+                            <h2>Conclusion</h2>
+                            <p>Image classification with TensorFlow and Keras is a powerful technique that can be applied to various domains, from recognizing objects in photos to medical diagnosis. Experiment with different architectures, hyperparameters, and datasets to improve your model’s accuracy!</p>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input
+                                class="form-control"
+                                type="text"
+                                id="searchInput"
+                                placeholder="Enter search term..."
+                                aria-label="Enter search term..."
+                                aria-describedby="button-search" />
+                        <button
+                                class="btn btn-primary"
+                                id="button-search"
+                                type="button"
+                                onclick="search()">
+                            Go!
+                        </button>
+                    </div>
+                </div>
+                <!-- Search Results -->
+                <div id="searchResults"></div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Web Design</a></li>
+                                <li><a href="#!">HTML</a></li>
+                                <li><a href="#!">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Recent Posts</div>
+                <div class="card-body">
+                    <p>Coming Soon..!</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <script
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                    <ins
+                            class="adsbygoogle"
+                            style="display: block"
+                            data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86"
+                            data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <script
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                    <ins
+                            class="adsbygoogle"
+                            style="display: block"
+                            data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86"
+                            data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <script
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                    <ins
+                            class="adsbygoogle"
+                            style="display: block"
+                            data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86"
+                            data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">
+            Copyright &copy CSEdge Learn 2024
+        </p>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="../script.js"></script>
+</body>
+</html>
