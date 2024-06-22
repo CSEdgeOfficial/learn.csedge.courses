@@ -1,0 +1,21 @@
+.copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #708090;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.copy-button.copied {
+    background-color: #28a745;
+}
+
+.code-container {
+    position: relative;
+    overflow: hidden;
+}
