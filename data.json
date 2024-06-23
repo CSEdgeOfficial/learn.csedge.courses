@@ -1,0 +1,59 @@
+[
+    {
+      "url": "./posts/linkedin/creating-professional-linkedin-account.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkx3NudeL9WB5diyA7peE-rrrZ1OuFXrzSChgyKhr6iQ&s",
+      "date": "April 25, 2024",
+      "title": "Unlock the Power of Networking: Crafting Your Professional LinkedIn Profile",
+      "description": "Embark on a journey to create a compelling Professional LinkedIn account that opens doors to limitless opportunities. This step-by-step guide demystifies the process, empowering you to harness the full potential of LinkedIn's vast network, connecting millions worldwide."
+    },
+    {
+      "url": "./posts/github/How-to-Apply-for-GitHub-Student-Developer-Pack.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNYDqYlvfORMgsjdtflgwHnjA-hHUwJPkFaLDn5zFwyQ&s",
+      "date": "April 25, 2024",
+      "title": "Unlock Exclusive Benefits: Applying for GitHub Student Pro Account",
+      "description": "Discover the pathway to unlocking the full potential of your student journey by acquiring a GitHub Student Pro account. Dive into this comprehensive guide to understand the application process, eligibility criteria, and the plethora of benefits awaiting you. Elevate your coding experience and collaboration capabilities with GitHub's premium features tailored for students."
+    },
+    {
+      "url": "./posts/technology/How-to-build-rest-api-using-node-and-mongo-db.html",
+      "image": "https://shorturl.at/hxiFR",
+      "date": "May 26, 2024",
+      "title": "Building a RESTful API with Node.js and MongoDB: A Step-by-Step Guide",
+      "description": "Learn how to create, test, and deploy your API, and discover best practices for handling routes, authentication, and error handling. By the end of this guide, you'll be ready to build and host your own RESTful API, empowering your applications with seamless data communication. 🚀🌐"
+    },
+    {
+      "url": "./posts/power BI/powerBI.html",
+      "image": "./posts/powerBI/powerBI.png",
+      "date": "April 25, 2024",
+      "title": "Power BI for Beginners: Your First Dashboard Step-by-Step",
+      "description": "In this step-by-step guide, we will walk you through the basics of Power BI, from connecting to your data sources to designing interactive and visually appealing dashboards."
+    },
+    {
+      "url": "./posts/azure/How-to-Create-an-Azure-Account.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplePLm0DvcyhLXZHdWe4gMVzpl6LsyfLYpsLxCHcGPQ&s",
+      "date": "April 25, 2024",
+      "title": "Empower Your Learning: Creating Your Azure Student Account",
+      "description": "Embark on your cloud journey with Azure by unlocking the Azure Student account, your gateway to a world of learning and innovation. Dive into this comprehensive guide to discover the step-by-step process to create your Azure Student account and access $200 in free Azure credits. Explore the vast array of Azure services and resources tailored to support your educational endeavors, empowering you to build, experiment, and innovate without constraints."
+    },
+    {
+      "url": "./posts/github/How-to-Make-Pull-Requests-on-GitHub.html",
+      "image": "https://miro.medium.com/v2/resize:fit:400/1*qp-tg5nRgXcdBAPOrMFrpg.jpeg",
+      "date": "May 25, 2024",
+      "title": "Expand your knowledge on Graphic User Interphase designing using Java AWT (Abstract Window Toolkit)",
+      "description": "Discover the secrets to creating dynamic Java GUIs with our guide, \"Mastering Java AWT: A to Z.\" Whether you're a beginner eager to learn the fundamentals or an experienced developer looking to hone your skills with custom components and advanced layouts, this guide offers everything you need. Transform your Java programming abilities and elevate your applications to new heights today!"
+    },
+    {
+      "url": "./posts/github/How-to-Make-Pull-Requests-on-GitHub.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloyzP9KVKtrLX6gDh5koAKVUHZ3prgr3b0YRlK-ORcg&s",
+      "date": "April 25, 2024",
+      "title": "Collaborate and Contribute: Mastering Pull Requests in GitHub",
+      "description": "Unlock the power of collaboration with GitHub by mastering the art of creating Pull Requests. This comprehensive guide walks you through the step-by-step process of initiating a Pull Request, from forking a repository to submitting your changes for review. Learn how to contribute to open-source projects and collaborate effectively with peers, empowering you to make meaningful contributions to the global developer community. Ready to elevate your GitHub workflow? Let's dive in!"
+    },
+    {
+      "url": "./posts/github/How-to-setup-your-github-local-repository.html",
+      "image": "https://user.oc-static.com/upload/2022/01/04/16412576933806_image30.png",
+      "date": "May 19, 2024",
+      "title": "Unlocking GitHub CLI: Setting Up Your Local Repository",
+      "description": "Embark on your open source journey with GitHub by setting up your local repository. In this detailed guide, we'll walk you through the step-by-step process of creating a local GitHub repository. Learn how to initialize Git, add files, commit changes, and connect your local repo to your remote GitHub account. Whether you're a beginner or an experienced developer, this tutorial empowers you to manage your code efficiently and collaborate seamlessly."
+    }
+  ]
+  
