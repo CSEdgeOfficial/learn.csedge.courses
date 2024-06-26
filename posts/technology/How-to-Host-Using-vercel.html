@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Learn how to deploy websites on Vercel, including setting up a project, configuring build settings, and using continuous deployment." />
+    <meta name="keywords"
+        content="Vercel, Web hosting, Continuous deployment, Static site generators, Git integration, Developer tools, Setup, Deployment, Cloud hosting, CI/CD" />
+    <title>Vercel: Simplifying Your Web Deployments</title>
+    <meta name="vaishali-sharma-20" content="CSEdge" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
+            <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i>
+                            Contact</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i>
+                            Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Page Content-->
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8 py-6">
+                <h1 class="pt-5">Vercel: Simplifying Your Web Deployments</h1>
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <main class="container">
+                            <section>
+                                <p>Deploying websites can often be a complex and cumbersome process, but Vercel offers
+                                    a simplified solution for developers of all skill levels. This powerful platform
+                                    provides continuous deployment, static site hosting, and a variety of other features
+                                    to streamline your web projects. In this guide, we'll explore the benefits of using
+                                    Vercel and provide a step-by-step tutorial on how to deploy your website.</p>
+                            </section>
+                            <section>
+                                <h3>What is Vercel?</h3>
+                                <p>Vercel is a cloud-based platform that automates the deployment and management of
+                                    modern web projects. It supports continuous deployment from Git repositories,
+                                    serverless functions, and a host of other features designed to make web development
+                                    easier and more efficient. Whether you're working on a personal project, a client
+                                    site, or a large-scale application, Vercel offers a robust set of tools to support
+                                    your workflow.</p>
+                                <h4>Benefits of Using Vercel </h4>
+                                <ul>
+                                    <li><b>Continuous Deployment:</b> Vercel automatically deploys your site whenever
+                                        you push changes to your Git repository, ensuring your website is always up to
+                                        date.</li>
+                                    <li><b>Static Site Hosting:</b> Vercel specializes in hosting static websites,
+                                        which can be faster and more secure than traditional server-rendered sites.</li>
+                                    <li><b>Custom Domains:</b> You can use your own domain name with your Vercel-hosted
+                                        site, giving it a professional appearance.</li>
+                                    <li><b>Serverless Functions:</b> Vercel allows you to run serverless functions,
+                                        enabling dynamic functionality without the need for a traditional server.</li>
+                                    <li><b>Easy Configuration:</b> Setting up a project on Vercel is straightforward
+                                        and user-friendly, with a variety of options for customizing your build and
+                                        deployment settings.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>How to Deploy a Website Using Vercel</h3>
+                                <p>Deploying a website on Vercel is a simple and efficient process. Follow these
+                                    steps:</p>
+                                <ol>
+                                    <li>Sign up for a Vercel account at <a href="https://www.vercel.com">Vercel</a>.</li>
+                                    <li>Create a new project by connecting your Git repository (GitHub, GitLab, or Bitbucket).</li>
+                                    <li>Select the repository containing your website files.</li>
+                                    <li>Configure the build settings, including the build command and output directory.</li>
+                                    <li>Click "Deploy" to start the deployment process.</li>
+                                    <li>Once the deployment is complete, your site will be live at a Vercel-provided URL. You can configure a custom domain if desired.</li>
+                                </ol>
+                                <p>By following these steps, you can quickly and easily deploy your website using Vercel and take advantage of its powerful features.</p>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4 pt-5">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..."
+                                aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button" onclick="search()">
+                                Go!
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Search Results -->
+                    <div id="searchResults"></div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Web Design</a></li>
+                                    <li><a href="#!">HTML</a></li>
+                                    <li><a href="#!">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">JavaScript</a></li>
+                                    <li><a href="#!">CSS</a></li>
+                                    <li><a href="#!">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body">
+                        <p>Coming Soon..!</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid"
+                            data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409"
+                            data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+                Copyright &copy CSEdge Learn 2024
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    </div>
+</body>
+
+</html>
