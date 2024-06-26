@@ -707,17 +707,21 @@ body.dark-mode .faq{
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 2rem;
+    background-color: #f98117;
+    border-radius: 15px;
+    padding: 0rem 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .faq .accordion {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border: 1px solid #ddd;
     /* Add a border for visual separation */
+    background-color: #f6efe8;
+    border-radius: 15px;
 }
 
 .faq .accordion-header {
@@ -921,7 +925,7 @@ body.dark-mode .faq{
 /* Media Queries */
 @media screen and (max-width: 1000px) {
     .hero {
-        /* padding-top: 0; */
+        padding-top: 0;
     }
 
     #Services ul {
