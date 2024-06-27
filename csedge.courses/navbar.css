@@ -1,10 +1,12 @@
 nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     color: #000000;
-    padding: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
     background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 nav img {
@@ -16,19 +18,22 @@ nav h1 {
     font-size: 2rem;
     padding-left: 50px;
     margin: 0px;
+    display: inline;
 }
 
 nav a {
-    color: #000000;
+    color: black;
     text-decoration: none;
-    padding: 5px 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 0;
+    align-items: center;
+    padding: 10px;
 }
 nav ul li{
     padding-right: 2rem;
