@@ -747,7 +747,7 @@ body.dark-mode .faq{
 }
 
 .faq .accordion-header img {
-    transition: transform 0.3s ease;
+    transition: transform 0.9s ease;
     /* Add a smooth transition for the image */
 }
 
@@ -902,13 +902,13 @@ body.dark-mode .faq{
       color:yellow;
     }
     .col1 .contact-details{
-      display: inline-flex;
+      display: inline-flex; 
       justify-content: space-between;
     }
     .col1 .contact-details i{
       margin: 10px;
     }
-   
+
     .copyright {
         color: rgb(169, 169, 169);
         justify-content: center;
