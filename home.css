@@ -632,19 +632,6 @@ body.dark-mode #Services{
     color: #B23121 !important;
 }
 
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .contact-content {
-        flex-direction: column;
-    }
-    
-    .col {
-        flex: 1 1 100%;
-    }
-}
-
-
 /* Styles for FAQ */
 
 .faq {
@@ -919,11 +906,7 @@ body.dark-mode .faq{
     }
     
 /* Media Queries */
-@media screen and (max-width: 1000px) {
-    .hero {
-        /* padding-top: 0; */
-    }
-
+@media screen and (max-width: 1030px) {
     #Services ul {
         display: flex;
         flex-direction: column;
@@ -946,13 +929,16 @@ body.dark-mode .faq{
     #Services ul li p {
         margin: 0;
     }
+    .hero img{
+        padding: 50px;
+    }
 }
 
 @media screen and (max-width: 860px) {
     .hero {
         overflow: hidden;
         height: fit-content;
-        padding: 50px;
+        padding: 50px 30px 30px 30px;
     }
 
     .hero div {
@@ -1080,10 +1066,112 @@ body.dark-mode .faq{
         width: 100%;
     }
 
-    .footer-container {
+    /* .footer-container {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         font-size: medium;
+    } */
+
+    .row1{
+        font-size: smaller;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .col {
+        flex: 1 1 100%;
     }
 }
+
+@media screen and (max-width: 430px) {
+    p{
+        font-size: 3.9vw !important;
+    }
+
+    h2{
+        font-size: 8vw !important;
+    }
+
+    .hero div {
+        padding: 50px 10px 10px 10px;
+    }
+
+    .hero h2 {
+        font-size: 9vw !important;
+    }
+
+    .hero a {
+        font-size: 3.2vw;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .section-heading {
+        padding-top: 3.5vh;
+    }
+
+    .about-text{
+        padding: 10px 10px 30px 10px !important;
+    }
+
+    img.aos-init.aos-animate{
+        scale: 1.1 !important;
+    }
+
+    .internship-program .program-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .internship-program .program-buttons {
+        display: flex;
+        flex-direction: row;
+        font-size: x-small;
+        justify-content: center;
+        gap: 20px
+    }
+
+    .internship-program li {
+        height: 530px; 
+    }
+
+    p.program-description{
+        font-size: 3vw !important;
+    }
+
+    .program-apply-button {
+        font-size: 2.9vw;
+        padding: 8px 17px;
+    }
+
+    .contact-content {
+        padding: 20px;
+    }
+    .faq h3{
+        font-size: 3.9vw !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    img.aos-init.aos-animate{
+        scale: 0.8 !important;
+    }
+
+    img.faq-img{
+        scale: 0.8;
+    }
+
+    img.contact-img{
+        scale: 0.8;
+    }
+}
+
+
