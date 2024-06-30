@@ -25,7 +25,7 @@
    Make the necessary modifications or additions to the project files.
 
 3. **Commit and Push**
-   Once you've made your changes, commit them and push to your fork:
+   Once you've made your changes, commit them and push into your fork:
    ```bash
    git add .
    git commit -m "Describe your changes here"

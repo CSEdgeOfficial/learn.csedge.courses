@@ -7,13 +7,32 @@ a {
 
 /* Footer CSS */
 .site-footer {
-  background-color: #f5f5f5;
+  background: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
   padding: 30px 0;
 }
 
 .site-footer h6 {
-  font-size: 18px;
+  color:  #fed700;
+  font-size: 24px;
   margin-bottom: 15px;
+  position: relative;
+  font-weight: bold;
+}
+
+.site-footer h6::after{
+  content: '';
+  height:3px;
+  width:0px;
+  background-color:  #fed700;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: 0.3s ease;
+
+}
+.site-footer h6:hover::after{
+  width: 35px;
 }
 
 .site-footer ul {
@@ -44,6 +63,59 @@ a {
   margin-bottom: 0;
 }
 
+
+/* footer link hover effect */
+.site-footer .footer-links a{
+font-weight: 500;
+display: block;
+text-decoration: none;
+color:#f2f2f2;
+margin-bottom: 5px;
+position: relative;
+transition: 0.3s ease;
+}
+.site-footer .footer-links a::before{
+content:'';
+height: 16px;
+width:3px;
+position: absolute;
+top:5px;
+left:-10px;
+background-color: rgb(255, 255, 0);
+transition: 0.5s ease;
+opacity: 0;
+}
+.site-footer .footer-links a:hover::before{
+opacity: 1;
+}
+.site-footer .footer-links a:hover{
+transform: translateX(-8px);
+color:yellow;
+}
+
+.site-footer .libutton {
+  background-color:#c1a403 ;
+  color: #555;
+  transition: transform .3s;
+}
+.site-footer .libutton:hover{
+  background-color:#eccc18 ;
+  transform: scale(1.1);
+}
+.site-footer .libutton a{
+  color: #555;
+}
+
+.blog-buttons{
+  background-color:#e5c303 ;
+  color:rgb(64, 62, 62);
+  transition: transform .3s;
+}
+.blog-buttons:hover{
+  background-color:#eccc18 ;
+  transform: scale(1.1);
+  color: black;
+}
 
 #goTopBtn {
   display: none;
