@@ -1,0 +1,25 @@
+* {
+    text-align: center;
+    color: #000000;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/a6/bf/1c/a6bf1ca75ad990e12c886616b5adfa02.gif");
+}
+
+.not-found {
+    background-color: #bdbaba95;
+    border-radius: 20px;
+    padding: 1em 2em ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) { /*Adjusting for smaller screen device like phone*/
+    .not-found {
+        min-width: 70vw;
+    }
+  }
+
