@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn how to create a user info-based resume maker, including data collection, rich text editing, template choices, live preview, and format options." />
+    <meta name="keywords" content="Resume Maker, User Info, Data Collection, Rich Text Editor, Templates, Live Preview, PDF, Docx, TXT, Web Development, Tutorials, UI/UX" />
+    <title>User Info Based Resume Maker: Step-by-Step Guide</title>
+    <meta name="saipradyumnagoud" content="CSEdge" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
+            <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Page Content-->
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8 py-6">
+                <h1 class="pt-5">User Info Based Resume Maker: Step-by-Step Guide</h1>
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <main class="container">
+                            <section>
+                                <p>A user info-based resume maker allows users to create professional resumes online, offering features like data collection, rich text editing, template choices, live preview, and format options.</p>
+                            </section>
+                            <section>
+                                <h3>Data Collection</h3>
+                                <p>Gather user's professional details, e.g., name, contact info, summary, skills, education, experience, projects, certifications, languages, references.</p>
+                                <pre><code>
+// Example of collecting user's professional details
+const userDetails = {
+    name: "John Doe",
+    contactInfo: "john.doe@example.com",
+    summary: "Experienced web developer...",
+    skills: ["HTML", "CSS", "JavaScript"],
+    education: [
+        {
+            degree: "B.Sc. in Computer Science",
+            institution: "XYZ University",
+            year: "2020"
+        }
+    ],
+    experience: [
+        {
+            position: "Web Developer",
+            company: "ABC Corp",
+            duration: "Jan 2021 - Present",
+            responsibilities: ["Developing web applications", "Collaborating with designers"]
+        }
+    ],
+    projects: [
+        {
+            title: "Portfolio Website",
+            description: "A personal portfolio website showcasing projects and skills",
+            technologies: ["HTML", "CSS", "JavaScript"]
+        }
+    ],
+    certifications: ["Certified Web Developer"],
+    languages: ["English", "Spanish"],
+    references: ["Jane Smith, j.smith@example.com"]
+};
+                                </code></pre>
+                                <h4>Rich Text Editor</h4>
+                                <p>Support detailed entries in sections requiring extensive writing.</p>
+                                <pre><code>
+// Example of integrating a rich text editor
+// HTML
+<textarea id="richTextEditor" name="editor"></textarea>
+
+// JavaScript
+CKEDITOR.replace('richTextEditor', {
+    height: 300
+});
+                                </code></pre>
+                                <h4>Template Choices</h4>
+                                <p>Allow selecting from various resume designs suiting industries or preferences.</p>
+                                <pre><code>
+// Example of template choices
+const templates = [
+    { id: 1, name: "Classic", preview: "classic-preview.png" },
+    { id: 2, name: "Modern", preview: "modern-preview.png" },
+    { id: 3, name: "Creative", preview: "creative-preview.png" }
+];
+
+templates.forEach(template => {
+    console.log(`Template: ${template.name}, Preview: ${template.preview}`);
+});
+                                </code></pre>
+                                <h4>Live Preview</h4>
+                                <p>Display a real-time view of the created resume alongside edits.</p>
+                                <pre><code>
+// Example of live preview functionality
+const resumePreview = document.getElementById('resumePreview');
+
+function updatePreview() {
+    const content = document.getElementById('richTextEditor').value;
+    resumePreview.innerHTML = content;
+}
+
+document.getElementById('richTextEditor').addEventListener('input', updatePreview);
+                                </code></pre>
+                                <h4>Format Choices</h4>
+                                <p>Offer output choices like PDF, Docx, or txt.</p>
+                                <pre><code>
+// Example of format choices
+function exportResume(format) {
+    if (format === 'PDF') {
+        console.log('Exporting as PDF...');
+    } else if (format === 'Docx') {
+        console.log('Exporting as Docx...');
+    } else if (format === 'TXT') {
+        console.log('Exporting as TXT...');
+    }
+}
+
+exportResume('PDF');
+                                </code></pre>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4 pt-5">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button" onclick="search()">
+                                Go!
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Search Results -->
+                    <div id="searchResults"></div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Web Design</a></li>
+                                    <li><a href="#!">HTML</a></li>
+                                    <li><a href="#!">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">JavaScript</a></li>
+                                    <li><a href="#!">CSS</a></li>
+                                    <li><a href="#!">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body">
+                        <p>Coming Soon..!</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409" crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409" data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409" crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409" data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409" crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409" data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+                Copyright &copy CSEdge Learn 2024
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    </div>
+</body>
+
+</html>
