@@ -62,14 +62,95 @@
                             <section>
                                 <h3>Data Collection</h3>
                                 <p>Gather user's professional details, e.g., name, contact info, summary, skills, education, experience, projects, certifications, languages, references.</p>
+                                <pre><code>
+// Example of collecting user's professional details
+const userDetails = {
+    name: "John Doe",
+    contactInfo: "john.doe@example.com",
+    summary: "Experienced web developer...",
+    skills: ["HTML", "CSS", "JavaScript"],
+    education: [
+        {
+            degree: "B.Sc. in Computer Science",
+            institution: "XYZ University",
+            year: "2020"
+        }
+    ],
+    experience: [
+        {
+            position: "Web Developer",
+            company: "ABC Corp",
+            duration: "Jan 2021 - Present",
+            responsibilities: ["Developing web applications", "Collaborating with designers"]
+        }
+    ],
+    projects: [
+        {
+            title: "Portfolio Website",
+            description: "A personal portfolio website showcasing projects and skills",
+            technologies: ["HTML", "CSS", "JavaScript"]
+        }
+    ],
+    certifications: ["Certified Web Developer"],
+    languages: ["English", "Spanish"],
+    references: ["Jane Smith, j.smith@example.com"]
+};
+                                </code></pre>
                                 <h4>Rich Text Editor</h4>
                                 <p>Support detailed entries in sections requiring extensive writing.</p>
+                                <pre><code>
+// Example of integrating a rich text editor
+// HTML
+<textarea id="richTextEditor" name="editor"></textarea>
+
+// JavaScript
+CKEDITOR.replace('richTextEditor', {
+    height: 300
+});
+                                </code></pre>
                                 <h4>Template Choices</h4>
                                 <p>Allow selecting from various resume designs suiting industries or preferences.</p>
+                                <pre><code>
+// Example of template choices
+const templates = [
+    { id: 1, name: "Classic", preview: "classic-preview.png" },
+    { id: 2, name: "Modern", preview: "modern-preview.png" },
+    { id: 3, name: "Creative", preview: "creative-preview.png" }
+];
+
+templates.forEach(template => {
+    console.log(`Template: ${template.name}, Preview: ${template.preview}`);
+});
+                                </code></pre>
                                 <h4>Live Preview</h4>
                                 <p>Display a real-time view of the created resume alongside edits.</p>
+                                <pre><code>
+// Example of live preview functionality
+const resumePreview = document.getElementById('resumePreview');
+
+function updatePreview() {
+    const content = document.getElementById('richTextEditor').value;
+    resumePreview.innerHTML = content;
+}
+
+document.getElementById('richTextEditor').addEventListener('input', updatePreview);
+                                </code></pre>
                                 <h4>Format Choices</h4>
                                 <p>Offer output choices like PDF, Docx, or txt.</p>
+                                <pre><code>
+// Example of format choices
+function exportResume(format) {
+    if (format === 'PDF') {
+        console.log('Exporting as PDF...');
+    } else if (format === 'Docx') {
+        console.log('Exporting as Docx...');
+    } else if (format === 'TXT') {
+        console.log('Exporting as TXT...');
+    }
+}
+
+exportResume('PDF');
+                                </code></pre>
                             </section>
                         </main>
                     </div>
