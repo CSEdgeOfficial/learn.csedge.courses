@@ -819,4 +819,38 @@ i {
     height: 55px;
     border-radius: 50%; /* Makes the image circular */
 }
+.contact-icons a i {
+    color: #ffffff;
+    transition: color 0.1s ease;
+   
+}
+.contact-icn a i {
+    color: black;
+    transition: color 0.1s ease;
+   
+}
 
+/* Specific colors for each social media icon */
+.contact-icons a .fa-envelope:hover {
+    color: #D44638; /* Red color for email */
+}
+
+.contact-icons a .fa-linkedin:hover {
+    color: #0077B5; /* LinkedIn blue */
+    fill: white;
+}
+
+.contact-icons a .fa-github:hover {
+    color: black; /* GitHub black */
+    background-color: white;
+    border-radius: 50%;
+}
+
+.contact-icons a .fa-instagram:hover {
+    color: #E1306C; /* Instagram pink */
+}
+
+.contact-icons a .fa-youtube:hover {
+    color: #FF0000; /* YouTube red */
+    
+}
