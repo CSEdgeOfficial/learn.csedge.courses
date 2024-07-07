@@ -8,7 +8,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-76QCJCGDB5');
   </script>
   <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
@@ -40,14 +39,20 @@
   <!--Google Site Search Verification-->
   <meta name="google-site-verification" content="lnzqpbpjoknDdDMpcJhBthXHLR7jUWtfSXoGHbdpI40" />
   <style>
-    /* CSS for Navbar hover effects */
+    /* CSS for Navbar hover and click effects */
     .navbar-nav .nav-link {
       transition: color 0.3s, background-color 0.3s;
     }
 
     .navbar-nav .nav-link:hover {
       color: #ffffff;
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: #007bff; /* Change this to your desired hover background color */
+      border-radius: 4px;
+    }
+
+    .navbar-nav .nav-link:active {
+      color: #ffffff;
+      background-color: #0056b3; /* Change this to your desired active background color */
       border-radius: 4px;
     }
   </style>
@@ -75,7 +80,7 @@
       }
     </style>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
         <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
@@ -85,30 +90,26 @@
           <span class="toggler-icon top-bar"></span>
           <span class="toggler-icon middle-bar"></span>
           <span class="toggler-icon bottom-bar"></span>
-
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex justify-content-center">
-              <li class="nav-item me-2">
-                <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i>
-                  About</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i> Contact</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex justify-content-center">
+            <li class="nav-item me-2">
+              <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+  
     <!-- Page header with logo and tagline-->
     <div class="container">
       <div class="text-center my-5">
