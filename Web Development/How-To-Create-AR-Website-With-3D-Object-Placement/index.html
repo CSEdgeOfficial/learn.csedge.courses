@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn how to create an AR website with 3D object placement, focusing on the implementation of AR technology and interactive 3D models." />
+    <meta name="keywords" content="AR Website, 3D Object Placement, Web Development, HTML, CSS, JavaScript, AR.js, Three.js" />
+    <title>AR Website with 3D Object Placement</title>
+    <meta name="saipradyumnagoud" content="CSEdge" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img height="32px" width="32px" src="https://csedge.courses/Images/CSEDGE-LOGO32X32.png" alt="logo" />
+            <a class="navbar-brand" href="./index.html">CSEdge Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses/about"> <i class="fa-solid fa-circle-info"></i> About</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="https://csedge.courses#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-blog"></i> Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Page Content-->
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8 py-6">
+                <h1 class="pt-5">AR Website with 3D Object Placement</h1>
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <main class="container">
+                            <section>
+                                <p>Learn how to create an AR website with 3D object placement, focusing on the implementation of AR technology and interactive 3D models. We will use libraries such as AR.js and Three.js to achieve this.</p>
+                            </section>
+                            <section>
+                                <h3>Introduction</h3>
+                                <p>Augmented Reality (AR) websites allow users to interact with 3D objects in a real-world environment through their browser. This tutorial will guide you through the steps to create an AR website that supports 3D object placement.</p>
+                                <h4>Technologies Used</h4>
+                                <ul>
+                                    <li>AR.js: A library for adding AR capabilities to web applications.</li>
+                                    <li>Three.js: A JavaScript library for creating and displaying 3D graphics in a web browser.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Setting Up the Project</h3>
+                                <p>Start by setting up your HTML file and including the necessary libraries.</p>
+                                <pre><code>
+// Example of including AR.js and Three.js in HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AR Website with 3D Object Placement</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <a-scene embedded arjs>
+        <!-- Your AR content will go here -->
+    </a-scene>
+</body>
+</html>
+                                </code></pre>
+                                <h4>Creating the AR Scene</h4>
+                                <p>Set up the AR scene and place a 3D model in the scene.</p>
+                                <pre><code>
+// Example of creating an AR scene with a 3D model
+<a-scene embedded arjs>
+    <a-marker preset="hiro">
+        <a-entity 
+            gltf-model="url(path/to/your/model.gltf)" 
+            scale="0.5 0.5 0.5"
+            position="0 0 0">
+        </a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+</a-scene>
+                                </code></pre>
+                                <h4>Interactivity</h4>
+                                <p>Add interactivity to the 3D model, such as allowing users to click on the model to change its color.</p>
+                                <pre><code>
+// Example of adding interactivity to the 3D model
+<a-marker preset="hiro">
+    <a-entity 
+        gltf-model="url(path/to/your/model.gltf)" 
+        scale="0.5 0.5 0.5"
+        position="0 0 0"
+        event-set__mouseenter="_event: mouseenter; color: red"
+        event-set__mouseleave="_event: mouseleave; color: blue">
+    </a-entity>
+</a-marker>
+                                </code></pre>
+                                <h4>Testing and Deployment</h4>
+                                <p>Test your AR website on different devices to ensure it works correctly. Once satisfied, deploy your website using a hosting service like Netlify or GitHub Pages.</p>
+                                <pre><code>
+// Example of deploying your AR website
+// Step 1: Create a repository on GitHub
+// Step 2: Push your project files to the repository
+// Step 3: Enable GitHub Pages in the repository settings
+// Your AR website is now live!
+                                </code></pre>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Web Design</a></li>
+                                    <li><a href="#!">HTML</a></li>
+                                    <li><a href="#!">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">JavaScript</a></li>
+                                    <li><a href="#!">CSS</a></li>
+                                    <li><a href="#!">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Side Widget</div>
+                    <div class="card-body">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409" crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display: block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8930077947690409" data-ad-slot="9866674087"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+                Copyright &copy CSEdge Learn 2024
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    </div>
+</body>
+
+</html>
