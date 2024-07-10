@@ -12,7 +12,7 @@ const Pricing = () => {
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             {/* Pricing Card */}
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl">
-              <h3 className="mb-4 text-2xl font-semibold">Self Learner</h3>
+              <h3 className="mb-4 text-2xl font-semibold">Starter Solution</h3>
               <p className="font-light text-gray-500 sm:text-lg">Best option for personal learning.</p>
               <div className="flex justify-center items-baseline my-8">
                 <span className="mr-2 text-5xl font-extrabold">$29</span>
@@ -50,7 +50,7 @@ const Pricing = () => {
             </div>
             {/* Pricing Card */}
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl">
-              <h3 className="mb-4 text-2xl font-semibold">Organistaion Learner</h3>
+              <h3 className="mb-4 text-2xl font-semibold">Pro Solution</h3>
               <p className="font-light text-gray-500 sm:text-lg">Relevant for multiple learners, extended & premium support.</p>
               <div className="flex justify-center items-baseline my-8">
                 <span className="mr-2 text-5xl font-extrabold">$99</span>
@@ -88,7 +88,7 @@ const Pricing = () => {
             </div>
             {/* Pricing Card */}
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl">
-              <h3 className="mb-4 text-2xl font-semibold">Multi Learner</h3>
+              <h3 className="mb-4 text-2xl font-semibold">Expert Solution</h3>
               <p className="font-light text-gray-500 sm:text-lg">Advanced solution with all required functionalities.</p>
               <div className="flex justify-center items-baseline my-8">
                 <span className="mr-2 text-5xl font-extrabold">$199</span>

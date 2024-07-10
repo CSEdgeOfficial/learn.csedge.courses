@@ -5,6 +5,7 @@ import About from '../components/About'
 import Footer from '../components/Footer'
 import Testimonial from '../components/Testimonial'
 import Pricing from '../components/Pricing'
+import Contact from './Contact'
 
 const Home = () => {
   return (
@@ -99,8 +100,10 @@ const Home = () => {
   </div>
 </section>
 <Pricing></Pricing>
+
 <Testimonial></Testimonial>
   <About></About>
+  <Contact></Contact>
  <Footer></Footer>
 </div>
     </>
