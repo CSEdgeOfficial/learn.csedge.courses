@@ -17,6 +17,28 @@ body.dark-mode {
     color: white;
 }
 
+#loader {
+    width: 560px;
+    overflow: hidden;
+    position: fixed;
+    aspect-ratio: 2;
+    background: url('./Images/CSEDGE-LOGO32X32.png') no-repeat;
+    z-index: 100;
+    animation: l3 1s infinite linear;
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
+.loader-heading{
+    margin-top: 42%;
+    margin-left: 12%;
+ 
+}
 /* The switch - the box around the slider */
 .switch {
     position: relative;
