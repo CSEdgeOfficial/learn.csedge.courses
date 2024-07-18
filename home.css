@@ -795,7 +795,7 @@ body.dark-mode .faq{
     /* Tomato red color */
 }
 
-/* Styles for Footer */
+/* Styles for Footer
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
   .f1{
@@ -917,7 +917,7 @@ body.dark-mode .faq{
         margin-top: 4rem;
         margin-left: 4rem;
     }
-    
+     */
 /* Media Queries */
 @media screen and (max-width: 1000px) {
     .hero {
@@ -1086,4 +1086,148 @@ body.dark-mode .faq{
         align-items: center;
         font-size: medium;
     }
+}
+
+/* General footer styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.f1 {
+    padding: 3rem 1rem;
+    background: #000; /* Changed background color to black */
+    position: relative;
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px; /* Added curved border */
+}
+
+.social_media:hover {
+    color: yellow;
+}
+
+.container1 {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social {
+    font-size: x-large;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col1 {
+    min-width: 250px;
+    color: #fff; /* Changed text color to white */
+    font-family: 'Poppins', sans-serif;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.col1 .h11 {
+    color: yellow;
+}
+
+.col1 .logo {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.col1 h3 {
+    font-weight: 800;
+    color: yellow;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.col1 h3::after {
+    content: '';
+    height: 2px;
+    width: 35px; /* Adjusted width for underline */
+    background-color: rgb(208, 255, 0);
+    position: absolute;
+    bottom: -5px; /* Adjusted position for underline */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.col1 h3:hover::after {
+    width: 70px; /* Adjusted width on hover */
+}
+
+.col1 .social a i {
+    color: #fff; /* Changed icon color to white */
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+    font-size: 1.8rem;
+}
+
+.col1 .social a i:hover {
+    transform: scale(1.5);
+    color: yellow;
+}
+
+.col1 .links a {
+    font-weight: 200;
+    display: block;
+    text-decoration: none;
+    color: #fff; /* Changed link text color to white */
+    margin-bottom: 5px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.col1 .links a::before {
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-color: rgb(255, 255, 0);
+    transition: opacity 0.5s ease, height 0.3s ease;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.col1 .links a:hover::before {
+    opacity: 1;
+    height: 100%;
+}
+
+.col1 .links a:hover {
+    transform: translateX(-8px);
+    color: yellow;
+}
+
+.col1 .contact-details {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.col1 .contact-details i {
+    margin: 10px;
+}
+
+.copyright {
+    color: #a9a9a9; /* Adjusted copyright text color */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 4rem;
 }
