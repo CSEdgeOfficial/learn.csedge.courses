@@ -155,7 +155,29 @@ nav ul li a:hover::after {
     
 }
 
+
+/* Width at which Toggle Mode will go inside Hamburger */
 @media screen and (max-width: 1100px) {
+
+    #ham-mode-toggle-list-item {
+        display: inline !important;
+    }
+
+    .navbar-ham-switch .toggle-container {
+        display: none;
+    }
+}
+    
+/* Width at which hamburger will be made */
+
+@media screen and (max-width: 1100px) {
+
+    #ham-mode-toggle {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
     nav img {
         display: inline-block;
         padding-right: 15px;
@@ -176,6 +198,11 @@ nav ul li a:hover::after {
         flex-direction: column;
         text-align: center;
         transition: left 0.3s ease;
+        justify-content: space-evenly;
+    }
+
+    nav ul .navitem {
+        margin: inherit;
     }
 
     nav ul.show {
@@ -183,14 +210,14 @@ nav ul li a:hover::after {
     }
 
     nav ul li {
-        margin: 30px 0;
+        margin: 20px 0;
     }
 
-    nav img {
+    nav  img {
         display: block;
     }
 
-    nav ul a {
+    nav ul a, #ham-mode-toggle {
         color: #000000;
         font-size: 20px;
     }

@@ -68,20 +68,30 @@
         <!--   <li class="navitem"><a href="https://learn.csedge.courses"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>--> 
                <li class="navitem"><a href="index.html"><i class="fas fa-blog navbar-icons"></i> Blog</a></li>
                <li class="navitem"><a href="#faq"><i class="fas fa-question-circle navbar-icons"></i> FAQ</a></li>
+               <li class="navitem" id = "ham-mode-toggle-list-item" style="display: none;"><button id ="ham-mode-toggle" onclick="toggleMode()"><i class="fas fa-sun navbar-icons"></i> Toggle Mode</button></li>
+               
+           <div class="toggle-container" style="top: 0px;">
+            <input type="checkbox" id="dark-mode-toggle" class="switch-checkbox">
+            <label class="theme-switch" for="dark-mode-toggle">
+            <div class="toggle-button">
+                <span class="light-mode-icon"><img src="./images/sun.svg" style = "display: block;"></span>
+                <span class="dark-mode-icon"><img src="./images/moon.svg"style = "display: block;"></span>
+            </div>
+            </label>
+        </div>
            </ul>
+
               
-                <div class="toggle-container" style="top: 0px;">
-                    <input type="checkbox" id="dark-mode-toggle" class="switch-checkbox">
-                    <label class="theme-switch" for="dark-mode-toggle">
-                    <div class="toggle-button">
-                        <span class="light-mode-icon"><img src="./images/sun.svg" style = "display: block;"></span>
-                        <span class="dark-mode-icon"><img src="./images/moon.svg"style = "display: block;"></span>
-                    </div>
-                    </label>
-                </div>
+                
         </div>
     </nav>
  
+<script>
+    function toggleMode(){
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
+
 <style>
     .toggle-container {
       transform: translate(-50%, -50%);
