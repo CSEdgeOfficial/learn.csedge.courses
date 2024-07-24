@@ -32,11 +32,29 @@ nav ul {
 }
 nav ul li{
     padding-right: 2rem;
+    position: relative;
 }
 nav ul li a:hover {
     color: #222;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  
+}
+
+.navbar-links li a::after {
+    content: ' ' !important;
+    display: inline-flex;
+    position: absolute;
+    width: 0%;
+    height: 2px !important;
+    top: 30px;
+    left: 0px;
+}
+
+
+.navbar-links li:hover > a::after {
+    display: inline-flex;
+    transition: all 0.2s linear;
+    width: 100% !important;
+    background-color: #222 !important;
 }
 
 @media screen and (max-width: 768px) {
