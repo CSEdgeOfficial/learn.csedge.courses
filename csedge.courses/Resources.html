@@ -58,8 +58,46 @@
             <li><a href="./index.html#faq">FAQ</a></li>
         </ul>
     </nav>
+    <nav class="mid">
+        <ul>
+            <li><a href="#free-ebooks">Free E-Books</a></li>
+            <li><a href="#free-resources">Free Resources</a></li>
+            <li><a href="#free-videos">Free Videos</a></li>
+            
+        </ul>
+    </nav>
+
 
     <style>
+        nav.mid {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.0rem;
+            color: #000000;
+            background-color: #5f8283;
+            display: flex;
+            justify-content: center; /* Center the ul horizontally */
+        }
+        
+        nav.mid ul {
+            list-style-type: none; 
+            display: flex;
+            gap: 20px; 
+            padding: 0;
+            margin: 0; 
+        }
+        
+        
+        nav.mid ul li a {
+            text-decoration: none; 
+            color: black;
+            font-size: 16px; 
+        }
+        .mid a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+        }
         .header {
             text-align: center;
             margin-top: 50px;
@@ -306,7 +344,7 @@
     </style>
 
     <!--Free E-Books Section-->
-    <h1 class="header">Free E-Books</h1>
+    <h1 id="free-ebooks" class="header">Free E-Books</h1>
     <div class="card-container">
         <div class="ebook-card">
             <img src="https://ouch-cdn2.icons8.com/bl9xOqdFsrPmb0M5HsMQp-6cGpZgx4VTtIFC2ZrCLh0/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjg2/LzdmMWM2NmVmLWM5/MzUtNDZkNy1hMWMz/LTcwYWFmYzA2MzEy/Zi5wbmc.png"
@@ -434,7 +472,7 @@
     </script>
 
     <!--Free Courses-->
-    <h1 class="header">Free Resources</h1>
+    <h1 id="free-resources"  class="header">Free Resources</h1>
     <div class="card-container">
         <article class="card">
             <header>
@@ -631,7 +669,7 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     <!--YT Videos-->
-    <h1 class="header">Free Videos</h1>
+    <h1 id="free-videos"  class="header">Free Videos</h1>
     <div class="container">
         <div class="videos">
             <!-- Video 1 -->
@@ -650,7 +688,7 @@
                 </div>
             </div>
             <!-- Video 2 -->
-            <div class="video-card">
+            <div  class="video-card">
                 <a href="https://youtu.be/EOLPQdVj5Ac?list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu" target="_blank">
                     <img src="https://i.ytimg.com/vi/EOLPQdVj5Ac/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCg16BfC7QsjRuz5gE4geYmHsmDow"
                         alt="Video 1">
